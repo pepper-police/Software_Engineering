@@ -24,6 +24,20 @@
 
 \section{機能の概要・前提条件・制約事項}
 
+\subsection{前提条件}
+\begin{itemize}
+	\item 宅配元と宅配先がお互いドローン着地地点を登録している
+	\item 事業者は搬送装置を無人航空機の登録制度に基づき国土交通省のシステムに登録すること
+	\item 利用者は日本語を理解できること
+\end{itemize}
+\subsection{制約条件}
+\begin{itemize}
+	\item 利用者が情報を登録するときに虚偽の情報を登録しないこと
+	\item 管理者は利用者の情報を本システムの利用目的以外で使用しないこと
+	\item 管理者は利用者の個人情報の管理を情報漏洩のないように行うこと
+	\item 事業者は航空法施行規則236条に基づき搬送装置の適切な運用を行うこと
+	\item 利用者は利用規約を順守すること
+\end{itemize}
 \section{情報・金銭の流れ}
 
 \section{想定する利用者}
@@ -31,7 +45,40 @@
 \section{運用・保守}
 
 \section{ハードウェア・ソフトウェアの構成}
-kubota
+\subsection{ハードウェア構成}
+本システムのハードウェア構成を表\ref{fig:hardware}に示す．
+\begin{table}[H]
+ \begin{center}
+  \caption{ハードウェアの構成}
+    \label{fig:hardware}
+  \begin{tabular}{ccc} \hline
+    項目 & 種類 & 数量 \\ \hline \hline
+    メインサーバ & レンタルサーバ & 2 \\
+    データベースサーバ & レンタルサーバ & 2 \\
+    管理者端末 & PC & 1 \\
+    事業者端末 & PC & 事業者数 \\
+    利用者端末 & スマートフォン & 利用者数 \\
+    搬送装置 & ドローン & 事業者数以上 \\ \hline
+  \end{tabular}
+ \end{center}
+\end{table}
+\subsection{ソフトウェア構成}
+本システムのソフトウェア構成を表\ref{fig:software}に示す．
+\begin{table}[H]
+ \begin{center}
+  \caption{ソフトウェアの構成}
+    \label{fig:software}
+  \begin{tabular}{cc} \hline
+    項目 & ソフトウェア \\ \hline \hline
+    Webサーバ & 未定 \\
+    データベース管理システム & 未定 \\
+    管理者端末 & Linux系OS \\
+    事業者端末 & 未定 \\
+    利用者端末 & Android,iOS \\
+    搬送装置 & 未定 \\ \hline
+  \end{tabular}
+ \end{center}
+\end{table}
 
 \section{費用・効果}
 
