@@ -3,14 +3,15 @@
 \date{\today}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage{url}
-\usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
 \usepackage{float}
 \usepackage{ascmac}
 \usepackage{pdfpages}
 
 \title{ドローン宅配事業者支援システム}
 
-\author{土佐山田IT株式会社}
+\author{土佐山田IT株式会社 \and
+        久保田 天治 \and 塩澤 康志 \and 蝉 祐介 \and 寺内 俊輔 \and 林 晃太郎 \and 松本 吏司}
 
 \begin{document}
 \maketitle
@@ -97,6 +98,11 @@
 \section{情報・金銭の流れ}
 
 \section{想定する利用者}
+本システムが想定する利用者を下記に示す．
+\begin{itemize}
+        \item 宅配を希望する小規模事業者または個人
+        \item 薬を処方する病院または診療所
+\end{itemize}
 
 \section{運用・保守}
 
@@ -192,9 +198,26 @@
     21,600,000,000円(収益)－900,264,000(費用)＝20,699,736,000円
 \end{center}
 
-\section{スケジュール}
+\section{開発体制と工程計画}
+本システムの開発は土佐山田IT株式会社の8名により実装する．
+
+本システムの工程計画は図\ref{schedule}に示す．
+\begin{figure}[htbp]
+        \label{schedule}
+        \centering
+        \includegraphics[width=15cm]{schedule.png}
+        \caption{工程計画}
+\end{figure}
 
 \section{本システムのアピールポイント}
+\begin{enumerate}
+        \item 未だに日本に存在のしないシステムである．
+        \item 22年度の宅配荷物数は50億個であり，8年連続史上最高を更新中である．しかし，人手不足が深刻化しており，この課題の解決策のひとつとなりうる．
+        \item 交通渋滞や地理的な制約を受けずに荷物を迅速かつ効率的に配達することが可能である．
+        \item 災害時などで交通インフラが破壊されたとしても物理的障害の影響が少ないため，必要な物資や医療用品の迅速な配達が可能である．
+        \item 離島や山間部などのアクセスが難しい地域において従来の宅配方法と比較し，大幅なコスト削減になる．
+        \item 今日リモート診療が普及し始めている．リモート診療とドローン宅配を併用すると患者は外出する必要がなくなるため，感染リスクを極力減らすことができる．
+\end{enumerate}
 
 \section{貢献度}
 
