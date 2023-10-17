@@ -7,6 +7,7 @@
 \usepackage{float}
 \usepackage{ascmac}
 \usepackage{pdfpages}
+\usepackage{enumitem}
 
 \title{ドローン宅配事業者支援システム}
 
@@ -68,35 +69,41 @@
 \subsection{機能概要}
 本システムは管理者，ドローン宅配事業者，使用者が存在する．それぞれに向けた機能の概要を説明する．
 \subsubsection{管理者向け機能}
-\begin{itemize}
-    \item ログインログアウト機能
-    \item 会員管理機能
-    \item ドローン宅配事業者会員登録承認機能
-    \item 会員情報閲覧機能
-    \item 利用情報分析機能
-    \item 宅配依頼受付機能
-    \item 宅配仕事割り振り機能
-    \item ドローン貸出機能
-    \item 貸出ドローン情報管理機能
-\end{itemize}
-\subsubsection{ドローン宅配事業者向け機能}
-\begin{itemize}
-    \item ログインログアウト機能
-    \item ドローン宅配事業者会員登録申請
-    \item 宅配依頼承諾機能
-    \item 配達完了通知機能
-    \item 宅配場所登録機能
-    \item ドローンレンタル機能
-    \item 退会機能
-\end{itemize}
+\begin{description}[labelwidth=12em]
+  \setlength{\leftskip}{1em}
+  \item [ログインログアウト機能] ユーザーがアカウントにログインし、ログアウトできる機能。ああああああああああああああああああああああああああああ
+  \item [会員管理機能]  機能いい良い良い良い良い良い良い良い良い良い良い良い良い良い良い良い良い良い良い良いいい
+  \item [事業者会員登録承認機能] 機能
+  \item [会員情報閲覧機能] 機能
+  \item [利用情報分析機能] 機能
+  \item [宅配依頼受付機能] 機能
+  \item [宅配仕事割り振り機能] 機能
+  \item [ドローン貸出機能] 機能
+  \item [貸出ドローン情報管理機能] 機能
+\end{description}
+
+\subsubsection{事業者向け機能}
+\begin{description}[labelwidth=12em]
+  \setlength{\leftskip}{1em}
+  \item [ログインログアウト機能] 機能
+  \item [事業者会員登録申請] 機能
+  \item [宅配依頼承諾機能] 機能
+  \item [配達完了通知機能] 機能
+  \item [宅配場所登録機能] 機能
+  \item [ドローンレンタル機能] 機能
+  \item [退会機能] 機能
+\end{description}
+
 \subsubsection{使用者向け機能}
-\begin{itemize}
-    \item ログインログアウト機能
-    \item 使用者会員登録機能
-    \item 宅配依頼機能
-    \item 宅配場所登録機能
-    \item 退会機能
-\end{itemize}
+\begin{description}[labelwidth=12em]
+  \setlength{\leftskip}{1em}
+  \item [ログインログアウト機能] 機能
+  \item [使用者会員登録機能] 機能
+  \item [宅配依頼機能] 機能
+  \item [宅配場所登録機能] 機能
+  \item [退会機能] 機能
+\end{description}
+
 \subsection{前提条件}
 \begin{itemize}
 	\item 宅配元と宅配先がお互いドローン着地地点を登録している
