@@ -165,18 +165,19 @@
 \begin{itemize}
   \item 宅配元と宅配先がお互いドローン着地地点を登録している
   \item 事業者は搬送装置を無人航空機の登録制度に基づき国土交通省のシステムに登録すること
+  \item 宅配依頼に対し送り主と受け取り主の双方の同意している
   \item 利用者は日本語を理解できること
 \end{itemize}
 \subsection{制約条件}
 \begin{itemize}
-  \item 利用者が情報を登録するときに虚偽の情報を登録しないこと
-  \item 管理者は利用者の情報を本システムの利用目的以外で使用しないこと
-  \item 管理者は利用者の個人情報の管理を情報漏洩のないように行うこと
-  \item 事業者は航空法施行規則236条に基づき搬送装置の適切な運用を行うこと
-  \item 事業者は航空法施行規則236条に基づき搬送装置の適切な運用を行うこと
-  \item 荷物はW320×D260×H200(mm)の宅配用段ボールに梱包されていること\footnote{\label{fot:airtruck}物流専用ドローン AirTruckを想定}
-  \item 荷物の重量は5kg以下であること\footref{fot:airtruck}
-  \item 利用者は利用規約を順守すること
+\item 利用者が情報を登録するときに虚偽の情報を登録しないこと
+\item 管理者は利用者の情報を本システムの利用目的以外で使用しないこと
+\item 管理者は利用者の個人情報の管理を情報漏洩のないように行うこと
+\item 事業者は航空法施行規則236条に基づき搬送装置の適切な運用を行うこと
+\item 荷物はW320$\times$D260$\times$H200(mm)以内に収まること\footnote{\label{fot:airtruck}物流専用ドローン AirTruck\cite{aeronext_airtruck}を想定}
+\item 荷物は段ボールに梱包されていること
+\item 荷物の重量は5kg以下であること\footref{fot:airtruck}
+\item 利用者は利用規約を順守すること
 \end{itemize}
 \section{ドローン宅配・情報・金銭の流れ}
 
@@ -274,14 +275,14 @@
   \begin{center}
     \caption{ソフトウェアの構成}
     \label{fig:software}
-    \begin{tabular}{cc} \hline
-      項目           & ソフトウェア      \\ \hline \hline
-      Webサーバ       & 未定          \\
-      データベース管理システム & 未定          \\
-      管理者端末        & Linux系OS    \\
-      事業者端末        & 未定          \\
-      利用者端末        & Android，iOS \\
-      搬送装置         & 未定          \\ \hline
+    \begin{tabular}{ccc} \hline
+      項目           & ソフトウェア & 備考     \\ \hline \hline
+      サーバ       & Webサーバ  &        \\
+      サーバ & DBMS  &        \\
+      管理者端末        & 管理者用システム &   \\
+      事業者端末        & 事業者用システム &         \\
+      利用者端末        & 利用者用システム & \\
+      搬送装置         & ドローン管理システム &         \\ \hline
     \end{tabular}
   \end{center}
 \end{table}
