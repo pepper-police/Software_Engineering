@@ -182,17 +182,26 @@
 
 \subsection{ドローン宅配の流れ}
 本システムで想定するドローン宅配の流れを図\ref{fig:overview_flow}に示す．
+また，以下に詳細な流れを示す．
+
+\begin{enumerate}
+\item 送り主である利用者が，管理者に対して宅配依頼を行う．
+\item 管理者が事業者に対し，集荷・配送依頼を行う．
+\item 事業者がドローンを用い，依頼を受けた荷物の集荷を行う．
+\item 受け取り主である利用者が事業者から離れている場合，トラックを用いて荷物を受け取り主の最寄りの事業者へ配送する．
+\item 事業者がドローンを用い，荷物を受け取り主へ配達する．
+\end{enumerate}
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\linewidth]{./overview_flow.pdf}
   \caption{ドローン宅配の流れ}
-  \label{fig:overview_flow_1}
+  \label{fig:overview_flow}
 \end{figure}
 
 \subsection{情報の流れ}
-本システムにおける情報の流れを図\ref{fig:info_flow_1}に示す．
-本システムは，利用者(送り主及び受け取り主)が使用する端末，ドローン宅配事業者が利用する端末，システム管理者が利用する端末及び，システム中核を担うサーバとデータベースによって構成される．
+本システムにおける情報の流れを図\ref{fig:info_flow}に示す．
+本システムは，利用者(送り主及び受け取り主)が使用する端末，事業者が利用する端末，システム管理者が利用する端末及び，システム中核を担うサーバとデータベースによって構成される．
 
 各ユーザからの要求を受けサーバが処理を行い，webページやアプリケーションに適した情報を提供する．
 
@@ -200,17 +209,17 @@
   \centering
   \includegraphics[width=0.6\linewidth]{./info_flow.pdf}
   \caption{本システムにおける情報の流れ}
-  \label{fig:info_flow_1}
+  \label{fig:info_flow}
 \end{figure}
 
 \subsection{金銭の流れ}
-本システムにおける金銭の流れを図\ref{fig:money_flow_1}に示す．
+本システムにおける金銭の流れを図\ref{fig:money_flow}に示す．
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\linewidth]{./money_flow.pdf}
   \caption{本システムにおける金銭の流れ}
-  \label{fig:money_flow_1}
+  \label{fig:money_flow}
 \end{figure}
 
 
