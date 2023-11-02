@@ -1,0 +1,547 @@
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.euc) (TeX Live 2023) (preloaded format=platex 2023.5.27)  12 NOV 2023 22:57
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Proposal.tex
+(./Proposal.tex
+pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-05-22>
+(/usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2023/02/23 jsclasses (okumura, texjporg)
+Class jsarticle Info: Autodetected engine: pLaTeX on input line 236.
+\jsc@mpt=\dimen156
+\jsc@mmm=\dimen157
+\jsc@smallskipamount=\skip48
+LaTeX Info: Redefining \textmc on input line 511.
+LaTeX Info: Redefining \textgt on input line 513.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 575.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+\fullwidth=\dimen158
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+\c@part=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\@abstractbox=\box68
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\jsc@tocl@width=\dimen159
+\@lnumwidth=\dimen160
+\bibindent=\dimen161
+(/usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count192
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks18
+\float@box=\box69
+\@float@everytoks=\toks19
+\@floatcapt=\box70
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+\@savetbaselineshift=\dimen164
+\@saveybaselineshift=\dimen165
+\scb@x=\box71
+\scscb@x=\box72
+\@bw=\dimen166
+\@nbox=\box73
+\@nbody=\box74
+\@scw=\dimen167
+\ascmac@hoboxa=\box75
+\ascmac@hoboxb=\box76
+\@itemh=\dimen168
+\@iboxpos=\toks20
+\@iboxstr=\box77
+\@bwsp=\box78
+\@@bwsp=\box79
+\@bcal=\count194
+\shaderule=\dimen169
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count195
+\calc@Bcount=\count196
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count197
+\calc@Cskip=\skip53
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen172
+\ESO@tempdimb=\dimen173
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 227.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+\AM@pagewidth=\dimen174
+\AM@pageheight=\dimen175
+\AM@fboxrule=\dimen176
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2022/12/19 v0.5x Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will insert empty pages instead of the actual
+(pdfpages)                PDF file because we are running in DVI mode or with
+(pdfpages)                dvips driver.
+
+)
+\pdfpages@includegraphics@status=\count198
+\AM@pagebox=\box80
+\AM@global@opts=\toks21
+\AM@pagecnt=\count199
+\AM@toc@title=\toks22
+\AM@lof@heading=\toks23
+\c@AM@survey=\count266
+\AM@templatesizebox=\box81
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen177
+\enit@toks=\toks24
+\enit@inbox=\box82
+\enit@count@id=\count267
+\enitdp@description=\count268
+)
+(/usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/otf.sty
+Package: otf 2023/02/23 TeX JP org, v1.7b8 psitau, u0.28 ttk
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 333.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY1/mc/m/n --> JY1/hmc/m/n on input line 333.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hmc/m/n on input line 333.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/hmc/m/n --> JY1/hmc/bx/n on input line 335.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 336.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 336.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 336.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 337.
+
+(/usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
+>
+\@tempcntc=\count269
+\@tempcntd=\count270
+\@tempcnte=\count271
+\@tempcntf=\count272
+))
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 15.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
+\l__pdf_internal_box=\box83
+\g__pdf_backend_object_int=\count273
+\l__pdf_backend_content_box=\box84
+\l__pdf_backend_model_box=\box85
+\g__pdf_backend_annotation_int=\count274
+\g__pdf_backend_link_int=\count275
+\g__pdf_backend_link_sf_int=\count276
+)
+(./Proposal.aux)
+\openout1 = `Proposal.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.st
+y
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
+))
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 19.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 19.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 23.0061pt on input line 21.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 23.0061pt on input line 21.
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 23.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 15.9785pt on input line 25.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 15.9785pt on input line 25.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 27.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 7.39746pt on input line 28.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 28.
+ [1
+
+]
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 35.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 35.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 35.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 35.
+
+(./Proposal.toc
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 3.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 3.
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 4.
+)
+\tf@toc=\write3
+\openout3 = `Proposal.toc'.
+
+ [1]
+File: ./home_delivery.pdf Graphic file (type pdf)
+<./home_delivery.pdf>
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 50.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 50.
+File: ./working_population.pdf Graphic file (type pdf)
+<./working_population.pdf>
+ [2
+
+]
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 62.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 63.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 63.
+LaTeX Font Info:    Kanji font shape `JY1/hgt/m/sl' undefined
+(Font)              No change on input line 63.
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 64.
+LaTeX Font Info:    Kanji font shape `JY1/hgt/m/sl' undefined
+(Font)              No change on input line 68.
+ [3]
+File: flying_level.pdf Graphic file (type pdf)
+<flying_level.pdf>
+ [4]
+File: dron_category.pdf Graphic file (type pdf)
+<dron_category.pdf>
+LaTeX Font Info:    Font shape `JT1/cidj/m/1' will be
+(Font)              scaled to size 9.24683pt on input line 132.
+LaTeX Font Info:    Font shape `JY1/cidj/m/1' will be
+(Font)              scaled to size 9.24683pt on input line 132.
+ [5]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 168--169
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 169--170
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 170--171
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 171--172
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 172--174
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 174--176
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 176--177
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 177--178
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 178--179
+ []
+ []
+
+[6]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 185--186
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 186--187
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 187--188
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 188--189
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 189--190
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 190--191
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 191--192
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 192--193
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 193--194
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 194--195
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 201--203
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 203--204
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 204--205
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 205--206
+ []
+ []
+
+[7]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 206--207
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 207--208
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 208--209
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 209--210
+ []
+ []
+
+LaTeX Font Info:    Font shape `JT1/hmc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/hgt/m/n' tried instead on input line 222.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 222.
+LaTeX Font Info:    Font shape `JY1/hmc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/hgt/m/n' tried instead on input line 222.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 222.
+
+LaTeX Warning: Citation `personal_information' on page 8 undefined on input lin
+e 222.
+
+
+LaTeX Warning: Citation `aviation_law' on page 8 undefined on input line 223.
+
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 224.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 7.39746pt on input line 224.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 224.
+[8]
+File: ./overview_flow.pdf Graphic file (type pdf)
+<./overview_flow.pdf>
+File: ./info_flow.pdf Graphic file (type pdf)
+<./info_flow.pdf>
+File: ./money_flow.pdf Graphic file (type pdf)
+<./money_flow.pdf>
+ [9] [10] [11]
+Overfull \hbox (5.55518pt too wide) in paragraph at lines 358--371
+ [][][][] 
+ []
+
+
+Overfull \hbox (40.02434pt too wide) in paragraph at lines 376--389
+ [][][][] 
+ []
+
+[12]
+File: schedule.pdf Graphic file (type pdf)
+<schedule.pdf>
+ [13] [14] [15] (./Proposal.bbl) [16
+
+] (./Proposal.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 5122 strings out of 476701
+ 76964 string characters out of 5805420
+ 1856612 words of memory out of 5000000
+ 25508 multiletter control sequences out of 15000+600000
+ 526102 words of font info for 103 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 66i,10n,75p,744b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on Proposal.dvi (17 pages, 53072 bytes).
