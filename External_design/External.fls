@@ -1,0 +1,686 @@
+PWD /Users/allround/Desktop/Software_Engineering/Software_Engineering/External_design
+INPUT /usr/local/texlive/2023/texmf.cnf
+INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2023/texmf.cnf
+INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2023/texmf-var/web2c/eptex/platex.fmt
+INPUT External.tex
+OUTPUT External.log
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/ptex-fonts/jis/jis.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/ascmac/ascgrp.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppnull.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppnull.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppnull.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppnull.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/otf.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/otf.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/otf.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/otf.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/morefloats/morefloats.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/morefloats/morefloats.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/morefloats/morefloats.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/morefloats/morefloats.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+INPUT ./External.aux
+INPUT External.aux
+INPUT External.aux
+OUTPUT External.aux
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsl12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+OUTPUT External.dvi
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT ./External.toc
+INPUT External.toc
+INPUT External.toc
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+OUTPUT External.toc
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlgothr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmsl10.tfm
+INPUT ./flow/admin_login.pdf
+INPUT ./flow/admin_login.pdf
+INPUT flow/admin_login.pdf
+INPUT extractbb -B cropbox -O flow/admin_login.pdf
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-v.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/japanese-otf/nmlminr-h.tfm
+INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT ./flow/admin_logout.pdf
+INPUT ./flow/admin_logout.pdf
+INPUT flow/admin_logout.pdf
+INPUT extractbb -B cropbox -O flow/admin_logout.pdf
+INPUT ./flow/admin_businessListView.pdf
+INPUT ./flow/admin_businessListView.pdf
+INPUT flow/admin_businessListView.pdf
+INPUT extractbb -B cropbox -O flow/admin_businessListView.pdf
+INPUT ./flow/admin_businessFilter.pdf
+INPUT ./flow/admin_businessFilter.pdf
+INPUT flow/admin_businessFilter.pdf
+INPUT extractbb -B cropbox -O flow/admin_businessFilter.pdf
+INPUT ./flow/admin_businessSearch.pdf
+INPUT ./flow/admin_businessSearch.pdf
+INPUT flow/admin_businessSearch.pdf
+INPUT extractbb -B cropbox -O flow/admin_businessSearch.pdf
+INPUT ./flow/admin_coop_sort.pdf
+INPUT ./flow/admin_coop_sort.pdf
+INPUT flow/admin_coop_sort.pdf
+INPUT extractbb -B cropbox -O flow/admin_coop_sort.pdf
+INPUT ./flow/admin_coop_bill.pdf
+INPUT ./flow/admin_coop_bill.pdf
+INPUT flow/admin_coop_bill.pdf
+INPUT extractbb -B cropbox -O flow/admin_coop_bill.pdf
+INPUT ./flow/admin_show_prop_coop.pdf
+INPUT ./flow/admin_show_prop_coop.pdf
+INPUT flow/admin_show_prop_coop.pdf
+INPUT extractbb -B cropbox -O flow/admin_show_prop_coop.pdf
+INPUT ./flow/admin_coop_edit.pdf
+INPUT ./flow/admin_coop_edit.pdf
+INPUT flow/admin_coop_edit.pdf
+INPUT extractbb -B cropbox -O flow/admin_coop_edit.pdf
+INPUT ./flow/admin_show_payment_coop.pdf
+INPUT ./flow/admin_show_payment_coop.pdf
+INPUT flow/admin_show_payment_coop.pdf
+INPUT extractbb -B cropbox -O flow/admin_show_payment_coop.pdf
+INPUT ./flow/admin_payment.pdf
+INPUT ./flow/admin_payment.pdf
+INPUT flow/admin_payment.pdf
+INPUT extractbb -B cropbox -O flow/admin_payment.pdf
+INPUT ./flow/drone_info.pdf
+INPUT ./flow/drone_info.pdf
+INPUT flow/drone_info.pdf
+INPUT extractbb -B cropbox -O flow/drone_info.pdf
+INPUT ./flow/drone_info_editor.pdf
+INPUT ./flow/drone_info_editor.pdf
+INPUT flow/drone_info_editor.pdf
+INPUT extractbb -B cropbox -O flow/drone_info_editor.pdf
+INPUT ./flow/admin_userListView.pdf
+INPUT ./flow/admin_userListView.pdf
+INPUT flow/admin_userListView.pdf
+INPUT extractbb -B cropbox -O flow/admin_userListView.pdf
+INPUT ./flow/admin_userFilter.pdf
+INPUT ./flow/admin_userFilter.pdf
+INPUT flow/admin_userFilter.pdf
+INPUT extractbb -B cropbox -O flow/admin_userFilter.pdf
+INPUT ./flow/admin_userSearch.pdf
+INPUT ./flow/admin_userSearch.pdf
+INPUT flow/admin_userSearch.pdf
+INPUT extractbb -B cropbox -O flow/admin_userSearch.pdf
+INPUT ./flow/admin_user_sort.pdf
+INPUT ./flow/admin_user_sort.pdf
+INPUT flow/admin_user_sort.pdf
+INPUT extractbb -B cropbox -O flow/admin_user_sort.pdf
+INPUT ./flow/admin_user_bill.pdf
+INPUT ./flow/admin_user_bill.pdf
+INPUT flow/admin_user_bill.pdf
+INPUT extractbb -B cropbox -O flow/admin_user_bill.pdf
+INPUT ./flow/admin_user_edit.pdf
+INPUT ./flow/admin_user_edit.pdf
+INPUT flow/admin_user_edit.pdf
+INPUT extractbb -B cropbox -O flow/admin_user_edit.pdf
+INPUT ./flow/admin_show_payment_user.pdf
+INPUT ./flow/admin_show_payment_user.pdf
+INPUT flow/admin_show_payment_user.pdf
+INPUT extractbb -B cropbox -O flow/admin_show_payment_user.pdf
+INPUT ./flow/customer_payment.pdf
+INPUT ./flow/customer_payment.pdf
+INPUT flow/customer_payment.pdf
+INPUT extractbb -B cropbox -O flow/customer_payment.pdf
+INPUT ./flow/coop_statistics_display.pdf
+INPUT ./flow/coop_statistics_display.pdf
+INPUT flow/coop_statistics_display.pdf
+INPUT extractbb -B cropbox -O flow/coop_statistics_display.pdf
+INPUT ./flow/coop_information_narrowing.pdf
+INPUT ./flow/coop_information_narrowing.pdf
+INPUT flow/coop_information_narrowing.pdf
+INPUT extractbb -B cropbox -O flow/coop_information_narrowing.pdf
+INPUT ./flow/coop_information_graph_display.pdf
+INPUT ./flow/coop_information_graph_display.pdf
+INPUT flow/coop_information_graph_display.pdf
+INPUT extractbb -B cropbox -O flow/coop_information_graph_display.pdf
+INPUT ./flow/user_statistics_display.pdf
+INPUT ./flow/user_statistics_display.pdf
+INPUT flow/user_statistics_display.pdf
+INPUT extractbb -B cropbox -O flow/user_statistics_display.pdf
+INPUT ./flow/user_information_narrowing.pdf
+INPUT ./flow/user_information_narrowing.pdf
+INPUT flow/user_information_narrowing.pdf
+INPUT extractbb -B cropbox -O flow/user_information_narrowing.pdf
+INPUT ./flow/user_information_graph_display.pdf
+INPUT ./flow/user_information_graph_display.pdf
+INPUT flow/user_information_graph_display.pdf
+INPUT extractbb -B cropbox -O flow/user_information_graph_display.pdf
+INPUT ./flow/view_delivery_request.pdf
+INPUT ./flow/view_delivery_request.pdf
+INPUT flow/view_delivery_request.pdf
+INPUT extractbb -B cropbox -O flow/view_delivery_request.pdf
+INPUT ./flow/delivery_request_narrowing.pdf
+INPUT ./flow/delivery_request_narrowing.pdf
+INPUT flow/delivery_request_narrowing.pdf
+INPUT extractbb -B cropbox -O flow/delivery_request_narrowing.pdf
+INPUT ./flow/admin_deliveryRequestSearch.pdf
+INPUT ./flow/admin_deliveryRequestSearch.pdf
+INPUT flow/admin_deliveryRequestSearch.pdf
+INPUT extractbb -B cropbox -O flow/admin_deliveryRequestSearch.pdf
+INPUT ./flow/admin_delivery_request_sort.pdf
+INPUT ./flow/admin_delivery_request_sort.pdf
+INPUT flow/admin_delivery_request_sort.pdf
+INPUT extractbb -B cropbox -O flow/admin_delivery_request_sort.pdf
+INPUT ./flow/admin_delivery_work_allocation.pdf
+INPUT ./flow/admin_delivery_work_allocation.pdf
+INPUT flow/admin_delivery_work_allocation.pdf
+INPUT extractbb -B cropbox -O flow/admin_delivery_work_allocation.pdf
+INPUT ./flow/view_drone_loan_applications.pdf
+INPUT ./flow/view_drone_loan_applications.pdf
+INPUT flow/view_drone_loan_applications.pdf
+INPUT extractbb -B cropbox -O flow/view_drone_loan_applications.pdf
+INPUT ./flow/drone_loan_approval.pdf
+INPUT ./flow/drone_loan_approval.pdf
+INPUT flow/drone_loan_approval.pdf
+INPUT extractbb -B cropbox -O flow/drone_loan_approval.pdf
+INPUT ./flow/admin_deliveryWorkAllocationFilter.pdf
+INPUT ./flow/admin_deliveryWorkAllocationFilter.pdf
+INPUT flow/admin_deliveryWorkAllocationFilter.pdf
+INPUT extractbb -B cropbox -O flow/admin_deliveryWorkAllocationFilter.pdf
+INPUT ./flow/admin_deliveryWorkAllocationSearch.pdf
+INPUT ./flow/admin_deliveryWorkAllocationSearch.pdf
+INPUT flow/admin_deliveryWorkAllocationSearch.pdf
+INPUT extractbb -B cropbox -O flow/admin_deliveryWorkAllocationSearch.pdf
+INPUT ./flow/admin_delivery_work_sort.pdf
+INPUT ./flow/admin_delivery_work_sort.pdf
+INPUT flow/admin_delivery_work_sort.pdf
+INPUT extractbb -B cropbox -O flow/admin_delivery_work_sort.pdf
+INPUT ./flow/admin_all_do_job.pdf
+INPUT ./flow/admin_all_do_job.pdf
+INPUT flow/admin_all_do_job.pdf
+INPUT extractbb -B cropbox -O flow/admin_all_do_job.pdf
+INPUT ./flow/admin_droneFilter.pdf
+INPUT ./flow/admin_droneFilter.pdf
+INPUT flow/admin_droneFilter.pdf
+INPUT extractbb -B cropbox -O flow/admin_droneFilter.pdf
+INPUT ./flow/admin_droneSearch.pdf
+INPUT ./flow/admin_droneSearch.pdf
+INPUT flow/admin_droneSearch.pdf
+INPUT extractbb -B cropbox -O flow/admin_droneSearch.pdf
+INPUT ./flow/admin_drone_sort.pdf
+INPUT ./flow/admin_drone_sort.pdf
+INPUT flow/admin_drone_sort.pdf
+INPUT extractbb -B cropbox -O flow/admin_drone_sort.pdf
+INPUT ./flow/admin_all_do_drone.pdf
+INPUT ./flow/admin_all_do_drone.pdf
+INPUT flow/admin_all_do_drone.pdf
+INPUT extractbb -B cropbox -O flow/admin_all_do_drone.pdf
+INPUT ./flow/admin_drone_edit.pdf
+INPUT ./flow/admin_drone_edit.pdf
+INPUT flow/admin_drone_edit.pdf
+INPUT extractbb -B cropbox -O flow/admin_drone_edit.pdf
+INPUT ./flow/admin_drone_registration.pdf
+INPUT ./flow/admin_drone_registration.pdf
+INPUT flow/admin_drone_registration.pdf
+INPUT extractbb -B cropbox -O flow/admin_drone_registration.pdf
+INPUT ./flow/coop_login.pdf
+INPUT ./flow/coop_login.pdf
+INPUT flow/coop_login.pdf
+INPUT extractbb -B cropbox -O flow/coop_login.pdf
+INPUT ./flow/coop_logout.pdf
+INPUT ./flow/coop_logout.pdf
+INPUT flow/coop_logout.pdf
+INPUT extractbb -B cropbox -O flow/coop_logout.pdf
+INPUT ./flow/coop_registration_request.pdf
+INPUT ./flow/coop_registration_request.pdf
+INPUT flow/coop_registration_request.pdf
+INPUT extractbb -B cropbox -O flow/coop_registration_request.pdf
+INPUT ./flow/coop_edit.pdf
+INPUT ./flow/coop_edit.pdf
+INPUT flow/coop_edit.pdf
+INPUT extractbb -B cropbox -O flow/coop_edit.pdf
+INPUT ./flow/business_deliveryRequestListViewFilter.pdf
+INPUT ./flow/business_deliveryRequestListViewFilter.pdf
+INPUT flow/business_deliveryRequestListViewFilter.pdf
+INPUT extractbb -B cropbox -O flow/business_deliveryRequestListViewFilter.pdf
+INPUT ./flow/business_deliveryRequestListViewSearch.pdf
+INPUT ./flow/business_deliveryRequestListViewSearch.pdf
+INPUT flow/business_deliveryRequestListViewSearch.pdf
+INPUT extractbb -B cropbox -O flow/business_deliveryRequestListViewSearch.pdf
+INPUT ./flow/coop_delivery_request_list_sort.pdf
+INPUT ./flow/coop_delivery_request_list_sort.pdf
+INPUT flow/coop_delivery_request_list_sort.pdf
+INPUT extractbb -B cropbox -O flow/coop_delivery_request_list_sort.pdf
+INPUT ./flow/coop_all_do_deliv.pdf
+INPUT ./flow/coop_all_do_deliv.pdf
+INPUT flow/coop_all_do_deliv.pdf
+INPUT extractbb -B cropbox -O flow/coop_all_do_deliv.pdf
+INPUT ./flow/coop_delivery_request_list_notice.pdf
+INPUT ./flow/coop_delivery_request_list_notice.pdf
+INPUT flow/coop_delivery_request_list_notice.pdf
+INPUT extractbb -B cropbox -O flow/coop_delivery_request_list_notice.pdf
+INPUT ./flow/drone_registration.pdf
+INPUT ./flow/drone_registration.pdf
+INPUT flow/drone_registration.pdf
+INPUT extractbb -B cropbox -O flow/drone_registration.pdf
+INPUT ./flow/view_child_accounts.pdf
+INPUT ./flow/view_child_accounts.pdf
+INPUT flow/view_child_accounts.pdf
+INPUT extractbb -B cropbox -O flow/view_child_accounts.pdf
+INPUT ./flow/business_childAccountListViewFilter.pdf
+INPUT ./flow/business_childAccountListViewFilter.pdf
+INPUT flow/business_childAccountListViewFilter.pdf
+INPUT extractbb -B cropbox -O flow/business_childAccountListViewFilter.pdf
+INPUT ./flow/business_childAccountListViewSearch.pdf
+INPUT ./flow/business_childAccountListViewSearch.pdf
+INPUT flow/business_childAccountListViewSearch.pdf
+INPUT extractbb -B cropbox -O flow/business_childAccountListViewSearch.pdf
+INPUT ./flow/coop_child_account_list_sort.pdf
+INPUT ./flow/coop_child_account_list_sort.pdf
+INPUT flow/coop_child_account_list_sort.pdf
+INPUT extractbb -B cropbox -O flow/coop_child_account_list_sort.pdf
+INPUT ./flow/coop_all_do_child.pdf
+INPUT ./flow/coop_all_do_child.pdf
+INPUT flow/coop_all_do_child.pdf
+INPUT extractbb -B cropbox -O flow/coop_all_do_child.pdf
+INPUT ./flow/coop_create_child_acc.pdf
+INPUT ./flow/coop_create_child_acc.pdf
+INPUT flow/coop_create_child_acc.pdf
+INPUT extractbb -B cropbox -O flow/coop_create_child_acc.pdf
+INPUT ./flow/delete_child_account.pdf
+INPUT ./flow/delete_child_account.pdf
+INPUT flow/delete_child_account.pdf
+INPUT extractbb -B cropbox -O flow/delete_child_account.pdf
+INPUT ./flow/coop_child_account_edit.pdf
+INPUT ./flow/coop_child_account_edit.pdf
+INPUT flow/coop_child_account_edit.pdf
+INPUT extractbb -B cropbox -O flow/coop_child_account_edit.pdf
+INPUT ./flow/drone_lending.pdf
+INPUT ./flow/drone_lending.pdf
+INPUT flow/drone_lending.pdf
+INPUT extractbb -B cropbox -O flow/drone_lending.pdf
+INPUT ./flow/view_drone_types.pdf
+INPUT ./flow/view_drone_types.pdf
+INPUT flow/view_drone_types.pdf
+INPUT extractbb -B cropbox -O flow/view_drone_types.pdf
+INPUT ./flow/drone_repair_request.pdf
+INPUT ./flow/drone_repair_request.pdf
+INPUT flow/drone_repair_request.pdf
+INPUT extractbb -B cropbox -O flow/drone_repair_request.pdf
+INPUT ./flow/drone_trouble_request.pdf
+INPUT ./flow/drone_trouble_request.pdf
+INPUT flow/drone_trouble_request.pdf
+INPUT extractbb -B cropbox -O flow/drone_trouble_request.pdf
+INPUT ./flow/coop_withdrawal.pdf
+INPUT ./flow/coop_withdrawal.pdf
+INPUT flow/coop_withdrawal.pdf
+INPUT extractbb -B cropbox -O flow/coop_withdrawal.pdf
+INPUT ./flow/user_login.pdf
+INPUT ./flow/user_login.pdf
+INPUT flow/user_login.pdf
+INPUT extractbb -B cropbox -O flow/user_login.pdf
+INPUT ./flow/user_logout.pdf
+INPUT ./flow/user_logout.pdf
+INPUT flow/user_logout.pdf
+INPUT extractbb -B cropbox -O flow/user_logout.pdf
+INPUT ./flow/user_registration.pdf
+INPUT ./flow/user_registration.pdf
+INPUT flow/user_registration.pdf
+INPUT extractbb -B cropbox -O flow/user_registration.pdf
+INPUT ./flow/customer_info_editor.pdf
+INPUT ./flow/customer_info_editor.pdf
+INPUT flow/customer_info_editor.pdf
+INPUT extractbb -B cropbox -O flow/customer_info_editor.pdf
+INPUT ./flow/user_deliv_pacement_request.pdf
+INPUT ./flow/user_deliv_pacement_request.pdf
+INPUT flow/user_deliv_pacement_request.pdf
+INPUT extractbb -B cropbox -O flow/user_deliv_pacement_request.pdf
+INPUT ./flow/user_deliv_request.pdf
+INPUT ./flow/user_deliv_request.pdf
+INPUT flow/user_deliv_request.pdf
+INPUT extractbb -B cropbox -O flow/user_deliv_request.pdf
+INPUT ./flow/favorites_list_display.pdf
+INPUT ./flow/favorites_list_display.pdf
+INPUT flow/favorites_list_display.pdf
+INPUT extractbb -B cropbox -O flow/favorites_list_display.pdf
+INPUT ./flow/favorite_data_reference.pdf
+INPUT ./flow/favorite_data_reference.pdf
+INPUT flow/favorite_data_reference.pdf
+INPUT extractbb -B cropbox -O flow/favorite_data_reference.pdf
+INPUT ./flow/receipt_completion_notice.pdf
+INPUT ./flow/receipt_completion_notice.pdf
+INPUT flow/receipt_completion_notice.pdf
+INPUT extractbb -B cropbox -O flow/receipt_completion_notice.pdf
+INPUT ./flow/add_favorite.pdf
+INPUT ./flow/add_favorite.pdf
+INPUT flow/add_favorite.pdf
+INPUT extractbb -B cropbox -O flow/add_favorite.pdf
+INPUT ./flow/user_withdrawal.pdf
+INPUT ./flow/user_withdrawal.pdf
+INPUT flow/user_withdrawal.pdf
+INPUT extractbb -B cropbox -O flow/user_withdrawal.pdf
+INPUT ./ui/admin_login.pdf
+INPUT ./ui/admin_login.pdf
+INPUT ui/admin_login.pdf
+INPUT extractbb -B cropbox -O ui/admin_login.pdf
+INPUT ./ui/admin_login_error_screen.pdf
+INPUT ./ui/admin_login_error_screen.pdf
+INPUT ui/admin_login_error_screen.pdf
+INPUT extractbb -B cropbox -O ui/admin_login_error_screen.pdf
+INPUT ./ui/coop_information_management_screen.pdf
+INPUT ./ui/coop_information_management_screen.pdf
+INPUT ui/coop_information_management_screen.pdf
+INPUT extractbb -B cropbox -O ui/coop_information_management_screen.pdf
+INPUT ./ui/coop_info_fil.pdf
+INPUT ./ui/coop_info_fil.pdf
+INPUT ui/coop_info_fil.pdf
+INPUT extractbb -B cropbox -O ui/coop_info_fil.pdf
+INPUT ./ui/coop_information_details_screen.pdf
+INPUT ./ui/coop_information_details_screen.pdf
+INPUT ui/coop_information_details_screen.pdf
+INPUT extractbb -B cropbox -O ui/coop_information_details_screen.pdf
+INPUT ./ui/coop_information_editing_function.pdf
+INPUT ./ui/coop_information_editing_function.pdf
+INPUT ui/coop_information_editing_function.pdf
+INPUT extractbb -B cropbox -O ui/coop_information_editing_function.pdf
+INPUT ./ui/coop_payment_info_prop_edit.pdf
+INPUT ./ui/coop_payment_info_prop_edit.pdf
+INPUT ui/coop_payment_info_prop_edit.pdf
+INPUT extractbb -B cropbox -O ui/coop_payment_info_prop_edit.pdf
+INPUT ./ui/coop_payment_information_details_screen.pdf
+INPUT ./ui/coop_payment_information_details_screen.pdf
+INPUT ui/coop_payment_information_details_screen.pdf
+INPUT extractbb -B cropbox -O ui/coop_payment_information_details_screen.pdf
+INPUT ./ui/coop_drone_information_management_screen.pdf
+INPUT ./ui/coop_drone_information_management_screen.pdf
+INPUT ui/coop_drone_information_management_screen.pdf
+INPUT extractbb -B cropbox -O ui/coop_drone_information_management_screen.pdf
+INPUT ./ui/coop_drone_information_management_screen_refinement.pdf
+INPUT ./ui/coop_drone_information_management_screen_refinement.pdf
+INPUT ui/coop_drone_information_management_screen_refinement.pdf
+INPUT extractbb -B cropbox -O ui/coop_drone_information_management_screen_refinement.pdf
+INPUT ./ui/user_information_management_screen.pdf
+INPUT ./ui/user_information_management_screen.pdf
+INPUT ui/user_information_management_screen.pdf
+INPUT extractbb -B cropbox -O ui/user_information_management_screen.pdf
+INPUT ./ui/user_information_management_screen_refinement.pdf
+INPUT ./ui/user_information_management_screen_refinement.pdf
+INPUT ui/user_information_management_screen_refinement.pdf
+INPUT extractbb -B cropbox -O ui/user_information_management_screen_refinement.pdf
+INPUT ./ui/user_information_details_screen.pdf
+INPUT ./ui/user_information_details_screen.pdf
+INPUT ui/user_information_details_screen.pdf
+INPUT extractbb -B cropbox -O ui/user_information_details_screen.pdf
+INPUT ./ui/coop_stats_info.pdf
+INPUT ./ui/coop_stats_info.pdf
+INPUT ui/coop_stats_info.pdf
+INPUT extractbb -B cropbox -O ui/coop_stats_info.pdf
+INPUT ./ui/coop_info_graph.pdf
+INPUT ./ui/coop_info_graph.pdf
+INPUT ui/coop_info_graph.pdf
+INPUT extractbb -B cropbox -O ui/coop_info_graph.pdf
+INPUT ./ui/user_stats_info.pdf
+INPUT ./ui/user_stats_info.pdf
+INPUT ui/user_stats_info.pdf
+INPUT extractbb -B cropbox -O ui/user_stats_info.pdf
+INPUT ./ui/user_info_graph.pdf
+INPUT ./ui/user_info_graph.pdf
+INPUT ui/user_info_graph.pdf
+INPUT extractbb -B cropbox -O ui/user_info_graph.pdf
+INPUT ./ui/admin_deliv_req_list.pdf
+INPUT ./ui/admin_deliv_req_list.pdf
+INPUT ui/admin_deliv_req_list.pdf
+INPUT extractbb -B cropbox -O ui/admin_deliv_req_list.pdf
+INPUT ./ui/coop_login.pdf
+INPUT ./ui/coop_login.pdf
+INPUT ui/coop_login.pdf
+INPUT extractbb -B cropbox -O ui/coop_login.pdf
+INPUT ./ui/coop_login_error_screen.pdf
+INPUT ./ui/coop_login_error_screen.pdf
+INPUT ui/coop_login_error_screen.pdf
+INPUT extractbb -B cropbox -O ui/coop_login_error_screen.pdf
+INPUT ./ui/logout_coop.pdf
+INPUT ./ui/logout_coop.pdf
+INPUT ui/logout_coop.pdf
+INPUT extractbb -B cropbox -O ui/logout_coop.pdf
+INPUT ./ui/logout_check.pdf
+INPUT ./ui/logout_check.pdf
+INPUT ui/logout_check.pdf
+INPUT extractbb -B cropbox -O ui/logout_check.pdf
+INPUT ./ui/new_coop_member_registration.pdf
+INPUT ./ui/new_coop_member_registration.pdf
+INPUT ui/new_coop_member_registration.pdf
+INPUT extractbb -B cropbox -O ui/new_coop_member_registration.pdf
+INPUT ./ui/coop_deliv_req_list-1.pdf
+INPUT ./ui/coop_deliv_req_list-1.pdf
+INPUT ui/coop_deliv_req_list-1.pdf
+INPUT extractbb -B cropbox -O ui/coop_deliv_req_list-1.pdf
+INPUT ./ui/drone_registration_function.pdf
+INPUT ./ui/drone_registration_function.pdf
+INPUT ui/drone_registration_function.pdf
+INPUT extractbb -B cropbox -O ui/drone_registration_function.pdf
+INPUT ./ui/child_account_list_screen.pdf
+INPUT ./ui/child_account_list_screen.pdf
+INPUT ui/child_account_list_screen.pdf
+INPUT extractbb -B cropbox -O ui/child_account_list_screen.pdf
+INPUT ./ui/child_account_list_screen-1.pdf
+INPUT ./ui/child_account_list_screen-1.pdf
+INPUT ui/child_account_list_screen-1.pdf
+INPUT extractbb -B cropbox -O ui/child_account_list_screen-1.pdf
+INPUT ./ui/child_acc.pdf
+INPUT ./ui/child_acc.pdf
+INPUT ui/child_acc.pdf
+INPUT extractbb -B cropbox -O ui/child_acc.pdf
+INPUT ./ui/drone_loan_list.pdf
+INPUT ./ui/drone_loan_list.pdf
+INPUT ui/drone_loan_list.pdf
+INPUT extractbb -B cropbox -O ui/drone_loan_list.pdf
+INPUT ./ui/drone_req.pdf
+INPUT ./ui/drone_req.pdf
+INPUT ui/drone_req.pdf
+INPUT extractbb -B cropbox -O ui/drone_req.pdf
+INPUT ./ui/drone_information_detail_screen.pdf
+INPUT ./ui/drone_information_detail_screen.pdf
+INPUT ui/drone_information_detail_screen.pdf
+INPUT extractbb -B cropbox -O ui/drone_information_detail_screen.pdf
+INPUT ./ui/user_login.pdf
+INPUT ./ui/user_login.pdf
+INPUT ui/user_login.pdf
+INPUT extractbb -B cropbox -O ui/user_login.pdf
+INPUT ./ui/users_login_error_screen.pdf
+INPUT ./ui/users_login_error_screen.pdf
+INPUT ui/users_login_error_screen.pdf
+INPUT extractbb -B cropbox -O ui/users_login_error_screen.pdf
+INPUT ./ui/logout_user.pdf
+INPUT ./ui/logout_user.pdf
+INPUT ui/logout_user.pdf
+INPUT extractbb -B cropbox -O ui/logout_user.pdf
+INPUT ./ui/logout_check_user.pdf
+INPUT ./ui/logout_check_user.pdf
+INPUT ui/logout_check_user.pdf
+INPUT extractbb -B cropbox -O ui/logout_check_user.pdf
+INPUT ./ui/user_new_member_registration.pdf
+INPUT ./ui/user_new_member_registration.pdf
+INPUT ui/user_new_member_registration.pdf
+INPUT extractbb -B cropbox -O ui/user_new_member_registration.pdf
+INPUT ./ui/user_information_edit_function.pdf
+INPUT ./ui/user_information_edit_function.pdf
+INPUT ui/user_information_edit_function.pdf
+INPUT extractbb -B cropbox -O ui/user_information_edit_function.pdf
+INPUT ./ui/deliv_place_req_phone.pdf
+INPUT ./ui/deliv_place_req_phone.pdf
+INPUT ui/deliv_place_req_phone.pdf
+INPUT extractbb -B cropbox -O ui/deliv_place_req_phone.pdf
+INPUT ./ui/deliv_req_phone.pdf
+INPUT ./ui/deliv_req_phone.pdf
+INPUT ui/deliv_req_phone.pdf
+INPUT extractbb -B cropbox -O ui/deliv_req_phone.pdf
+INPUT ./ui/user_deliv_req_list_receive.pdf
+INPUT ./ui/user_deliv_req_list_receive.pdf
+INPUT ui/user_deliv_req_list_receive.pdf
+INPUT extractbb -B cropbox -O ui/user_deliv_req_list_receive.pdf
+INPUT ./ui/user_deliv_req_list_submit.pdf
+INPUT ./ui/user_deliv_req_list_submit.pdf
+INPUT ui/user_deliv_req_list_submit.pdf
+INPUT extractbb -B cropbox -O ui/user_deliv_req_list_submit.pdf
+INPUT ./ui/fav_registor_phone.pdf
+INPUT ./ui/fav_registor_phone.pdf
+INPUT ui/fav_registor_phone.pdf
+INPUT extractbb -B cropbox -O ui/fav_registor_phone.pdf
+INPUT ./ui/withdrawal(phone).pdf
+INPUT ./ui/withdrawal(phone).pdf
+INPUT ui/withdrawal(phone).pdf
+INPUT extractbb -B cropbox -O ui/withdrawal(phone).pdf
+INPUT External.aux

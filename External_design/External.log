@@ -1,0 +1,1163 @@
+This is e-pTeX, Version 3.141592653-p4.1.0-230214-2.6 (utf8.euc) (TeX Live 2023) (preloaded format=platex 2023.5.27)  15 NOV 2023 23:02
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**External.tex
+(./External.tex
+pLaTeX2e <2023-02-14>+1 (based on LaTeX2e <2022-11-01> patch level 1)
+L3 programming layer <2023-05-22>
+(/usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jsarticle.cls
+Document Class: jsarticle 2023/02/23 jsclasses (okumura, texjporg)
+Class jsarticle Info: Autodetected engine: pLaTeX on input line 236.
+\jsc@mpt=\dimen156
+\jsc@mmm=\dimen157
+\jsc@smallskipamount=\skip48
+LaTeX Info: Redefining \textmc on input line 511.
+LaTeX Info: Redefining \textgt on input line 513.
+\symmincho=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/mc/m/n --> JY1/gt/m/n on input line 575.
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 769.
+\fullwidth=\dimen158
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 7.68799pt on input line 922.
+\c@part=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\@abstractbox=\box68
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\jsc@tocl@width=\dimen159
+\@lnumwidth=\dimen160
+\bibindent=\dimen161
+(/usr/local/texlive/2023/texmf-dist/tex/platex/jsclasses/jslogo.sty
+Package: jslogo 2019/07/25 okumura, texjporg
+LaTeX Info: Redefining \TeX on input line 82.
+LaTeX Info: Redefining \LaTeX on input line 135.
+LaTeX Info: Redefining \LaTeXe on input line 188.
+)
+\heisei=\count192
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvipdfmx.def on input line 107.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+File: dvipdfmx.def 2022/09/22 v5.0m Graphics/color driver for dvipdfmx
+))
+\Gin@req@height=\dimen162
+\Gin@req@width=\dimen163
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks18
+\float@box=\box69
+\@float@everytoks=\toks19
+\@floatcapt=\box70
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/ascmac.sty
+Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/ascmac/tascmac.sty
+Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
+\@savetbaselineshift=\dimen164
+\@saveybaselineshift=\dimen165
+\scb@x=\box71
+\scscb@x=\box72
+\@bw=\dimen166
+\@nbox=\box73
+\@nbody=\box74
+\@scw=\dimen167
+\ascmac@hoboxa=\box75
+\ascmac@hoboxb=\box76
+\@itemh=\dimen168
+\@iboxpos=\toks20
+\@iboxstr=\box77
+\@bwsp=\box78
+\@@bwsp=\box79
+\@bcal=\count194
+\shaderule=\dimen169
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count195
+\calc@Bcount=\count196
+\calc@Adimen=\dimen170
+\calc@Bdimen=\dimen171
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count197
+\calc@Cskip=\skip53
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
+\ESO@tempdima=\dimen172
+\ESO@tempdimb=\dimen173
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: dvips.def on input line 227.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2022/09/22 v3.1e Graphics/color driver for dvips
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+\AM@pagewidth=\dimen174
+\AM@pageheight=\dimen175
+\AM@fboxrule=\dimen176
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2022/12/19 v0.5x Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will insert empty pages instead of the actual
+(pdfpages)                PDF file because we are running in DVI mode or with
+(pdfpages)                dvips driver.
+
+)
+\pdfpages@includegraphics@status=\count198
+\AM@pagebox=\box80
+\AM@global@opts=\toks21
+\AM@pagecnt=\count199
+\AM@toc@title=\toks22
+\AM@lof@heading=\toks23
+\c@AM@survey=\count266
+\AM@templatesizebox=\box81
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip54
+\enit@outerparindent=\dimen177
+\enit@toks=\toks24
+\enit@inbox=\box82
+\enit@count@id=\count267
+\enitdp@description=\count268
+)
+(/usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/otf.sty
+Package: otf 2023/02/23 TeX JP org, v1.7b8 psitau, u0.28 ttk
+LaTeX Font Info:    Redeclaring symbol font `mincho' on input line 333.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `normal'
+(Font)                  JY1/mc/m/n --> JY1/hmc/m/n on input line 333.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hmc/m/n on input line 333.
+LaTeX Font Info:    Overwriting symbol font `mincho' in version `bold'
+(Font)                  JY1/hmc/m/n --> JY1/hmc/bx/n on input line 335.
+LaTeX Font Info:    Redeclaring math alphabet \mathgt on input line 336.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `normal'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 336.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/gt/m/n --> JY1/hgt/m/n on input line 336.
+LaTeX Font Info:    Overwriting math alphabet `\mathgt' in version `bold'
+(Font)                  JY1/hgt/m/n --> JY1/hgt/bx/n on input line 337.
+
+(/usr/local/texlive/2023/texmf-dist/tex/platex/japanese-otf/ajmacros.sty
+Package: ajmacros 2019/04/01 21:00 iNOUE Koich! <inoue@ma.ns.musashi-tech.ac.jp
+>
+\@tempcntc=\count269
+\@tempcntd=\count270
+\@tempcnte=\count271
+\@tempcntf=\count272
+))
+(/usr/local/texlive/2023/texmf-dist/tex/latex/morefloats/morefloats.sty
+Package: morefloats 2015/07/22 v1.0h Raise limit of unprocessed floats (HMM)
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+
+(/usr/local/texlive/2023/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+))
+Package morefloats Info: Maximum number of possible floats asked for: 36
+(morefloats)             (i.e. 18 more floats).
+(morefloats)             LaTeX might run out of memory before this
+(morefloats)             (in which case it will notify you).
+)
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 15.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 15.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2023-04-19 L3 backend support: dvips
+\l__pdf_internal_box=\box83
+\g__pdf_backend_object_int=\count273
+\l__pdf_backend_content_box=\box84
+\l__pdf_backend_model_box=\box85
+\g__pdf_backend_annotation_int=\count274
+\g__pdf_backend_link_int=\count275
+\g__pdf_backend_link_sf_int=\count276
+)
+(./External.aux)
+\openout1 = `External.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.st
+y
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+ (/usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvips (dvips) on input line 124.
+))
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 19.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 19.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 23.0061pt on input line 21.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 23.0061pt on input line 21.
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 23.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 15.9785pt on input line 25.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 15.9785pt on input line 25.
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 27.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 27.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 28.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 28.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 7.39746pt on input line 28.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 5.5481pt on input line 28.
+ [1
+
+]
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 60.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 9.24683pt on input line 60.
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 60.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 13.31541pt on input line 60.
+
+(./External.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 6.47278pt on input line 2.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 4.62341pt on input line 2.
+)
+\tf@toc=\write3
+\openout3 = `External.toc'.
+
+ [1]
+LaTeX Font Info:    Font shape `JT1/hgt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 65.
+LaTeX Font Info:    Font shape `JY1/hgt/m/n' will be
+(Font)              scaled to size 11.09619pt on input line 65.
+LaTeX Font Info:    Kanji font shape `JY1/hmc/m/sl' undefined
+(Font)              No change on input line 71.
+File: flow/admin_login.pdf Graphic file (type pdf)
+<flow/admin_login.pdf>
+LaTeX Font Info:    Font shape `JT1/hmc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 94.
+LaTeX Font Info:    Font shape `JY1/hmc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 94.
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 92--94
+ []
+ []
+
+[2
+
+]
+File: flow/admin_logout.pdf Graphic file (type pdf)
+<flow/admin_logout.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 95--97
+ []
+ []
+
+[3]
+File: flow/admin_businessListView.pdf Graphic file (type pdf)
+<flow/admin_businessListView.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 106--107
+ []
+ []
+
+[4]
+File: flow/admin_businessFilter.pdf Graphic file (type pdf)
+<flow/admin_businessFilter.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 108--109
+ []
+ []
+
+[5]
+File: flow/admin_businessSearch.pdf Graphic file (type pdf)
+<flow/admin_businessSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 110--111
+ []
+ []
+
+[6]
+File: flow/admin_coop_sort.pdf Graphic file (type pdf)
+<flow/admin_coop_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 112--113
+ []
+ []
+
+[7]
+File: flow/admin_coop_bill.pdf Graphic file (type pdf)
+<flow/admin_coop_bill.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 114--115
+ []
+ []
+
+[8]
+File: flow/admin_show_prop_coop.pdf Graphic file (type pdf)
+<flow/admin_show_prop_coop.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 119--120
+ []
+ []
+
+[9]
+File: flow/admin_coop_edit.pdf Graphic file (type pdf)
+<flow/admin_coop_edit.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 121--122
+ []
+ []
+
+[10]
+File: flow/admin_show_payment_coop.pdf Graphic file (type pdf)
+<flow/admin_show_payment_coop.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 123--124
+ []
+ []
+
+[11]
+File: flow/admin_payment.pdf Graphic file (type pdf)
+<flow/admin_payment.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 125--126
+ []
+ []
+
+[12]
+File: flow/drone_info.pdf Graphic file (type pdf)
+<flow/drone_info.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 127--128
+ []
+ []
+
+[13]
+File: flow/drone_info_editor.pdf Graphic file (type pdf)
+<flow/drone_info_editor.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 129--130
+ []
+ []
+
+[14] [15]
+Overfull \vbox (348.5164pt too high) has occurred while \output is active []
+
+
+[16]
+File: flow/admin_userListView.pdf Graphic file (type pdf)
+<flow/admin_userListView.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 136--137
+ []
+ []
+
+File: flow/admin_userFilter.pdf Graphic file (type pdf)
+<flow/admin_userFilter.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 138--139
+ []
+ []
+
+[17]
+File: flow/admin_userSearch.pdf Graphic file (type pdf)
+<flow/admin_userSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 140--141
+ []
+ []
+
+[18]
+File: flow/admin_user_sort.pdf Graphic file (type pdf)
+<flow/admin_user_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 142--143
+ []
+ []
+
+[19]
+File: flow/admin_user_bill.pdf Graphic file (type pdf)
+<flow/admin_user_bill.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 144--145
+ []
+ []
+
+[20]
+File: flow/admin_user_edit.pdf Graphic file (type pdf)
+<flow/admin_user_edit.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 150--151
+ []
+ []
+
+[21]
+File: flow/admin_show_payment_user.pdf Graphic file (type pdf)
+<flow/admin_show_payment_user.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 152--153
+ []
+ []
+
+[22]
+File: flow/customer_payment.pdf Graphic file (type pdf)
+<flow/customer_payment.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 154--155
+ []
+ []
+
+[23]
+File: flow/coop_statistics_display.pdf Graphic file (type pdf)
+<flow/coop_statistics_display.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 159--160
+ []
+ []
+
+[24]
+File: flow/coop_information_narrowing.pdf Graphic file (type pdf)
+<flow/coop_information_narrowing.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 161--162
+ []
+ []
+
+[25]
+File: flow/coop_information_graph_display.pdf Graphic file (type pdf)
+<flow/coop_information_graph_display.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 163--164
+ []
+ []
+
+[26]
+File: flow/user_statistics_display.pdf Graphic file (type pdf)
+<flow/user_statistics_display.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 168--169
+ []
+ []
+
+File: flow/user_information_narrowing.pdf Graphic file (type pdf)
+<flow/user_information_narrowing.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 170--171
+ []
+ []
+
+[27]
+File: flow/user_information_graph_display.pdf Graphic file (type pdf)
+<flow/user_information_graph_display.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 172--173
+ []
+ []
+
+[28]
+File: flow/view_delivery_request.pdf Graphic file (type pdf)
+<flow/view_delivery_request.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 178--179
+ []
+ []
+
+File: flow/delivery_request_narrowing.pdf Graphic file (type pdf)
+<flow/delivery_request_narrowing.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 180--181
+ []
+ []
+
+[29]
+File: flow/admin_deliveryRequestSearch.pdf Graphic file (type pdf)
+<flow/admin_deliveryRequestSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 182--183
+ []
+ []
+
+[30]
+File: flow/admin_delivery_request_sort.pdf Graphic file (type pdf)
+<flow/admin_delivery_request_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 184--185
+ []
+ []
+
+[31]
+File: flow/admin_delivery_work_allocation.pdf Graphic file (type pdf)
+<flow/admin_delivery_work_allocation.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 187--189
+ []
+ []
+
+[32]
+File: flow/view_drone_loan_applications.pdf Graphic file (type pdf)
+<flow/view_drone_loan_applications.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 195--196
+ []
+ []
+
+[33]
+File: flow/drone_loan_approval.pdf Graphic file (type pdf)
+<flow/drone_loan_approval.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 197--198
+ []
+ []
+
+[34]
+File: flow/admin_deliveryWorkAllocationFilter.pdf Graphic file (type pdf)
+<flow/admin_deliveryWorkAllocationFilter.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 199--200
+ []
+ []
+
+[35]
+File: flow/admin_deliveryWorkAllocationSearch.pdf Graphic file (type pdf)
+<flow/admin_deliveryWorkAllocationSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 201--202
+ []
+ []
+
+[36]
+File: flow/admin_delivery_work_sort.pdf Graphic file (type pdf)
+<flow/admin_delivery_work_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 203--204
+ []
+ []
+
+[37]
+File: flow/admin_all_do_job.pdf Graphic file (type pdf)
+<flow/admin_all_do_job.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 207--208
+ []
+ []
+
+[38]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 214--215
+ []
+ []
+
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 215--216
+ []
+ []
+
+File: flow/admin_droneFilter.pdf Graphic file (type pdf)
+<flow/admin_droneFilter.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 216--217
+ []
+ []
+
+[39]
+File: flow/admin_droneSearch.pdf Graphic file (type pdf)
+<flow/admin_droneSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 218--219
+ []
+ []
+
+[40]
+File: flow/admin_drone_sort.pdf Graphic file (type pdf)
+<flow/admin_drone_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 220--221
+ []
+ []
+
+[41]
+File: flow/admin_all_do_drone.pdf Graphic file (type pdf)
+<flow/admin_all_do_drone.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 224--225
+ []
+ []
+
+[42]
+File: flow/admin_drone_edit.pdf Graphic file (type pdf)
+<flow/admin_drone_edit.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 226--227
+ []
+ []
+
+[43]
+File: flow/admin_drone_registration.pdf Graphic file (type pdf)
+<flow/admin_drone_registration.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 228--229
+ []
+ []
+
+[44] [45] [46]
+File: flow/coop_login.pdf Graphic file (type pdf)
+<flow/coop_login.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 236--238
+ []
+ []
+
+File: flow/coop_logout.pdf Graphic file (type pdf)
+<flow/coop_logout.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 239--241
+ []
+ []
+
+[47]
+File: flow/coop_registration_request.pdf Graphic file (type pdf)
+<flow/coop_registration_request.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 242--245
+ []
+ []
+
+[48]
+File: flow/coop_edit.pdf Graphic file (type pdf)
+<flow/coop_edit.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 247--250
+ []
+ []
+
+[49] [50]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 252--253
+ []
+ []
+
+[51]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 253--259
+ []
+ []
+
+File: flow/business_deliveryRequestListViewFilter.pdf Graphic file (type pdf)
+<flow/business_deliveryRequestListViewFilter.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 259--260
+ []
+ []
+
+File: flow/business_deliveryRequestListViewSearch.pdf Graphic file (type pdf)
+<flow/business_deliveryRequestListViewSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 261--262
+ []
+ []
+
+[52]
+File: flow/coop_delivery_request_list_sort.pdf Graphic file (type pdf)
+<flow/coop_delivery_request_list_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 263--264
+ []
+ []
+
+[53]
+File: flow/coop_all_do_deliv.pdf Graphic file (type pdf)
+<flow/coop_all_do_deliv.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 267--268
+ []
+ []
+
+[54]
+File: flow/coop_delivery_request_list_notice.pdf Graphic file (type pdf)
+<flow/coop_delivery_request_list_notice.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 270--271
+ []
+ []
+
+[55]
+File: flow/drone_registration.pdf Graphic file (type pdf)
+<flow/drone_registration.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 278--280
+ []
+ []
+
+[56]
+File: flow/view_child_accounts.pdf Graphic file (type pdf)
+<flow/view_child_accounts.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 282--283
+ []
+ []
+
+[57]
+File: flow/business_childAccountListViewFilter.pdf Graphic file (type pdf)
+<flow/business_childAccountListViewFilter.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 284--285
+ []
+ []
+
+[58]
+File: flow/business_childAccountListViewSearch.pdf Graphic file (type pdf)
+<flow/business_childAccountListViewSearch.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 286--287
+ []
+ []
+
+[59]
+File: flow/coop_child_account_list_sort.pdf Graphic file (type pdf)
+<flow/coop_child_account_list_sort.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 288--289
+ []
+ []
+
+[60]
+File: flow/coop_all_do_child.pdf Graphic file (type pdf)
+<flow/coop_all_do_child.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 292--293
+ []
+ []
+
+[61]
+File: flow/coop_create_child_acc.pdf Graphic file (type pdf)
+<flow/coop_create_child_acc.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 301--302
+ []
+ []
+
+[62]
+Overfull \vbox (164.56683pt too high) has occurred while \output is active []
+
+
+[63]
+File: flow/delete_child_account.pdf Graphic file (type pdf)
+<flow/delete_child_account.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 307--308
+ []
+ []
+
+File: flow/coop_child_account_edit.pdf Graphic file (type pdf)
+<flow/coop_child_account_edit.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 309--310
+ []
+ []
+
+[64]
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 312--313
+ []
+ []
+
+[65]
+File: flow/drone_lending.pdf Graphic file (type pdf)
+<flow/drone_lending.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 313--314
+ []
+ []
+
+[66]
+File: flow/view_drone_types.pdf Graphic file (type pdf)
+<flow/view_drone_types.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 318--319
+ []
+ []
+
+[67]
+File: flow/drone_repair_request.pdf Graphic file (type pdf)
+<flow/drone_repair_request.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 320--321
+ []
+ []
+
+[68]
+File: flow/drone_trouble_request.pdf Graphic file (type pdf)
+<flow/drone_trouble_request.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 322--323
+ []
+ []
+
+[69]
+File: flow/coop_withdrawal.pdf Graphic file (type pdf)
+<flow/coop_withdrawal.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 324--325
+ []
+ []
+
+[70]
+File: flow/user_login.pdf Graphic file (type pdf)
+<flow/user_login.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 334--336
+ []
+ []
+
+[71]
+File: flow/user_logout.pdf Graphic file (type pdf)
+<flow/user_logout.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 337--339
+ []
+ []
+
+[72]
+File: flow/user_registration.pdf Graphic file (type pdf)
+<flow/user_registration.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 340--342
+ []
+ []
+
+[73]
+Overfull \vbox (57.15327pt too high) has occurred while \output is active []
+
+
+[74]
+File: flow/customer_info_editor.pdf Graphic file (type pdf)
+<flow/customer_info_editor.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 343--346
+ []
+ []
+
+[75]
+File: flow/user_deliv_pacement_request.pdf Graphic file (type pdf)
+<flow/user_deliv_pacement_request.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 347--350
+ []
+ []
+
+[76] [77]
+Overfull \vbox (164.56683pt too high) has occurred while \output is active []
+
+
+[78]
+File: flow/user_deliv_request.pdf Graphic file (type pdf)
+<flow/user_deliv_request.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 351--354
+ []
+ []
+
+[79]
+Overfull \vbox (32.89767pt too high) has occurred while \output is active []
+
+
+[80]
+File: flow/favorites_list_display.pdf Graphic file (type pdf)
+<flow/favorites_list_display.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 355--356
+ []
+ []
+
+File: flow/favorite_data_reference.pdf Graphic file (type pdf)
+<flow/favorite_data_reference.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 357--358
+ []
+ []
+
+File: flow/receipt_completion_notice.pdf Graphic file (type pdf)
+<flow/receipt_completion_notice.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 359--362
+ []
+ []
+
+[81]
+File: flow/add_favorite.pdf Graphic file (type pdf)
+<flow/add_favorite.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 363--366
+ []
+ []
+
+[82]
+File: flow/user_withdrawal.pdf Graphic file (type pdf)
+<flow/user_withdrawal.pdf>
+
+Overfull \hbox (14.62344pt too wide) in paragraph at lines 367--368
+ []
+ []
+
+[83]
+File: ui/admin_login.pdf Graphic file (type pdf)
+<ui/admin_login.pdf>
+ [84]
+File: ui/admin_login_error_screen.pdf Graphic file (type pdf)
+<ui/admin_login_error_screen.pdf>
+ [85]
+File: ui/coop_information_management_screen.pdf Graphic file (type pdf)
+<ui/coop_information_management_screen.pdf>
+File: ui/coop_info_fil.pdf Graphic file (type pdf)
+<ui/coop_info_fil.pdf>
+ [86]
+File: ui/coop_information_details_screen.pdf Graphic file (type pdf)
+<ui/coop_information_details_screen.pdf>
+File: ui/coop_information_editing_function.pdf Graphic file (type pdf)
+<ui/coop_information_editing_function.pdf>
+ [87] [88]
+Overfull \vbox (336.97464pt too high) has occurred while \output is active []
+
+
+[89]
+File: ui/coop_payment_info_prop_edit.pdf Graphic file (type pdf)
+<ui/coop_payment_info_prop_edit.pdf>
+File: ui/coop_payment_information_details_screen.pdf Graphic file (type pdf)
+<ui/coop_payment_information_details_screen.pdf>
+ [90]
+File: ui/coop_drone_information_management_screen.pdf Graphic file (type pdf)
+<ui/coop_drone_information_management_screen.pdf>
+File: ui/coop_drone_information_management_screen_refinement.pdf Graphic file (
+type pdf)
+<ui/coop_drone_information_management_screen_refinement.pdf>
+ [91]
+File: ui/user_information_management_screen.pdf Graphic file (type pdf)
+<ui/user_information_management_screen.pdf>
+File: ui/user_information_management_screen_refinement.pdf Graphic file (type p
+df)
+<ui/user_information_management_screen_refinement.pdf>
+ [92] [93]
+File: ui/user_information_details_screen.pdf Graphic file (type pdf)
+<ui/user_information_details_screen.pdf>
+ [94]
+File: ui/coop_stats_info.pdf Graphic file (type pdf)
+<ui/coop_stats_info.pdf>
+File: ui/coop_info_graph.pdf Graphic file (type pdf)
+<ui/coop_info_graph.pdf>
+ [95] [96]
+File: ui/user_stats_info.pdf Graphic file (type pdf)
+<ui/user_stats_info.pdf>
+File: ui/user_info_graph.pdf Graphic file (type pdf)
+<ui/user_info_graph.pdf>
+ [97] [98]
+File: ui/admin_deliv_req_list.pdf Graphic file (type pdf)
+<ui/admin_deliv_req_list.pdf>
+ [99]
+File: ui/coop_login.pdf Graphic file (type pdf)
+<ui/coop_login.pdf>
+File: ui/coop_login_error_screen.pdf Graphic file (type pdf)
+<ui/coop_login_error_screen.pdf>
+ [100] [101]
+File: ui/logout_coop.pdf Graphic file (type pdf)
+<ui/logout_coop.pdf>
+File: ui/logout_check.pdf Graphic file (type pdf)
+<ui/logout_check.pdf>
+ [102]
+[103]
+File: ui/new_coop_member_registration.pdf Graphic file (type pdf)
+<ui/new_coop_member_registration.pdf>
+ [104]
+Overfull \vbox (393.57811pt too high) has occurred while \output is active []
+
+
+[105]
+File: ui/coop_deliv_req_list-1.pdf Graphic file (type pdf)
+<ui/coop_deliv_req_list-1.pdf>
+File: ui/drone_registration_function.pdf Graphic file (type pdf)
+<ui/drone_registration_function.pdf>
+ [106]
+File: ui/child_account_list_screen.pdf Graphic file (type pdf)
+<ui/child_account_list_screen.pdf>
+File: ui/child_account_list_screen-1.pdf Graphic file (type pdf)
+<ui/child_account_list_screen-1.pdf>
+ [107] [108]
+File: ui/child_acc.pdf Graphic file (type pdf)
+<ui/child_acc.pdf>
+ [109]
+File: ui/drone_loan_list.pdf Graphic file (type pdf)
+<ui/drone_loan_list.pdf>
+File: ui/drone_req.pdf Graphic file (type pdf)
+<ui/drone_req.pdf>
+ [110]
+File: ui/drone_information_detail_screen.pdf Graphic file (type pdf)
+<ui/drone_information_detail_screen.pdf>
+ [111]
+Overfull \vbox (12.27827pt too high) has occurred while \output is active []
+
+
+[112]
+File: ui/user_login.pdf Graphic file (type pdf)
+<ui/user_login.pdf>
+File: ui/users_login_error_screen.pdf Graphic file (type pdf)
+<ui/users_login_error_screen.pdf>
+ [113] [114]
+File: ui/logout_user.pdf Graphic file (type pdf)
+<ui/logout_user.pdf>
+File: ui/logout_check_user.pdf Graphic file (type pdf)
+<ui/logout_check_user.pdf>
+ [115] [116]
+File: ui/user_new_member_registration.pdf Graphic file (type pdf)
+<ui/user_new_member_registration.pdf>
+ [117]
+Overfull \vbox (45.13762pt too high) has occurred while \output is active []
+
+
+[118]
+File: ui/user_information_edit_function.pdf Graphic file (type pdf)
+<ui/user_information_edit_function.pdf>
+
+Overfull \vbox (64.82483pt too high) has occurred while \output is active []
+
+
+[119]
+File: ui/deliv_place_req_phone.pdf Graphic file (type pdf)
+<ui/deliv_place_req_phone.pdf>
+
+Overfull \vbox (131.60611pt too high) has occurred while \output is active []
+
+
+[120]
+File: ui/deliv_req_phone.pdf Graphic file (type pdf)
+<ui/deliv_req_phone.pdf>
+File: ui/user_deliv_req_list_receive.pdf Graphic file (type pdf)
+<ui/user_deliv_req_list_receive.pdf>
+File: ui/user_deliv_req_list_submit.pdf Graphic file (type pdf)
+<ui/user_deliv_req_list_submit.pdf>
+ [121] [122]
+File: ui/fav_registor_phone.pdf Graphic file (type pdf)
+<ui/fav_registor_phone.pdf>
+ [123]
+Overfull \vbox (954.7848pt too high) has occurred while \output is active []
+
+
+[124]
+File: ui/withdrawal(phone).pdf Graphic file (type pdf)
+<ui/withdrawal(phone).pdf>
+
+Overfull \vbox (954.7848pt too high) has occurred while \output is active []
+
+
+[125] [126] (./External.aux) ) 
+Here is how much of TeX's memory you used:
+ 6263 strings out of 476701
+ 111472 string characters out of 5805420
+ 1851612 words of memory out of 5000000
+ 26532 multiletter control sequences out of 15000+600000
+ 524593 words of font info for 94 fonts, out of 8000000 for 9000
+ 934 hyphenation exceptions out of 8191
+ 66i,6n,75p,329b,1019s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on External.dvi (127 pages, 79900 bytes).
