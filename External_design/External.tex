@@ -49,11 +49,11 @@
     \label{fig:#1}
   \end{figure}
 }
-\newcommand{\ui}[1]{
+\newcommand{\ui}[2]{
   \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{ui/#1}
-    \caption{#1}
+    \caption{#2}
     \label{fig:#1}
   \end{figure}
 }
@@ -65,15 +65,15 @@
 \subsection{システム化の背景・目的}
 2022年日本における宅配便取扱個数は50億個を超えた.
 図のように宅配需要は近年増加し続けている，しかし，宅配サービスの拡大と需要増加には新たな課題も浮かび上がっている．
-最も顕著な課題は宅配業界における労働力不足だ，図のように道路貨物運送業の自動車運転者は減少を続けている．
+最も顕著な課題は宅配業界における労働力不足だ．図のように道路貨物運送業の自動車運転者は減少を続けている．
 この問題を解決するためにより効率的な配送方法が必要である．
 
-ドローン宅配事業者支援システム\system の目的は宅配業界の労働力不足の問題を自動運転で運用するドローンを用いることで解決することである．
+ドローン宅配事業者支援システム\system の目的は，宅配業界の労働力不足の問題を自動運転で運用するドローンを用いることで解決することである．
 そのためには多くの事業者にドローン宅配を利用してもらうため，ドローン宅配事業者を支援するためのベースとなるサービスを制作する．
 このシステムを導入することにより，今後日本国内で増加するであろう宅配便取扱個数の増加と労働力不足を宅配業界全体で乗り越えられると考える．
 
-\subsection{システム化の範囲}
-本システムは宅配依頼を受けてから，
+% \subsection{システム化の範囲}
+% 本システムは宅配依頼を受けてから，
 \section{要件定義}
 機能要件・非機能要件を記述する．要件を踏まえた具体的な設計は本章以降で説明する．
 \subsection{機能要件}
@@ -81,7 +81,7 @@
 \subsection{非機能要件}
 後回し
 
-\section{業務フロー図}
+% \section{業務フロー図}
 %流れ
 \section{機能設計}
 本システムは管理者，事業者，利用者が存在する．それぞれに向けた機能設計を記述する．
@@ -113,8 +113,8 @@
   \fig{\detokenize{admin_coop_sort}}{情報並び替え機能}
   \item [請求書送付機能]事業者に対してメールで請求書を送付する機能
   \fig{\detokenize{admin_coop_bill}}{請求書送付機能}
-  \item [一括選択機能]条件を満たす事業者全てに対して選択を行う機能
-  \fig{\detokenize{admin_all_select_coop}}{事業者一括選択機能}
+  % \item [一括選択機能]条件を満たす事業者全てに対して選択を行う機能
+  % \fig{\detokenize{admin_all_select_coop}}{事業者一括選択機能}
   %\item [一括実行機能]現在選択されている事業者全てに対して，一括で機能の実行を行う機能
   \item [事業者情報詳細閲覧機能]選択した事業者の詳細情報を表示する機能
   \fig{\detokenize{admin_show_prop_coop}}{事業者詳細情報閲覧機能}
@@ -143,8 +143,8 @@
   \fig{\detokenize{admin_user_sort}}{情報並び替え機能}
   \item [請求書送付機能]利用者に対してメールで請求書を送付する機能
   \fig{\detokenize{admin_user_bill}}{請求書送付機能}
-  \item [一括選択機能]条件を満たす利用者全てに対して選択を行う機能
-  \fig{\detokenize{admin_all_select_user}}{一括選択機能}
+  % \item [一括選択機能]条件を満たす利用者全てに対して選択を行う機能
+  % \fig{\detokenize{admin_all_select_user}}{一括選択機能}
   %\item [一括実行機能]現在選択されている利用者全てに対して，一括で機能の実行を行う機能
   %\item [利用者情報詳細閲覧機能]選択した利用者の詳細情報を表示する機能
   \item [利用者情報編集機能]選択した利用者の情報を編集する機能
@@ -202,8 +202,8 @@
   \fig{\detokenize{admin_deliveryWorkAllocationSearch}}{検索機能}
   \item [情報ソート機能]情報のソートを行う機能
   \fig{\detokenize{admin_delivery_work_sort}}{情報ソート機能}
-  \item [一括選択機能]一括選択をする機能
-  \fig{\detokenize{admin_all_select_job}}{一括選択機能}
+  % \item [一括選択機能]一括選択をする機能
+  % \fig{\detokenize{admin_all_select_job}}{一括選択機能}
   \item [一括実行機能]選択したの機能を一括で実行する機能
   \fig{\detokenize{admin_all_do_job}}{一括実行機能}
 
@@ -219,8 +219,8 @@
   \fig{\detokenize{admin_droneSearch}}{検索機能}
   \item [情報ソート機能]情報のソートを行う機能
   \fig{\detokenize{admin_drone_sort}}{情報ソート機能}
-  \item [一括選択機能]一括選択をする機能
-  \fig{\detokenize{admin_all_select_drone}}{一括選択機能}
+  % \item [一括選択機能]一括選択をする機能
+  % \fig{\detokenize{admin_all_select_drone}}{一括選択機能}
   \item [一括実行機能]選択したの機能を一括で実行する機能
   \fig{\detokenize{admin_all_do_drone}}{一括実行機能}
   \item [事業者ドローン情報編集]ドローンの各種詳細情報を表示する機能
@@ -262,8 +262,8 @@
   \fig{\detokenize{business_deliveryRequestListViewSearch}}{検索機能}
   \item [情報ソート機能]情報のソートを行う機能
   \fig{\detokenize{coop_delivery_request_list_sort}}{情報ソート機能}
-  \item [一括選択機能]一括選択をする機能
-  \fig{\detokenize{coop_all_select_deliv}}{一括選択機能}
+  % \item [一括選択機能]一括選択をする機能
+  % \fig{\detokenize{coop_all_select_deliv}}{一括選択機能}
   \item [一括実行機能]選択したの機能を一括で実行する機能
   \fig{\detokenize{coop_all_do_deliv}}{一括実行機能}
 
@@ -287,8 +287,8 @@
   \fig{\detokenize{business_childAccountListViewSearch}}{検索機能}
   \item [情報ソート機能]情報のソートを行う機能
   \fig{\detokenize{coop_child_account_list_sort}}{情報ソート機能}
-  \item [一括選択機能]一括選択をする機能
-  \fig{\detokenize{coop_all_select_child}}{一括選択機能}
+  % \item [一括選択機能]一括選択をする機能
+  % \fig{\detokenize{coop_all_select_child}}{一括選択機能}
   \item [一括実行機能]選択したの機能を一括で実行する機能
   \fig{\detokenize{coop_all_do_child}}{一括実行機能}
     % \item [子アカウント管理機能] 事業者が子アカウント発行機能を用いて発行した子アカウントの管理を行う機能．
@@ -327,10 +327,6 @@
   % 終わったらTOPに戻る
 \end{description}
 
-\fig{\detokenize{favorite_data_reference}}{お気に入りからデータ参照機能}
-\fig{\detokenize{receipt_completion_notice}}{受け取り完了通知機能}
-\fig{\detokenize{add_favorite}}{お気に入り登録機能}
-\fig{\detokenize{user_withdrawal}}{退会機能}
 \subsection{利用者向け機能}
 利用者向けのスマートフォン用ソフトウェアを用意し下記の機能を設ける．
 \begin{description}[labelwidth=\linewidth]
@@ -450,14 +446,15 @@ TOPに遷移する
 従って24時間365日という時間はオンライン/バッチを含みシステムが稼働している時間として定義する．
 ただし，毎月頭の深夜1時間程度メンテナンスの為にシステムを停止させる．
 \subsection{運用設計}
-ここ調べないと分からない．
-基本的にはDBのみ一定時間ごとにバックアップを取る，バックアップの間の時間は変更の差分のみ保存する，各種サーバはDockerか何かですぐに立ち上がるようにする．
-具体的なやつはAWSの機能を調べたら良いらしい
+% ここ調べないと分からない．
+基本的にはDBのみ一定時間ごとにRDSがバックアップを取る.
+% 各種サーバはDockerか何かですぐに立ち上がるようにする．
+% 具体的なやつはAWSの機能を調べたら良いらしい
 
 \subsection{保守設計}
 保守設計はシステムに変更を加えてシステムを維持することを目的とする．
-(先輩の資料が何を言ってるのかよく分からん)
-logと管理者からの報告からバグをリストアップした後，ドキュメント化し開発環境にて修正を行う．
+% (先輩の資料が何を言ってるのかよく分からん)
+システムログと管理者からの報告からバグをリストアップした後，ドキュメント化し開発環境にて修正を行う．
 システムアップデートについても開発環境にて検証を行う．
 バグの修正とシステムアップデートは致命的なもの以外は毎月のメンテナンスにて反映する．
 緊急性の高いものは開発環境で動作確認を終えた後，迅速に緊急メンテナンスを行い反映する．
@@ -466,54 +463,54 @@ logと管理者からの報告からバグをリストアップした後，ド�
 \section{ネットワーク設計}
 まだ詳細は決まってない
 
-\ui{\detokenize{退会(PC).pdf}}
-\ui{\detokenize{退会(スマホ).pdf}}
-\ui{\detokenize{宅配依頼(スマホ).pdf}}
-\ui{\detokenize{宅配依頼.pdf}}
-\ui{\detokenize{お気に入り登録(PC).pdf}}
-\ui{\detokenize{お気に入り登録(スマホ).pdf}}
-\ui{\detokenize{宅配場所登録画面(PC).pdf}}
-\ui{\detokenize{宅配場所登録画面(スマホ).pdf}}
-\ui{\detokenize{ログアウト画面.pdf}}
-\ui{\detokenize{ドローン申請画面.pdf}}
-\ui{\detokenize{ドローン登録機能.pdf}}
-\ui{\detokenize{事業者情報管理画面.pdf}}
-\ui{\detokenize{事業者情報編集機能.pdf}}
-\ui{\detokenize{事業者情報詳細画面.pdf}}
-\ui{\detokenize{事業者新規会員登録.pdf}}
-\ui{\detokenize{事業者統計情報画面.pdf}}
-\ui{\detokenize{利用者情報管理画面.pdf}}
-\ui{\detokenize{利用者情報編集機能.pdf}}
-\ui{\detokenize{利用者情報詳細画面.pdf}}
-\ui{\detokenize{利用者新規会員登録.pdf}}
-\ui{\detokenize{利用者統計情報画面.pdf}}
-\ui{\detokenize{利用者情報管理画面絞り込み.pdf}}
-\ui{\detokenize{ログアウト確認画面(利用者).pdf}}
-\ui{\detokenize{ログアウト確認画面-1.pdf}}
-\ui{\detokenize{子アカウント一覧画面-1.pdf}}
-\ui{\detokenize{ログアウト確認画面.pdf}}
-\ui{\detokenize{子アカウント一覧画面.pdf}}
-\ui{\detokenize{子アカウント発行画面.pdf}}
-\ui{\detokenize{利用者向け宅配依頼一覧(送信).pdf}}
-\ui{\detokenize{利用者向け宅配依頼一覧(受け取り).pdf}}
-\ui{\detokenize{ドローン情報詳細画面.pdf}}
-\ui{\detokenize{ドローン貸与申請一覧.pdf}}
-\ui{\detokenize{事業者向け宅配依頼一覧.pdf}}
-\ui{\detokenize{事業者情報グラフ画面.pdf}}
-\ui{\detokenize{事業者情報絞り込み画面.pdf}}
-\ui{\detokenize{利用者情報グラフ画面.pdf}}
-\ui{\detokenize{管理者向け宅配依頼一覧.pdf}}
-\ui{\detokenize{事業者向け画面ログイン.pdf}}
-\ui{\detokenize{事業者支払い情報詳細画面.pdf}}
-\ui{\detokenize{利用者向けログイン画面.pdf}}
-\ui{\detokenize{管理者向け画面ログイン.pdf}}
-\ui{\detokenize{事業者向け宅配依頼申請一覧.pdf}}
-\ui{\detokenize{事業者ドローン情報管理画面.pdf}}
-\ui{\detokenize{事業者支払い情報詳細編集画面.pdf}}
-\ui{\detokenize{事業者ドローン情報管理画面絞り込み.pdf}}
-\ui{\detokenize{事業者向けログインエラー画面.pdf}}
-\ui{\detokenize{利用者向けログインエラー画面.pdf}}
-\ui{\detokenize{管理者向けログインエラー画面.pdf}}
+\ui{\detokenize{admin_deliv_req_list.pdf}}{管理者向け宅配依頼一覧}
+\ui{\detokenize{admin_login_error_screen.pdf}}{管理者向けログインエラー画面}
+\ui{\detokenize{admin_login.pdf}}{管理者向け画面ログイン}
+\ui{\detokenize{child_acc.pdf}}{子アカウント発行画面}
+\ui{\detokenize{child_account_list_screen-1.pdf}}{子アカウント一覧画面-1}
+\ui{\detokenize{child_account_list_screen.pdf}}{子アカウント一覧画面}
+\ui{\detokenize{coop_deliv_req_list-1.pdf}}{事業者向け宅配依頼申請一覧}
+\ui{\detokenize{coop_deliv_req_list.pdf}}{事業者向け宅配依頼一覧}
+\ui{\detokenize{coop_drone_information_management_screen_refinement.pdf}}{事業者ドローン情報管理画面絞り込み}
+\ui{\detokenize{coop_drone_information_management_screen.pdf}}{事業者ドローン情報管理画面}
+\ui{\detokenize{coop_info_fil.pdf}}{事業者情報絞り込み画面}
+\ui{\detokenize{coop_info_graph.pdf}}{事業者統計情報画面}
+\ui{\detokenize{coop_information_details_screen.pdf}}{事業者情報詳細画面}
+\ui{\detokenize{coop_information_editing_function.pdf}}{事業者情報編集機能}
+\ui{\detokenize{coop_information_management_screen.pdf}}{事業者情報管理画面}
+\ui{\detokenize{coop_login_error_screen.pdf}}{事業者向けログインエラー画面}
+\ui{\detokenize{coop_login.pdf}}{事業者向け画面ログイン}
+\ui{\detokenize{coop_payment_info_prop_edit.pdf}}{事業者支払い情報詳細編集画面}
+\ui{\detokenize{coop_payment_information_details_screen.pdf}}{事業者支払い情報詳細画面}
+\ui{\detokenize{coop_stats_info.pdf}}{事業者統計情報画面}
+% \ui{\detokenize{deliv_place_req_pc.pdf}}{宅配場所登録画面(PC)}
+\ui{\detokenize{deliv_place_req_phone.pdf}}{宅配場所登録画面(スマホ)}
+\ui{\detokenize{deliv_req_phone.pdf}}{宅配依頼(スマホ)}
+% \ui{\detokenize{deliv_req.pdf}}{宅配依頼(PC)}
+\ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
+\ui{\detokenize{drone_loan_list.pdf}}{ドローン貸与申請一覧}
+\ui{\detokenize{drone_registration_function.pdf}}{ドローン登録機能}
+\ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
+% \ui{\detokenize{fav_registor_pc.pdf}}{お気に入り登録(PC)}
+\ui{\detokenize{fav_registor_phone.pdf}}{お気に入り登録(スマホ)}
+\ui{\detokenize{logout_check_user.pdf}}{ログアウト確認画面(利用者)}
+\ui{\detokenize{logout_check.pdf}}{ログアウト確認画面}
+\ui{\detokenize{logout_coop.pdf}}{ログアウト画面}
+\ui{\detokenize{logout_user.pdf}}{ログアウト画面}
+\ui{\detokenize{new_coop_member_registration.pdf}}{事業者新規会員登録}
+\ui{\detokenize{user_deliv_req_list_receive.pdf}}{利用者向け宅配依頼一覧(受け取り)}
+\ui{\detokenize{user_deliv_req_list_submit.pdf}}{利用者向け宅配依頼一覧(送信)}
+\ui{\detokenize{user_info_graph.pdf}}{利用者情報グラフ画面}
+\ui{\detokenize{user_information_details_screen.pdf}}{利用者情報詳細画面}
+\ui{\detokenize{user_information_edit_function.pdf}}{利用者情報編集機能}
+\ui{\detokenize{user_information_management_screen_refinement.pdf}}{利用者情報管理画面絞り込み}
+\ui{\detokenize{user_information_management_screen.pdf}}{利用者情報管理画面}
+\ui{\detokenize{user_login.pdf}}{利用者向けログイン画面}
+\ui{\detokenize{user_new_member_registration.pdf}}{利用者新規会員登録}
+\ui{\detokenize{user_stats_info.pdf}}{利用者統計情報画面}
+\ui{\detokenize{users_login_error_screen.pdf}}{利用者向けログインエラー画面}
+% \ui{\detokenize{withdrawal(PC).pdf}}{退会(PC)}
+\ui{\detokenize{withdrawal(phone).pdf}}{退会(スマホ)}
 
 % \bibliographystyle{junsrt}
 % \bibliography{References.bib}
