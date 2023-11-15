@@ -49,6 +49,20 @@
 \section{データ設計}
 
 \section{ネットワーク設計}
+図\ref{fig:network}は，本システムのネットワーク構成を示したものである．
+本システムは，Amazon Web Services(AWS) の Amazon Cloud Front を用いて作成する．
+Amazon Virtual Private Cloud(Amazon VPC) を用い，2つのアベイラビリティゾーン間でのトラフィックの共有を行う．
+
+インターネットゲートウェイにより，各アベイラビリティゾーンへと通信を分散させ，サーバと管理者・事業者・利用者がそれぞれ通信を行う．
+各アベイラビリティゾーン内では，Amazon Elastic Compute Cloud(EC2) 及び Amazon Relational Database Service(RDS) インスタンスを構築し，EC2インスタンスがリクエストの処理及びデータベースとの通信を行う．
+
+上記の構成要素の手前で，AWS WAF を利用しセキュリティの対策を行う．
+
+\begin{figure}[H]
+  \includegraphics[width=0.8\textwidth]{./network_img.pdf}
+  \caption{ネットワーク構成図}
+  \label{fig:network}
+\end{figure}
 
 \bibliographystyle{junsrt}
 \bibliography{References.bib}
