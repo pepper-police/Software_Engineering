@@ -52,7 +52,7 @@
 \newcommand{\ui}[2]{
   \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth]{ui/#1}
+    \includegraphics[width=0.8\textwidth]{ui/#1}
     \caption{#2}
     \label{fig:#1}
   \end{figure}
@@ -83,7 +83,7 @@
   \item [ログイン機能] 管理者がユーザ名，パスワード入力フィールドに情報を入力することでログインすることができ，
   ログイン状態を保持できる機能である．入力内容が正しい場合，ログイン状態になあり，トップページに遷移する
   \fig{\detokenize{admin_login}}{ログイン機能}
-  \item [ログアウト機能] 本システムにログインしている管理者が，ログイン状態を解除できる機能である．
+  \item [ログアウト機能] 本システgムにログインしている管理者が，ログイン状態を解除できる機能である．
   ログアウトするとログイン画面に遷移する．
   \fig{\detokenize{admin_logout}}{ログアウト機能}
   % \item [事業者管理機能]事業者の登録情報の管理閲覧，絞り込み，請求書の送付，支払い状態の管理閲覧，貸与ドローンの管理閲覧する機能．
@@ -391,17 +391,17 @@
 \end{figure}
 
 \subsection{管理者向け}
-ほぼ全ての画面にサイドバーがある
-サイドバーには各種一覧画面と分析画面へのリンクが貼ってある．
-一覧画面と詳細画面があるが，載せるデータをそれぞれ検討した方が良い．
-差が出ないなら詳細画面は必要ない．
+% ほぼ全ての画面にサイドバーがある
+% サイドバーには各種一覧画面と分析画面へのリンクが貼ってある．
+% 一覧画面と詳細画面があるが，載せるデータをそれぞれ検討した方が良い．
+% 差が出ないなら詳細画面は必要ない．
 \subsubsection{ログイン画面}
-ユーザ名とパスワード入力欄
-ログインボタンのみ
+% ユーザ名とパスワード入力欄
+% ログインボタンのみ
 \ui{\detokenize{admin_login.pdf}}{管理者向け画面ログイン}
 \ui{\detokenize{admin_login_error_screen.pdf}}{管理者向けログインエラー画面}
 \subsubsection{ログアウト画面}
-ログアウトボタンとログアウトが完了しました
+% ログアウトボタンとログアウトが完了しました
 % \subsubsection{TOP画面}
 % ヘッダーに基本的な情報
 % 左側にいろんな画面に行けるように左にサイドバー
@@ -410,8 +410,8 @@
 
 % TOP画面というもののサイドバーの左上に表示する画面をTOP画面として使う
 \subsubsection{事業者管理画面}
-事業者管理機能に書いてある，事業者一覧画面
-事業者情報詳細と支払い状態詳細と事業者ドローン情報管理に飛ぶボタンがある
+% 事業者管理機能に書いてある，事業者一覧画面
+% 事業者情報詳細と支払い状態詳細と事業者ドローン情報管理に飛ぶボタンがある
 \ui{\detokenize{coop_information_management_screen.pdf}}{事業者情報管理画面}
 \ui{\detokenize{coop_info_fil.pdf}}{事業者情報絞り込み画面}
 \begin{figure}[H]
@@ -423,13 +423,13 @@
 \clearpage
 %\ui{\detokenize{coop_information_editing_function.pdf}}{事業者情報編集機能}
 \subsubsection{事業者情報詳細}
-事業者情報を全部表示する画面
+% 事業者情報を全部表示する画面
 % 戻るボタンで事業者管理画面に行く
 % 支払い状態詳細と事業者ドローン情報管理にも飛べるようにしたい
 \ui{\detokenize{coop_information_details_screen.pdf}}{事業者情報詳細画面}
 \subsubsection{事業者支払い状態詳細}
-支払い状態のお金関係の情報を表示する，請求書の送付，メールの送信を行えるようにしたい．
-事業者一覧画面に戻るボタンがある
+% 支払い状態のお金関係の情報を表示する，請求書の送付，メールの送信を行えるようにしたい．
+% 事業者一覧画面に戻るボタンがある
 \ui{\detokenize{coop_payment_info_prop_edit.pdf}}{事業者支払い情報詳細編集画面}
 \ui{\detokenize{coop_payment_information_details_screen.pdf}}{事業者支払い情報詳細画面}
 % \subsubsection{ドローン貸与申請一覧}
@@ -450,11 +450,12 @@
 \ui{\detokenize{user_info_graph.pdf}}{利用者情報グラフ画面}
 \subsubsection{宅配依頼一覧}
 \ui{\detokenize{admin_deliv_req_list.pdf}}{管理者向け宅配依頼一覧}
+\clearpage
 \subsection{事業者向け}
 \subsubsection{ログイン画面}
-ユーザ名とパスワード入力欄
-ログインボタンのみ
-TOPに遷移する
+% ユーザ名とパスワード入力欄
+% ログインボタンのみ
+% TOPに遷移する
 \ui{\detokenize{coop_login.pdf}}{事業者向け画面ログイン}
 \ui{\detokenize{coop_login_error_screen.pdf}}{事業者向けログインエラー画面}
 % \subsubsection{ログアウト画面}
@@ -480,13 +481,13 @@ TOPに遷移する
 \ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
 \ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
 \subsubsection{退会画面}
-
+\clearpage
 \subsection{利用者向け}
-基本全部機能を見て
+% 基本全部機能を見て
 \subsubsection{ログイン画面}
-ユーザ名とパスワード入力欄
-ログインボタンのみ
-TOPに遷移する
+% ユーザ名とパスワード入力欄
+% ログインボタンのみ
+% TOPに遷移する
 \ui{\detokenize{user_login.pdf}}{利用者向けログイン画面}
 \ui{\detokenize{users_login_error_screen.pdf}}{利用者向けログインエラー画面}
 \subsubsection{ログアウト画面}
