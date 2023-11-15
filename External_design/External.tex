@@ -64,13 +64,25 @@
 
 \section{システム化の背景・目的}
 2022年日本における宅配便取扱個数は50億個を超えた.
-図のように宅配需要は近年増加し続けている，しかし，宅配サービスの拡大と需要増加には新たな課題も浮かび上がっている．
-最も顕著な課題は宅配業界における労働力不足だ．図のように道路貨物運送業の自動車運転者は減少を続けている．
+図\ref{fig:number}のように宅配需要は近年増加し続けている，しかし，宅配サービスの拡大と需要増加には新たな課題も浮かび上がっている．
+最も顕著な課題は宅配業界における労働力不足だ．図\ref{fig:driver}のように道路貨物運送業の自動車運転者は減少を続けている．
 この問題を解決するためにより効率的な配送方法が必要である．
 
 ドローン宅配事業者支援システム\system の目的は，宅配業界の労働力不足の問題を自動運転で運用するドローンを用いることで解決することである．
 そのためには多くの事業者にドローン宅配を利用してもらうため，ドローン宅配事業者を支援するためのベースとなるサービスを制作する．
 このシステムを導入することにより，今後日本国内で増加するであろう宅配便取扱個数の増加と労働力不足を宅配業界全体で乗り越えられると考える．
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{other/number.pdf}
+  \caption{年間宅配便取扱個数}
+  \label{fig:number}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{other/driver.png}
+  \caption{道路貨物運送業の自動車運転者}
+  \label{fig:driver}
+\end{figure}
 
 % \section{業務フロー図}
 %流れ
@@ -118,7 +130,13 @@
   \item [事業者ドローン情報詳細機能]事業者のドローン情報の詳細を閲覧する機能
   \fig{\detokenize{drone_info}}{事業者ドローン情報詳細閲覧機能}
   \item [事業者ドローン情報編集機能]事業者のドローン情報を編集する機能
-  \fig{\detokenize{drone_info_editor}}{事業者ドローン情報編集機能}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{flow/drone_info_editor.pdf}
+    \caption{事業者ドローン情報編集機能}
+    \label{fig:drone_info_editor}
+  \end{figure}
+  %\fig{\detokenize{drone_info_editor}}{事業者ドローン情報編集機能}
 
   % \item [利用者管理機能]利用者の登録情報の管理閲覧，絞り込み，請求書の送付，支払い状態の管理閲覧する機能．
   % 登録情報管理ボタン，支払い状態管理ボタンでそれぞれ対応したページに遷移する．各種データでソートと絞り込みを行えるようにする．
@@ -202,18 +220,24 @@
   % 貸与ドローン詳細画面がこれ
   % 上に全部チェック，プルダウンで一括削除と一括登録の選択と一括返却依頼，チェックに一括請求書送付ボタン，ドローン登録ボタン，絞り込みボタン
   % チェックボックス，型番，個体番号，稼働時間，ドローンの状況，返却依頼ボタン，削除ボタン，返却ボタン
-  \item [事業者ドローン情報一覧表示機能]事業者ドローン情報の一覧を表示する機能
-  \item [詳細表示機能]ドローン情報の詳細を表示する機能
-  \item [絞り込み機能]一覧の絞り込みを行う機能
-  \fig{\detokenize{admin_droneFilter}}{絞り込み機能}
-  \item [検索機能]検索を行う機能
-  \fig{\detokenize{admin_droneSearch}}{検索機能}
-  \item [情報ソート機能]情報のソートを行う機能
-  \fig{\detokenize{admin_drone_sort}}{情報ソート機能}
-  % \item [一括選択機能]一括選択をする機能
-  % \fig{\detokenize{admin_all_select_drone}}{一括選択機能}
-  \item [一括実行機能]選択したの機能を一括で実行する機能
-  \fig{\detokenize{admin_all_do_drone}}{一括実行機能}
+
+
+
+
+
+                                                                      %%いるやつ
+  % \item [事業者ドローン情報一覧表示機能]事業者ドローン情報の一覧を表示する機能
+  % \item [詳細表示機能]ドローン情報の詳細を表示する機能
+  % \item [絞り込み機能]一覧の絞り込みを行う機能
+  % \fig{\detokenize{admin_droneFilter}}{絞り込み機能}
+  % \item [検索機能]検索を行う機能
+  % \fig{\detokenize{admin_droneSearch}}{検索機能}
+  % \item [情報ソート機能]情報のソートを行う機能
+  % \fig{\detokenize{admin_drone_sort}}{情報ソート機能}
+  % % \item [一括選択機能]一括選択をする機能
+  % % \fig{\detokenize{admin_all_select_drone}}{一括選択機能}
+  % \item [一括実行機能]選択したの機能を一括で実行する機能
+  % \fig{\detokenize{admin_all_do_drone}}{一括実行機能}
   \item [事業者ドローン情報編集]ドローンの各種詳細情報を表示する機能
   \fig{\detokenize{admin_drone_edit}}{編集機能}
   \item [ドローン登録機能]ドローンを登録する機能
@@ -290,7 +314,13 @@
     % 新規アカウント発行は
 
     \item [子アカウント発行機能] 権限を限定した一般従業員用アカウントを発行して，同一事業者内で複数人が事業を行えるようにする機能．
-    \fig{\detokenize{coop_create_child_acc}}{子アカウント発行機能}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height=0.8\textheight]{flow/coop_create_child_acc.pdf}
+      \caption{子アカウント発行機能}
+      \label{fig:coop_create_child_acc}
+    \end{figure}
+    %\fig{\detokenize{coop_create_child_acc}}{子アカウント発行機能}
     % 各種機能のチェックボックス画面から与える権限を選び，次へを押す．
     % 次の画面で登録用のメールアドレスとパスワード2回の入力を行うと発行ボタンを押せる．
     % あとは登録したメールアドレスに招待リンクが飛ぶ．
@@ -327,13 +357,13 @@
 \begin{description}[labelwidth=\linewidth]
   \setlength{\leftskip}{1em}
   \item [ログイン機能] 利用者がユーザ名，パスワード入力フィールドに情報を入力することでログインすることができ，
-  ログイン状態を保持できる機能である．入力内容が正しい場合，ログイン状態になあり，トップページに遷移する
+  ログイン状態を保持できる機能である．%入力内容が正しい場合，ログイン状態になあり，トップページに遷移する
   \fig{\detokenize{user_login}}{ログイン機能}
   \item [ログアウト機能] 本システムにログインしている利用者が，ログイン状態を解除できる機能である．
-  ログアウトするとTOP画面に遷移する．
+  % ログアウトするとTOP画面に遷移する．
   \fig{\detokenize{user_logout}}{ログアウト機能}
   \item [利用者会員登録機能] 利用者名，住所，電話番号，メールアドレス，パスワードを用いて利用者が会員登録をする機能，これは管理者の許可が必要ない．
-  終わったらTOPに戻る．
+  % 終わったらTOPに戻る．
   \fig{\detokenize{user_registration}}{利用者会員登録機能}
   \item [利用者会員情報編集機能] 利用者名，住所，電話番号，メールアドレス，パスワードを編集する機能．
   変更の確認画面を出す．
@@ -341,12 +371,24 @@
   \fig{\detokenize{customer_info_editor}}{利用者会員情報編集機能}
   \item [宅配場所登録機能] 宅配で離着陸する場所を指定して登録編集する機能，外の画像を送信して申請をする．
   登録申請をしました画面を出す．
-  TOPに戻る
-  \fig{\detokenize{user_deliv_pacement_request}}{宅配場所申請機能}
+  % TOPに戻る
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.9\textheight]{flow/user_deliv_pacement_request.pdf}
+    \caption{宅配場所申請機能}
+    \label{fig:user_deliv_pacement_request}
+  \end{figure}
+  %\fig{\detokenize{user_deliv_pacement_request}}{宅配場所申請機能}
   \item [宅配依頼機能] 管理者に対して宅配を依頼する機能．
   % お気に入りから選択もしくは自分と相手の住所を選択して，荷物受け渡し時間を指定することで宅配を依頼する．
   % しばらくして受けてもらえたら，荷物をドローンに入れる
-  \fig{\detokenize{user_deliv_request}}{宅配依頼機能}
+  \begin{figure}[H]
+    \centering
+    \includegraphics[height=0.9\textheight]{flow/user_deliv_request.pdf}
+    \caption{宅配依頼機能}
+    \label{fig:user_deliv_request}
+  \end{figure}
+  %\fig{\detokenize{user_deliv_request}}{宅配依頼機能}
   \item [お気に入り一覧表示機能]お気に入り登録した相手を一覧表示する機能．
   \fig{\detokenize{favorites_list_display}}{お気に入り一覧表示機能}
   \item [お気に入りからデータ参照機能]お気に入りからデータを取得して反映する機能．
@@ -528,7 +570,12 @@
 バグの修正とシステムアップデートは致命的なもの以外は毎月のメンテナンスにて反映する．
 緊急性の高いものは開発環境で動作確認を終えた後，迅速に緊急メンテナンスを行い反映する．
 \section{データ設計}
-スプレットシート参照
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{other/driver.png}
+  \caption{データベース}
+  \label{fig:driver}
+\end{figure}
 \section{ネットワーク設計}
 図\ref{fig:network}は，本システムのネットワーク構成を示したものである．
 本システムは，Amazon Web Services(AWS) の Amazon Cloud Front を用いて作成する．
