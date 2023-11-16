@@ -79,7 +79,7 @@
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{other/driver.png}
+  \includegraphics[width=\textwidth]{other/driver.pdf}
   \caption{道路貨物運送業の自動車運転者}
   \label{fig:driver}
 \end{figure}
@@ -523,6 +523,7 @@
 \ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
 \ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
 \subsubsection{退会画面}
+\ui{\detokenize{withdrawal(PC).pdf}}{退会(PC)}
 \clearpage
 \subsection{利用者向け}
 % 基本全部機能を見て
@@ -572,7 +573,7 @@
 \section{データ設計}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=0.8\textwidth]{other/driver.png}
+  \includegraphics[width=0.8\textwidth]{other/database.pdf}
   \caption{データベース}
   \label{fig:driver}
 \end{figure}
@@ -614,7 +615,15 @@ DDoS攻撃の対策としてAWS Shieldを用いる．
 データベースサーバーに対して可用性向上の為，プライマリ・セカンダリ構成の冗長化を行う．
 \subsubsection{サーバーの負荷分散}
 特定のwebサーバーに対して負荷が集中することを避けるために，ロードバランサーを用い負荷の分散を行う．
-\bibliographystyle{junsrt}
-\bibliography{References.bib}
+
+\section{貢献度}
+\begin{itemize}
+  \item 1240312 久保田 天治 : 非機能要件の設計及びフロー図,UI図の作成
+  \item 1250329 塩澤 康志 : データベース設計及びフロー図,UI図の作成 週当番としての職務を果たした
+  \item 1250333 蝉 祐介 : フロー図,UI図の作成 週当番としての職務を果たした
+  \item 1250348 寺内 俊輔 : テンプレートの作成及びフロー図の作成 チームのバランスを確保(仲裁) タスク表を作成及び管理
+  \item 1250358 林 晃太郎 : UIの画面遷移図の作成及びフロー図,UI図の作成
+  \item 1250371 松本 吏司 : ネットワーク設計及びフロー図,UI図の作成 作業用リポジトリの整備 週当番としての職務を果たした
+\end{itemize}
 
 \end{document}
