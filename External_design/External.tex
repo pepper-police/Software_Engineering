@@ -78,16 +78,17 @@
 ドローン宅配事業者支援システム\system の目的は，宅配業界の労働力不足の問題を自動運転で運用するドローンを用いることで解決することである．
 そのためには多くの事業者にドローン宅配を利用してもらうため，ドローン宅配事業者を支援するためのベースとなるサービスを制作する．
 このシステムを導入することにより，今後日本国内で増加するであろう宅配便取扱個数の増加と労働力不足を宅配業界全体で乗り越えられると考える．
+%aaa
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{other/number.pdf}
-  \caption{年間宅配便取扱個数}
+  \includegraphics[height=\textheight]{other/number.pdf}
+  \caption{年間宅配便取扱個数(\cite{home_delivery_2022}より引用)}
   \label{fig:number}
 \end{figure}
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{other/driver.pdf}
-  \caption{道路貨物運送業の自動車運転者}
+  \includegraphics[width=\textwidth]{other/driver2.pdf}
+  \caption{道路貨物運送業の自動車運転者(\cite{Human_Resource}より引用)}
   \label{fig:driver}
 \end{figure}
 
@@ -644,7 +645,7 @@
   \centering
   \includegraphics[width=0.8\textwidth]{other/database.pdf}
   \caption{データベース}
-  \label{fig:driver}
+  \label{fig:database}
 \end{figure}
 \section{ネットワーク設計}
 図\ref{fig:network}は，本システムのネットワーク構成を示したものである．
@@ -694,5 +695,6 @@ DDoS攻撃の対策としてAWS Shieldを用いる．
   \item 1250358 林 晃太郎 : UIの画面遷移図の作成及びフロー図,UI図の作成．
   \item 1250371 松本 吏司 : ネットワーク設計及びフロー図,UI図の作成 作業用リポジトリの整備 週当番としての職務を果たした．
 \end{itemize}
-
+\bibliographystyle{junsrt}
+\bibliography{References.bib}
 \end{document}
