@@ -57,7 +57,9 @@
 \newcommand{\ui}[2]{
   \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{ui/#1}
+    \fbox{
+      \includegraphics[width=0.65\textwidth]{ui/#1}
+      }
     \caption{#2}
     \label{fig:#1}
   \end{figure}
@@ -93,6 +95,7 @@
 %流れ．
 \section{機能設計}
 本システムは管理者，事業者，利用者が存在する．それぞれに向けた機能設計を記述する．
+\clearpage
 \subsection{管理者向け機能}
 管理者用のwebページを作成し下記の機能を設ける．
 \begin{description}[labelwidth=\linewidth]
@@ -388,125 +391,235 @@
   \label{fig:user_diagram}
 \end{figure}
 
-\subsection{管理者向け}
-% ほぼ全ての画面にサイドバーがある．
-% サイドバーには各種一覧画面と分析画面へのリンクが貼ってある．
-% 一覧画面と詳細画面があるが，載せるデータをそれぞれ検討した方が良い．
-% 差が出ないなら詳細画面は必要ない．
+\clearpage
+\subsection{管理者向け画面}
+以下に管理者向けの各機能に対する画面を示す．
 \subsubsection{ログイン画面}
-% ユーザ名とパスワード入力欄．
-% ログインボタンのみ．
-\ui{\detokenize{admin_login.pdf}}{管理者向け画面ログイン}
-\ui{\detokenize{admin_login_error_screen.pdf}}{管理者向けログインエラー画面}
+ログインすることで各機能を利用できる．
+\ui{\detokenize{admin/admin_login_0.pdf}}{ログイン画面}
+\ui{\detokenize{admin/admin_login_1.pdf}}{ログイン画面}
+\clearpage
 \subsubsection{ログアウト画面}
-% ログアウトボタンとログアウトが完了しました．
-% \subsubsection{TOP画面}
-% ヘッダーに基本的な情報．
-% 左側にいろんな画面に行けるように左にサイドバー．
-% フッターに利用規約とか諸々．
-% これが基本デザイン．
-
-% TOP画面というもののサイドバーの左上に表示する画面をTOP画面として使う．
+ログアウトは，画面右上部のアイコン横のボタンから可能である．
+\ui{\detokenize{admin/admin_logout_0.pdf}}{ログアウト画面}
+\ui{\detokenize{admin/admin_logout_1.pdf}}{ログアウト画面}
+\clearpage
 \subsubsection{事業者管理画面}
-% 事業者管理機能に書いてある，事業者一覧画面．
-% 事業者情報詳細と支払い状態詳細と事業者ドローン情報管理に飛ぶボタンがある．
-\ui{\detokenize{coop_information_management_screen.pdf}}{事業者情報管理画面}
-\ui{\detokenize{coop_info_fil.pdf}}{事業者情報絞り込み画面}
-\begin{figure}[H]
-  \centering
-  \includegraphics[height=\textheight]{ui/coop_information_editing_function.pdf}
-  \caption{事業者情報編集機能}
-  \label{fig:coop_information_editing_function.pdf}
-\end{figure}
+事業者管理画面では，事業者の地域別の絞り込みが可能である．
+\ui{\detokenize{admin/admin_management_coop_0.pdf}}{事業者管理画面}
+\ui{\detokenize{admin/admin_management_coop_1.pdf}}{事業者管理画面}
 \clearpage
-%\ui{\detokenize{coop_information_editing_function.pdf}}{事業者情報編集機能}
-\subsubsection{事業者情報詳細}
-% 事業者情報を全部表示する画面．
-% 戻るボタンで事業者管理画面に行く．
-% 支払い状態詳細と事業者ドローン情報管理にも飛べるようにしたい．
-\ui{\detokenize{coop_information_details_screen.pdf}}{事業者情報詳細画面}
-\subsubsection{事業者支払い状態詳細}
-% 支払い状態のお金関係の情報を表示する，請求書の送付，メールの送信を行えるようにしたい．
-% 事業者一覧画面に戻るボタンがある．
-\ui{\detokenize{coop_payment_info_prop_edit.pdf}}{事業者支払い情報詳細編集画面}
-\ui{\detokenize{coop_payment_information_details_screen.pdf}}{事業者支払い情報詳細画面}
-% \subsubsection{ドローン貸与申請一覧}
+\subsubsection{事業者情報詳細画面}
+事業者情報詳細画面では，該当事業者の詳細情報を確認できる．
+\ui{\detokenize{admin/admin_view_coop_info.pdf}}{事業者情報詳細画面}
+\subsubsection{事業者支払い情報詳細画面}
+事業者支払い情報詳細画面では，該当事業者の支払いに関する詳細情報を確認できる．
+\ui{\detokenize{admin/admin_view_coop_payment.pdf}}{事業者支払い情報詳細画面}
 \clearpage
-\subsubsection{事業者ドローン情報管理}
-\ui{\detokenize{coop_drone_information_management_screen.pdf}}{事業者ドローン情報管理画面}
-\ui{\detokenize{coop_drone_information_management_screen_refinement.pdf}}{事業者ドローン情報管理画面絞り込み}
-\subsubsection{利用者管理}
-\ui{\detokenize{user_information_management_screen.pdf}}{利用者情報管理画面}
-\ui{\detokenize{user_information_management_screen_refinement.pdf}}{利用者情報管理画面絞り込み}
-\subsubsection{利用者情報詳細}
-\ui{\detokenize{user_information_details_screen.pdf}}{利用者情報詳細画面}
-\subsubsection{事業者情報分析}
-\ui{\detokenize{coop_stats_info.pdf}}{事業者統計情報画面}
-\ui{\detokenize{coop_info_graph.pdf}}{事業者統計情報画面}
-\subsubsection{利用者情報分析}
-\ui{\detokenize{user_stats_info.pdf}}{利用者統計情報画面}
-\ui{\detokenize{user_info_graph.pdf}}{利用者情報グラフ画面}
-\subsubsection{宅配依頼一覧}
-\ui{\detokenize{admin_deliv_req_list.pdf}}{管理者向け宅配依頼一覧}
+\subsubsection{事業者支払い情報編集画面}
+事業者支払い情報編集画面では，該当事業者の支払いに関する情報を編集できる．
+\ui{\detokenize{admin/admin_edit_coop_payment_0.pdf}}{事業者支払い情報編集画面}
+\ui{\detokenize{admin/admin_edit_coop_payment_1.pdf}}{事業者支払い情報編集画面}
 \clearpage
-\subsection{事業者向け}
-\subsubsection{ログイン画面}
-% ユーザ名とパスワード入力欄．
-% ログインボタンのみ．
-% TOPに遷移する．
-\ui{\detokenize{coop_login.pdf}}{事業者向け画面ログイン}
-\ui{\detokenize{coop_login_error_screen.pdf}}{事業者向けログインエラー画面}
-% \subsubsection{ログアウト画面}
-% ログアウトボタンとログアウトが完了しました．
-\ui{\detokenize{logout_coop.pdf}}{ログアウト画面}
-\ui{\detokenize{logout_check.pdf}}{ログアウト確認画面}
-\subsubsection{TOP画面}
-\subsubsection{事業者登録申請画面}
-\ui{\detokenize{new_coop_member_registration.pdf}}{事業者新規会員登録}
-\subsubsection{事業者情報編集画面}
-\subsubsection{依頼一覧機能}
-\ui{\detokenize{coop_deliv_req_list-1.pdf}}{事業者向け宅配依頼申請一覧}
-\subsubsection{配達依頼一覧機能}
-\subsubsection{使用ドローン登録画面}
-\ui{\detokenize{drone_registration_function.pdf}}{ドローン登録機能}
-\subsubsection{子アカウント一覧画面}
-\ui{\detokenize{child_account_list_screen.pdf}}{子アカウント一覧画面}
-\ui{\detokenize{child_account_list_screen-1.pdf}}{子アカウント一覧画面-1}
-\subsubsection{子アカウント発行画面}
-\ui{\detokenize{child_acc.pdf}}{子アカウント発行画面}
-\subsubsection{ドローン貸与申請画面}
-\ui{\detokenize{drone_loan_list.pdf}}{ドローン貸与申請一覧}
-\ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
-\ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
-\subsubsection{退会画面}
-\ui{\detokenize{withdrawal(PC).pdf}}{退会(PC)}
+\subsubsection{ドローン貸与申請一覧画面}
+ドローン貸与申請一覧画面画面では，事業者からの貸与申請の確認及び編集が出来る．
+\ui{\detokenize{admin/admin_drone_loan_request_list.pdf}}{ドローン貸与申請一覧画面}
 \clearpage
-\subsection{利用者向け}
-% 基本全部機能を見て．
-\subsubsection{ログイン画面}
-% ユーザ名とパスワード入力欄．
-% ログインボタンのみ．
-% TOPに遷移する．
-\ui{\detokenize{user_login.pdf}}{利用者向けログイン画面}
-\ui{\detokenize{users_login_error_screen.pdf}}{利用者向けログインエラー画面}
-\subsubsection{ログアウト画面}
-\ui{\detokenize{logout_user.pdf}}{ログアウト画面}
-\ui{\detokenize{logout_check_user.pdf}}{ログアウト確認画面(利用者)}
-\subsubsection{利用者会員登録画面}
-\ui{\detokenize{user_new_member_registration.pdf}}{利用者新規会員登録}
-\subsubsection{利用者会員情報編集画面}
-\ui{\detokenize{user_information_edit_function.pdf}}{利用者情報編集機能}
-\subsubsection{宅配場所登録画面}
-\ui{\detokenize{deliv_place_req_phone.pdf}}{宅配場所登録画面(スマホ)}
-\subsubsection{宅配依頼画面}
-\ui{\detokenize{deliv_req_phone.pdf}}{宅配依頼(スマホ)}
+\subsubsection{貸与ドローン管理画面}
+貸与ドローン管理画面では，貸与したドローンの管理が出来る．
+\ui{\detokenize{admin/admin_management_coop_drone_0.pdf}}{貸与ドローン管理画面}
+\ui{\detokenize{admin/admin_management_coop_drone_1.pdf}}{貸与ドローン管理画面}
+\clearpage
+\subsubsection{利用者管理画面}
+利用者管理画面では，利用者の地域別の絞り込みが可能である．
+\ui{\detokenize{admin/admin_management_user_info_0.pdf}}{利用者管理画面}
+\ui{\detokenize{admin/admin_management_user_info_1.pdf}}{利用者管理画面}
+\clearpage
+\subsubsection{利用者情報詳細画面}
+利用者情報詳細画面では，該当利用者の詳細情報を確認できる．
+\ui{\detokenize{admin/admin_management_user_detail.pdf}}{利用者情報詳細画面}
+\clearpage
+\subsubsection{事業者情報分析画面}
+事業者情報分析画面では，事業者情報を表またはグラフにて分析できる．
+\ui{\detokenize{admin/admin_view_coop_statistics_0.pdf}}{事業者情報分析画面}
+\ui{\detokenize{admin/admin_view_coop_statistics_1.pdf}}{事業者情報分析画面}
+\clearpage
+\subsubsection{利用者情報分析画面}
+利用者情報分析画面では，利用者情報を表またはグラフにて分析できる．
+\ui{\detokenize{admin/admin_view_user_statistics_0.pdf}}{利用者情報分析画面}
+\ui{\detokenize{admin/admin_view_user_statistics_1.pdf}}{利用者情報分析画面}
+\clearpage
 \subsubsection{宅配依頼一覧画面}
-\ui{\detokenize{user_deliv_req_list_receive.pdf}}{利用者向け宅配依頼一覧(受け取り)}
-\ui{\detokenize{user_deliv_req_list_submit.pdf}}{利用者向け宅配依頼一覧(送信)}
-\subsubsection{お気に入り登録画面}
-\ui{\detokenize{fav_registor_phone.pdf}}{お気に入り登録(スマホ)}
+宅配依頼一覧画面では，宅配依頼を確認することが出来る．
+\ui{\detokenize{admin/admin_delivery_request_list.pdf}}{宅配依頼一覧画面}
+\clearpage
+
+\subsection{事業者向け画面}
+以下に事業者向けの各機能に対する画面を示す．
+\subsubsection{ログイン画面}
+ログインすることで各機能を利用できる．
+\ui{\detokenize{coop/coop_login_0.pdf}}{ログイン画面}
+\ui{\detokenize{coop/coop_login_1.pdf}}{ログイン画面}
+\clearpage
+\subsubsection{ログアウト画面}
+ログアウトは，画面右上部のアイコン横のボタンから可能である．
+\ui{\detokenize{coop/coop_logout_0.pdf}}{ログアウト画面}
+\ui{\detokenize{coop/coop_logout_1.pdf}}{ログアウト画面}
+\clearpage
+\subsubsection{事業者登録申請画面}
+本画面にて事業者としての申請を行うことができる．
+\ui{\detokenize{coop/coop_registration_request_0.pdf}}{事業者登録申請画面}
+\ui{\detokenize{coop/coop_registration_request_1.pdf}}{事業者登録申請画面}
+\clearpage
+\subsubsection{事業者情報編集画面}
+事業者情報編集画面では，事業者情報の更新が可能である．
+\ui{\detokenize{coop/coop_edit_coop_info_0.pdf}}{事業者情報編集画面}
+\ui{\detokenize{coop/coop_edit_coop_info_1.pdf}}{事業者情報編集画面}
+\clearpage
+\subsubsection{宅配依頼一覧画面}
+宅配依頼一覧画面では，担当する宅配依頼の選択等を決定できる．
+\ui{\detokenize{coop/coop_delivery_request_list.pdf}}{宅配依頼一覧画面}
+\subsubsection{所持ドローン一覧画面}
+所持ドローン一覧画面では，自身の保有するドローンを確認できる．
+\ui{\detokenize{coop/coop_drone_list.pdf}}{所持ドローン一覧画面}
+\clearpage
+\subsubsection{ドローン登録画面}
+ドローン登録画面では，貸与されたドローン以外のドローンを登録できる．
+\ui{\detokenize{coop/coop_drone_registration.pdf}}{ドローン登録画面}
+\subsubsection{子アカウント作成画面}
+子アカウント作成画面では，同一事業者内で利用可能な子アカウントの作成を行える．
+\ui{\detokenize{coop/coop_create_child_account.pdf}}{子アカウント作成画面}
+\clearpage
+\subsubsection{子アカウント一覧画面}
+子アカウント一覧画面では，子アカウントの確認を行うことが出来る．
+\ui{\detokenize{coop/coop_child_account_list.pdf}}{子アカウント一覧画面}
+\subsubsection{ドローン貸与申請画面}
+ドローン貸与申請画面では，ドローンの貸出を申請することが出来る．
+\ui{\detokenize{coop/coop_drone_lent_request.pdf}}{ドローン貸与申請画面}
+\clearpage
 \subsubsection{退会画面}
-\ui{\detokenize{withdrawal(phone).pdf}}{退会(スマホ)}
+退会画面は，画面右上部のアイコン横のボタンから可能である．
+\ui{\detokenize{coop/coop_withdraw_0.pdf}}{退会画面}
+\ui{\detokenize{coop/coop_withdraw_1.pdf}}{退会画面}
+\ui{\detokenize{coop/coop_withdraw_2.pdf}}{退会画面}
+\clearpage
+
+\subsection{利用者向け画面}
+
+%% % ユーザ名とパスワード入力欄
+%% % ログインボタンのみ
+
+%% \ui{\detokenize{admin_login.pdf}}{管理者向け画面ログイン}
+%% \ui{\detokenize{admin_login_error_screen.pdf}}{管理者向けログインエラー画面}
+%% \subsubsection{ログアウト画面}
+%% % ログアウトボタンとログアウトが完了しました
+%% % \subsubsection{TOP画面}
+%% % ヘッダーに基本的な情報
+%% % 左側にいろんな画面に行けるように左にサイドバー
+%% % フッターに利用規約とか諸々
+%% % これが基本デザイン
+
+%% % TOP画面というもののサイドバーの左上に表示する画面をTOP画面として使う
+%% \subsubsection{事業者管理画面}
+%% % 事業者管理機能に書いてある，事業者一覧画面
+%% % 事業者情報詳細と支払い状態詳細と事業者ドローン情報管理に飛ぶボタンがある
+%% \ui{\detokenize{coop_information_management_screen.pdf}}{事業者情報管理画面}
+%% \ui{\detokenize{coop_info_fil.pdf}}{事業者情報絞り込み画面}
+%% \begin{figure}[H]
+%%   \centering
+%%   \includegraphics[height=\textheight]{ui/coop_information_editing_function.pdf}
+%%   \caption{事業者情報編集機能}
+%%   \label{fig:coop_information_editing_function.pdf}
+%% \end{figure}
+%% \clearpage
+%% %\ui{\detokenize{coop_information_editing_function.pdf}}{事業者情報編集機能}
+%% \subsubsection{事業者情報詳細}
+%% % 事業者情報を全部表示する画面
+%% % 戻るボタンで事業者管理画面に行く
+%% % 支払い状態詳細と事業者ドローン情報管理にも飛べるようにしたい
+%% \ui{\detokenize{coop_information_details_screen.pdf}}{事業者情報詳細画面}
+%% \subsubsection{事業者支払い状態詳細}
+%% % 支払い状態のお金関係の情報を表示する，請求書の送付，メールの送信を行えるようにしたい．
+%% % 事業者一覧画面に戻るボタンがある
+%% \ui{\detokenize{coop_payment_info_prop_edit.pdf}}{事業者支払い情報詳細編集画面}
+%% \ui{\detokenize{coop_payment_information_details_screen.pdf}}{事業者支払い情報詳細画面}
+%% % \subsubsection{ドローン貸与申請一覧}
+%% \clearpage
+%% \subsubsection{事業者ドローン情報管理}
+%% \ui{\detokenize{coop_drone_information_management_screen.pdf}}{事業者ドローン情報管理画面}
+%% \ui{\detokenize{coop_drone_information_management_screen_refinement.pdf}}{事業者ドローン情報管理画面絞り込み}
+%% \subsubsection{利用者管理}
+%% \ui{\detokenize{user_information_management_screen.pdf}}{利用者情報管理画面}
+%% \ui{\detokenize{user_information_management_screen_refinement.pdf}}{利用者情報管理画面絞り込み}
+%% \subsubsection{利用者情報詳細}
+%% \ui{\detokenize{user_information_details_screen.pdf}}{利用者情報詳細画面}
+%% \subsubsection{事業者情報分析}
+%% \ui{\detokenize{coop_stats_info.pdf}}{事業者統計情報画面}
+%% \ui{\detokenize{coop_info_graph.pdf}}{事業者統計情報画面}
+%% \subsubsection{利用者情報分析}
+%% \ui{\detokenize{user_stats_info.pdf}}{利用者統計情報画面}
+%% \ui{\detokenize{user_info_graph.pdf}}{利用者情報グラフ画面}
+%% \subsubsection{宅配依頼一覧}
+%% \ui{\detokenize{admin_deliv_req_list.pdf}}{管理者向け宅配依頼一覧}
+%% \clearpage
+%% \subsection{事業者向け}
+%% \subsubsection{ログイン画面}
+%% % ユーザ名とパスワード入力欄
+%% % ログインボタンのみ
+%% % TOPに遷移する
+%% \ui{\detokenize{coop_login.pdf}}{事業者向け画面ログイン}
+%% \ui{\detokenize{coop_login_error_screen.pdf}}{事業者向けログインエラー画面}
+%% % \subsubsection{ログアウト画面}
+%% % ログアウトボタンとログアウトが完了しました
+%% \ui{\detokenize{logout_coop.pdf}}{ログアウト画面}
+%% \ui{\detokenize{logout_check.pdf}}{ログアウト確認画面}
+%% \subsubsection{TOP画面}
+%% \subsubsection{事業者登録申請画面}
+%% \ui{\detokenize{new_coop_member_registration.pdf}}{事業者新規会員登録}
+%% \subsubsection{事業者情報編集画面}
+%% \subsubsection{依頼一覧機能}
+%% \ui{\detokenize{coop_deliv_req_list-1.pdf}}{事業者向け宅配依頼申請一覧}
+%% \subsubsection{配達依頼一覧機能}
+%% \subsubsection{使用ドローン登録画面}
+%% \ui{\detokenize{drone_registration_function.pdf}}{ドローン登録機能}
+%% \subsubsection{子アカウント一覧画面}
+%% \ui{\detokenize{child_account_list_screen.pdf}}{子アカウント一覧画面}
+%% \ui{\detokenize{child_account_list_screen-1.pdf}}{子アカウント一覧画面-1}
+%% \subsubsection{子アカウント発行画面}
+%% \ui{\detokenize{child_acc.pdf}}{子アカウント発行画面}
+%% \subsubsection{ドローン貸与申請画面}
+%% \ui{\detokenize{drone_loan_list.pdf}}{ドローン貸与申請一覧}
+%% \ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
+%% \ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
+%% \subsubsection{退会画面}
+%% \ui{\detokenize{withdrawal(PC).pdf}}{退会(PC)}
+%% \clearpage
+%% \subsection{利用者向け}
+%% % 基本全部機能を見て
+%% \subsubsection{ログイン画面}
+%% % ユーザ名とパスワード入力欄
+%% % ログインボタンのみ
+%% % TOPに遷移する
+%% \ui{\detokenize{user_login.pdf}}{利用者向けログイン画面}
+%% \ui{\detokenize{users_login_error_screen.pdf}}{利用者向けログインエラー画面}
+%% \subsubsection{ログアウト画面}
+%% \ui{\detokenize{logout_user.pdf}}{ログアウト画面}
+%% \ui{\detokenize{logout_check_user.pdf}}{ログアウト確認画面(利用者)}
+%% \subsubsection{利用者会員登録画面}
+%% \ui{\detokenize{user_new_member_registration.pdf}}{利用者新規会員登録}
+%% \subsubsection{利用者会員情報編集画面}
+%% \ui{\detokenize{user_information_edit_function.pdf}}{利用者情報編集機能}
+%% \subsubsection{宅配場所登録画面}
+%% \ui{\detokenize{deliv_place_req_phone.pdf}}{宅配場所登録画面(スマホ)}
+%% \subsubsection{宅配依頼画面}
+%% \ui{\detokenize{deliv_req_phone.pdf}}{宅配依頼(スマホ)}
+%% \subsubsection{宅配依頼一覧画面}
+%% \ui{\detokenize{user_deliv_req_list_receive.pdf}}{利用者向け宅配依頼一覧(受け取り)}
+%% \ui{\detokenize{user_deliv_req_list_submit.pdf}}{利用者向け宅配依頼一覧(送信)}
+%% \subsubsection{お気に入り登録画面}
+%% \ui{\detokenize{fav_registor_phone.pdf}}{お気に入り登録(スマホ)}
+%% \subsubsection{退会画面}
+%% \ui{\detokenize{withdrawal(phone).pdf}}{退会(スマホ)}
 
 \section{運用・保守設計}
 本システムはAWSで構築することを前提とする，基本的には24時間365日システムを稼働させる．
