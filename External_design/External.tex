@@ -9,7 +9,11 @@
 \usepackage{pdfpages}
 \usepackage{enumitem}
 \usepackage{otf}
-\usepackage{morefloats}\usepackage{morefloats}
+\usepackage{morefloats}
+% \usepackage{morefloats}
+\usepackage{comment}
+
+
 \newcommand{\system}{\textsl{Aero Net}}
 \maxdeadcycles=10000
 \begin{document}
@@ -48,11 +52,14 @@
     \caption{#2}
     \label{fig:#1}
   \end{figure}
+  \clearpage
 }
 \newcommand{\ui}[2]{
   \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{ui/#1}
+    \fbox{
+      \includegraphics[width=0.65\textwidth]{ui/#1}
+      }
     \caption{#2}
     \label{fig:#1}
   \end{figure}
@@ -63,7 +70,7 @@
 \clearpage
 
 \section{システム化の背景・目的}
-2022年日本における宅配便取扱個数は50億個を超えた.
+2022年日本における宅配便取扱個数は50億個を超えた
 図\ref{fig:number}のように宅配需要は近年増加し続けている，しかし，宅配サービスの拡大と需要増加には新たな課題も浮かび上がっている．
 最も顕著な課題は宅配業界における労働力不足だ．図\ref{fig:driver}のように道路貨物運送業の自動車運転者は減少を続けている．
 この問題を解決するためにより効率的な配送方法が必要である．
@@ -85,325 +92,277 @@
 \end{figure}
 
 % \section{業務フロー図}
-%流れ
+%流れ．
 \section{機能設計}
 本システムは管理者，事業者，利用者が存在する．それぞれに向けた機能設計を記述する．
+\clearpage
 \subsection{管理者向け機能}
 管理者用のwebページを作成し下記の機能を設ける．
 \begin{description}[labelwidth=\linewidth]
   \setlength{\leftskip}{1em}
+
   \item [ログイン機能] 管理者がユーザ名，パスワード入力フィールドに情報を入力することでログインすることができ，
-  ログイン状態を保持できる機能である．入力内容が正しい場合，ログイン状態になあり，トップページに遷移する
-  \fig{\detokenize{admin_login}}{ログイン機能}
-  \item [ログアウト機能] 本システgムにログインしている管理者が，ログイン状態を解除できる機能である．
+  ログイン状態を保持できる機能である．入力内容が正しい場合，ログイン状態になあり，トップページに遷移する．
+  \fig{admin_login}{ログイン機能}
+  \item [ログアウト機能] 本システムにログインしている管理者が，ログイン状態を解除できる機能．
   ログアウトするとログイン画面に遷移する．
-  \fig{\detokenize{admin_logout}}{ログアウト機能}
-  % \item [事業者管理機能]事業者の登録情報の管理閲覧，絞り込み，請求書の送付，支払い状態の管理閲覧，貸与ドローンの管理閲覧する機能．
+  \fig{admin_logout}{ログアウト機能}
+
+
+
+  % \item [事業者管理機能] 事業者の登録情報の管理閲覧，絞り込み，請求書の送付，支払い状態の管理閲覧，貸与ドローンの管理閲覧する機能．
   % 登録情報管理ボタン，支払い状態管理ボタン，貸与ドローン管理ボタンでそれぞれ対応したページ(登録情報詳細，支払い状態詳細，貸与ドローン詳細)に遷移する．
   % 左にあるチェックボックスを選択して，一括請求書の送付ボタンで一括で請求書を送付できる．各種データでソートと絞り込みを行えるようにする．
-  % 全選択，チェックに一括請求書送付ボタン，絞り込みボタン
+  % 全選択，チェックに一括請求書送付ボタン，絞り込みボタン．
   % チェックボックス，事業者名，事業拠点数，登録住所の都道府県，貸与ドローン数，直近7日間の宅配実績，支払い実績，請求書の送付，登録情報管理ボタン，支払い状態管理ボタン，貸与ドローン管理ボタンが並んでいる．
-  % 一画面に収める
+  % 一画面に収める．
   % (登録情報，支払い状態，貸与ドローン情報は基本的に自動で更新されるが，手動操作も可能にしている)
+  \item [事業者一覧閲覧機能] 事業者の一覧を表示閲覧する機能，この機能で表示する事業者一覧から事業者に対する各種操作を行う．
+  \fig{admin_view_coop_list}{事業者一覧閲覧機能}
+  \item [事業者絞り込み機能] 事業者の一覧から条件により絞り込みを行う機能．
+  \fig{admin_filter_coop}{事業者絞り込み機能}
+  \item [事業者検索機能] 事業者の一覧から条件により検索を行い，検索結果を表示する機能．
+  \fig{admin_search_coop}{事業者検索機能}
+  \item [情報並び替え機能] 事業者の一覧からある項目を用いて並べ替えを行う機能．
+  \fig{admin_sort_coop_info}{情報並び替え機能}
+  \item [請求書送付機能] 事業者に対してメールで請求書を送付する機能．
+  \fig{admin_send_coop_bill}{請求書送付機能}
+  \item [事業者情報詳細閲覧機能] 選択した事業者の詳細情報を表示する機能．
+  \fig{admin_view_coop_info}{事業者情報閲覧機能}
+  \item [事業者情報編集機能] 選択した事業者の情報を編集する機能．
+  \fig{admin_edit_coop_info}{事業者情報編集機能}
+  \item [事業者支払い情報詳細閲覧機能] 事業者の支払い情報の詳細を閲覧する機能．
+  \fig{admin_view_coop_pay_info}{事業者支払い情報閲覧機能}
+  \item [事業者支払い情報詳細編集機能] 事業者の支払い情報を編集する機能．
+  \fig{admin_edit_coop_pay_info}{事業者支払い情報編集機能}
+  \item [事業者ドローン情報詳細機能] 事業者のドローン情報の詳細を閲覧する機能．
+  \fig{admin_view_coop_drone_info}{事業者ドローン情報閲覧機能}
+  \item [事業者ドローン情報編集機能] 事業者のドローン情報を編集する機能．
+  \fig{admin_edit_coop_drone_info}{事業者ドローン情報編集機能}
 
-  \item [事業者一覧閲覧機能]事業者の一覧を表示閲覧する機能，この機能で表示する事業者一覧から事業者に対する各種操作を行う
-  \fig{\detokenize{admin_businessListView}}{事業者一覧閲覧機能}
-  \item [事業者絞り込み機能]事業者の一覧から条件により絞り込みを行う機能
-  \fig{\detokenize{admin_businessFilter}}{事業者絞り込み機能}
-  \item [事業者検索機能]事業者の一覧から条件により検索を行い，検索結果を表示する機能
-  \fig{\detokenize{admin_businessSearch}}{事業者検索機能}
-  \item [情報並び替え機能]事業者の一覧からある項目を用いて並べ替えを行う機能
-  \fig{\detokenize{admin_coop_sort}}{情報並び替え機能}
-  \item [請求書送付機能]事業者に対してメールで請求書を送付する機能
-  \fig{\detokenize{admin_coop_bill}}{請求書送付機能}
-  % \item [一括選択機能]条件を満たす事業者全てに対して選択を行う機能
-  % \fig{\detokenize{admin_all_select_coop}}{事業者一括選択機能}
-  %\item [一括実行機能]現在選択されている事業者全てに対して，一括で機能の実行を行う機能
-  \item [事業者情報詳細閲覧機能]選択した事業者の詳細情報を表示する機能
-  \fig{\detokenize{admin_show_prop_coop}}{事業者詳細情報閲覧機能}
-  \item [事業者情報編集機能]選択した事業者の情報を編集する機能
-  \fig{\detokenize{admin_coop_edit}}{事業者情報編集機能}
-  \item [事業者支払い情報詳細閲覧機能]事業者の支払い情報の詳細を閲覧する機能
-  \fig{\detokenize{admin_show_payment_coop}}{事業者支払い情報詳細閲覧機能}
-  \item [事業者支払い情報詳細編集機能]事業者の支払い情報を編集する機能
-  \fig{\detokenize{admin_payment}}{事業者支払い情報詳細編集機能}
-  \item [事業者ドローン情報詳細機能]事業者のドローン情報の詳細を閲覧する機能
-  \fig{\detokenize{drone_info}}{事業者ドローン情報詳細閲覧機能}
-  \item [事業者ドローン情報編集機能]事業者のドローン情報を編集する機能
-  \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{flow/drone_info_editor.pdf}
-    \caption{事業者ドローン情報編集機能}
-    \label{fig:drone_info_editor}
-  \end{figure}
-  %\fig{\detokenize{drone_info_editor}}{事業者ドローン情報編集機能}
+  % \begin{figure}[H]
+  %   \centering
+  %   \includegraphics[width=0.8\textwidth]{flow/drone_info_editor.pdf}
+  %   \caption{事業者ドローン情報編集機能}
+  %   \label{fig:drone_info_editor}
+  % \end{figure}
 
-  % \item [利用者管理機能]利用者の登録情報の管理閲覧，絞り込み，請求書の送付，支払い状態の管理閲覧する機能．
+
+
+  % \item [利用者管理機能] 利用者の登録情報の管理閲覧，絞り込み，請求書の送付，支払い状態の管理閲覧する機能．
   % 登録情報管理ボタン，支払い状態管理ボタンでそれぞれ対応したページに遷移する．各種データでソートと絞り込みを行えるようにする．
-  % 大体上と同じ
+  % 大体上と同じ．
   % (先払いを前提にすることで請求書送付機能いらない気がしてきた)
-  \item [利用者一覧閲覧機能]利用者の一覧を表示閲覧する機能，この機能で表示する利用者一覧から利用者に対する各種操作を行う
-  \fig{\detokenize{admin_userListView}}{利用者一覧閲覧機能}
-  \item [利用者絞り込み機能]利用者の一覧から条件により絞り込みを行う機能
-  \fig{\detokenize{admin_userFilter}}{利用者絞り込み機能}
-  \item [利用者検索機能]利用者の一覧から条件により検索を行い，検索結果を表示する機能
-  \fig{\detokenize{admin_userSearch}}{利用者検索機能}
-  \item [情報並び替え機能]利用者の一覧からある項目を用いて並べ替えを行う機能
-  \fig{\detokenize{admin_user_sort}}{情報並び替え機能}
-  \item [請求書送付機能]利用者に対してメールで請求書を送付する機能
-  \fig{\detokenize{admin_user_bill}}{請求書送付機能}
-  % \item [一括選択機能]条件を満たす利用者全てに対して選択を行う機能
-  % \fig{\detokenize{admin_all_select_user}}{一括選択機能}
-  %\item [一括実行機能]現在選択されている利用者全てに対して，一括で機能の実行を行う機能
-  %\item [利用者情報詳細閲覧機能]選択した利用者の詳細情報を表示する機能
-  \item [利用者情報編集機能]選択した利用者の情報を編集する機能
-  \fig{\detokenize{admin_user_edit}}{利用者情報編集機能}
-  \item [利用者支払い情報詳細閲覧機能]利用者の支払い情報の詳細を閲覧する機能
-  \fig{\detokenize{admin_show_payment_user}}{利用者支払い情報詳細閲覧機能}
-  \item [利用者支払い情報詳細編集機能]利用者の支払い情報を編集する機能
-  \fig{\detokenize{customer_payment}}{利用者支払い情報詳細編集機能}
+  \item [利用者一覧閲覧機能] 利用者の一覧を表示閲覧する機能，この機能で表示する利用者一覧から利用者に対する各種操作を行う．
+  \fig{admin_view_user_list}{利用者一覧閲覧機能}
+  \item [利用者絞り込み機能] 利用者の一覧から条件により絞り込みを行う機能．
+  \fig{admin_filter_user}{利用者絞り込み機能}
+  \item [利用者検索機能] 利用者の一覧から条件により検索を行い，検索結果を表示する機能．
+  \fig{admin_search_user}{利用者検索機能}
+  \item [情報並び替え機能] 利用者の一覧からある項目を用いて並べ替えを行う機能．
+  \fig{admin_sort_user_info}{情報並び替え機能}
+  \item [請求書送付機能] 利用者に対してメールで請求書を送付する機能．
+  \fig{admin_send_user_bill}{請求書送付機能}
+  \item [利用者情報詳細閲覧機能] 選択した利用者の詳細情報を表示する機能．
+  \fig{admin_view_user_info}{利用者情報閲覧機能}
+  \item [利用者情報編集機能] 選択した利用者の情報を編集する機能．
+  \fig{admin_edit_user_info}{利用者情報編集機能}
+  \item [利用者支払い情報詳細閲覧機能] 利用者の支払い情報の詳細を閲覧する機能．
+  \fig{admin_view_user_pay_info}{利用者支払い情報閲覧機能}
+  \item [利用者支払い情報詳細編集機能] 利用者の支払い情報を編集する機能．
+  \fig{admin_edit_user_pay_info}{利用者支払い情報編集機能}
 
-  % \item [事業者情報分析機能]事業者の利用状況を絞り込みやグラフを用いて分析する機能．
-  % 分析タブから事業者の統計情報を表示する機能である．(詳細は後日検討)
-  \item [事業者統計情報表示機能]事業者の統計情報表示機能
-  \fig{\detokenize{coop_statistics_display}}{事業者統計情報表示機能}
-  \item [事業者情報絞り込み機能]事業者の統計情報を絞り込む機能
-  \fig{\detokenize{coop_information_narrowing}}{事業者情報絞り込み機能}
-  \item [事業者情報グラフ表示機能]事業者情報のグラフを表示する機能
-  \fig{\detokenize{coop_information_graph_display}}{事業者情報グラフ表示機能}
 
-  % \item [利用者情報分析機能]利用者の利用状況を絞り込みやグラフを用いて分析する機能．
-  % 分析タブから利用者の統計情報を表示する機能である．(詳細は後日検討)
-  \item [利用者統計情報表示機能]利用者の統計情報表示機能
-  \fig{\detokenize{user_statistics_display}}{利用者統計情報表示機能}
-  \item [利用者情報絞り込み機能]利用者の統計情報を絞り込む機能
-  \fig{\detokenize{user_information_narrowing}}{利用者情報絞り込み機能}
-  \item [利用者情報グラフ表示機能]利用者情報のグラフを表示する機能
-  \fig{\detokenize{user_information_graph_display}}{利用者情報グラフ表示機能}
 
-  % \item [宅配依頼受付機能]利用者から宅配依頼を受け，事業者が宅配依頼を受けることが可能か確認し，事業者に仕事を割り振る機能．受付中，受付完了，集荷中，配送中，配送完了の状態を管理する．
-  % 宅配依頼一覧画面を設ける
-  % (基本的には自動で全部行う，動かなくなったらエラーを返す)
-  \item [宅配依頼一覧表示機能]宅配依頼一覧を表示する機能
-  \fig{\detokenize{view_delivery_request}}{宅配依頼一覧表示機能}
-  \item [絞り込み機能]宅配依頼の絞り込みを行う機能
-  \fig{\detokenize{delivery_request_narrowing}}{絞り込み機能}
-  \item [検索機能]宅配依頼の検索を行う機能
-  \fig{\detokenize{admin_deliveryRequestSearch}}{検索機能}
-  \item [情報ソート機能]宅配依頼一覧のソートを行う機能
-  \fig{\detokenize{admin_delivery_request_sort}}{情報ソート機能}
+  \item [事業者統計情報表示機能] 事業者の統計情報表示機能．
+  \fig{admin_view_coop_statistics_info}{事業者統計情報閲覧機能}
+  \item [事業者情報絞り込み機能] 事業者の統計情報を絞り込む機能．
+  \fig{admin_filter_coop_statistics_info}{事業者情報絞り込み機能}
+  \item [事業者情報グラフ表示機能] 事業者情報のグラフを表示する機能．
+  \fig{admin_view_coop_statistics_info_graph}{事業者情報グラフ閲覧機能}
 
-  \item [宅配仕事割り振り機能]宅配依頼受付機能で呼び出す，事業者に仕事を割り振る機能．集配に向かう事業者と仲介トラックと最終的に配送する事業者の組み合わせを選ぶ．
-  (基本的には自動で全部行う，動かなくなったらエラーを返す)
-  \fig{\detokenize{admin_delivery_work_allocation}}{宅配業務割り振り機能}
+
+  \item [利用者統計情報表示機能] 利用者の統計情報表示機能．
+  \fig{admin_view_user_statistics_info}{利用者統計情報閲覧機能}
+  \item [利用者情報絞り込み機能] 利用者の統計情報を絞り込む機能．
+  \fig{admin_filter_user_statistics_info}{利用者情報絞り込み機能}
+  \item [利用者情報グラフ表示機能] 利用者情報のグラフを表示する機能．
+  \fig{admin_view_user_statistics_info_graph}{利用者情報グラフ閲覧機能}
+
+
+
+  \item [宅配依頼一覧表示機能] 宅配依頼一覧を表示する機能．
+  \fig{admin_view_user_delivery_request_list}{宅配依頼一覧閲覧機能}
+  \item [絞り込み機能] 宅配依頼の絞り込みを行う機能．
+  \fig{admin_filter_user_delivery_request}{絞り込み機能}
+  \item [検索機能] 宅配依頼の検索を行う機能．
+  \fig{admin_search_user_delivery_request}{検索機能}
+  \item [情報ソート機能] 宅配依頼一覧のソートを行う機能．
+  \fig{admin_sort_user_delivery_request}{情報ソート機能}
+
+
+
 
   % 各種データでソートと絞り込みを行えるようにする．
   % 上に，一括選択ボタン，一括貸出ボタン，一括拒否ボタン，絞り込みが並んでいる．
   % チェックボックス，事業者名，要求ドローンの型番，要求個数，貸出ボタン，拒否ボタンが並んでいる．
   % ボタンは確認が入る．
-  \item [ドローン貸与申請一覧機能]ドローン貸与申請の一覧を表示する機能
-  \fig{\detokenize{view_drone_loan_applications}}{ドローン貸与申請一覧表示機能}
-  \item [ドローン貸与機能]事業者からドローン貸与申請を受けて貸出あるいは，申請の差し戻しを行う機能．
-  \fig{\detokenize{drone_loan_approval}}{ドローン貸与承認機能}
-  \item [絞り込み機能]一覧の絞り込みを行う機能
-  \fig{\detokenize{admin_deliveryWorkAllocationFilter}}{絞り込み機能}
-  \item [検索機能]検索を行う機能
-  \fig{\detokenize{admin_deliveryWorkAllocationSearch}}{検索機能}
-  \item [情報ソート機能]情報のソートを行う機能
-  \fig{\detokenize{admin_delivery_work_sort}}{情報ソート機能}
-  % \item [一括選択機能]一括選択をする機能
-  % \fig{\detokenize{admin_all_select_job}}{一括選択機能}
-  \item [一括実行機能]選択したの機能を一括で実行する機能
-  \fig{\detokenize{admin_all_do_job}}{一括実行機能}
 
-  % \item [事業者ドローン情報詳細機能]事業者の所持ドローン，貸出用ドローンの登録，個数の変更，各ドローンの個体番号と稼働時間，各ドローンの状態閲覧を行う機能．
-  % 貸与ドローン詳細画面がこれ
-  % 上に全部チェック，プルダウンで一括削除と一括登録の選択と一括返却依頼，チェックに一括請求書送付ボタン，ドローン登録ボタン，絞り込みボタン
-  % チェックボックス，型番，個体番号，稼働時間，ドローンの状況，返却依頼ボタン，削除ボタン，返却ボタン
-
-
-
-
-
-                                                                      %%いるやつ
-  % \item [事業者ドローン情報一覧表示機能]事業者ドローン情報の一覧を表示する機能
-  % \item [詳細表示機能]ドローン情報の詳細を表示する機能
-  % \item [絞り込み機能]一覧の絞り込みを行う機能
-  % \fig{\detokenize{admin_droneFilter}}{絞り込み機能}
-  % \item [検索機能]検索を行う機能
-  % \fig{\detokenize{admin_droneSearch}}{検索機能}
-  % \item [情報ソート機能]情報のソートを行う機能
-  % \fig{\detokenize{admin_drone_sort}}{情報ソート機能}
-  % % \item [一括選択機能]一括選択をする機能
-  % % \fig{\detokenize{admin_all_select_drone}}{一括選択機能}
-  % \item [一括実行機能]選択したの機能を一括で実行する機能
-  % \fig{\detokenize{admin_all_do_drone}}{一括実行機能}
-  \item [事業者ドローン情報編集]ドローンの各種詳細情報を表示する機能
-  \fig{\detokenize{admin_drone_edit}}{編集機能}
-  \item [ドローン登録機能]ドローンを登録する機能
-  \fig{\detokenize{admin_drone_registration}}{ドローン登録機能}
+  \item [宅配仕事割り振り機能] 宅配依頼受付機能で呼び出す，事業者に仕事を割り振る機能．集配に向かう事業者と仲介トラックと最終的に配送する事業者の組み合わせを選ぶ．(基本的には自動で全部行う，動かなくなったらエラーを返す)
+  \fig{admin_allocate_user_delivery_task}{宅配業務割り振り機能}
+  \item [ドローン貸与申請一覧機能] ドローン貸与申請の一覧を表示する機能．
+  \fig{admin_view_user_apply_drone_lend_list}{ドローン貸与申請一覧閲覧機能}
+  \item [ドローン貸与機能] 事業者からドローン貸与申請を受けて貸出あるいは，申請の差し戻しを行う機能．
+  \fig{admin_approve_user_delivery_task_allocate_drone_lend}{ドローン貸与承認機能}
+  \item [絞り込み機能] 一覧の絞り込みを行う機能．
+  \fig{admin_filter_user_delivery_task_allocate}{絞り込み機能}
+  \item [検索機能] 検索を行う機能．
+  \fig{admin_search_user_delivery_task_allocate}{検索機能}
+  \item [情報ソート機能] 情報のソートを行う機能．
+  \fig{admin_sort_user_delivery_task_allocate_info}{情報ソート機能}
+  % \item [事業者ドローン情報一覧表示機能] 事業者ドローン情報の一覧を表示する機能．
+  % \fig{}{事業者保有ドローン一覧閲覧機能}
+  \item [絞り込み機能] 一覧の絞り込みを行う機能．
+  \fig{admin_filter_coop_drone}{絞り込み機能}
+  \item [検索機能] 検索を行う機能．
+  \fig{admin_search_drone}{検索機能}
+  \item [情報ソート機能] 情報のソートを行う機能．
+  \fig{admin_sort_coop_drone_info}{情報ソート機能}
+  \item [事業者ドローン情報編集] ドローンの各種詳細情報を表示する機能．
+  \fig{admin_edit_coop_drone}{編集機能}
+  \item [ドローン登録機能] ドローンを登録する機能．
+  \fig{admin_register_coop_drone}{ドローン登録機能}
 \end{description}
+
+
+
 
 \subsection{事業者向け機能}
 事業者用のwebページを作成し下記の機能を設ける．
 \begin{description}[labelwidth=\linewidth]
   \setlength{\leftskip}{1em}
-  \item [ログイン機能] 事業者がユーザ名，パスワード入力フィールドに情報を入力することでログインすることができ，
-  ログイン状態を保持できる機能である．入力内容が正しい場合，ログイン状態になあり，トップページに遷移する
-  \fig{\detokenize{coop_login}}{ログイン機能}
-  \item [ログアウト機能] 本システムにログインしている事業者が，ログイン状態を解除できる機能である．
+
+  \item [ログイン機能]  事業者がユーザ名，パスワード入力フィールドに情報を入力することでログインすることができ，
+  ログイン状態を保持できる機能である．入力内容が正しい場合，ログイン状態になあり，トップページに遷移する．
+  \fig{coop_login}{ログイン機能}
+  \item [ログアウト機能]  本システムにログインしている事業者が，ログイン状態を解除できる機能である．
   ログアウトするとTOP画面に遷移する．
-  \fig{\detokenize{coop_logout}}{ログアウト機能}
-  \item [事業者登録申請機能] 事業者名，事業代表者，免許情報，口座情報，事業拠点，従業員数，電話番号，メールアドレス，施設情報，パスワードを入力して事業者登録申請を行う機能．
-  % パスワードは2度入力してもらう．
-  % 申請ボタンを押した場合，申請が完了したことを表示した後，TOPに遷移する．
-  \fig{\detokenize{coop_registration_request}}{事業者登録申請機能}
+  \fig{coop_logout}{ログアウト機能}
+  \item [事業者登録申請機能]  事業者名，事業代表者，免許情報，口座情報，事業拠点，従業員数，電話番号，メールアドレス，施設情報，パスワードを入力して事業者登録申請を行う機能．
+  \fig{coop_apply_coop_register}{事業者登録申請機能}
+  \item [事業者情報編集機能]  事業者名，事業代表者，免許情報，口座情報，事業拠点，従業員数，電話番号，メールアドレス，施設情報，パスワードを編集する機能．
+  \fig{coop_edit_coop_info}{事業者情報編集機能}
 
-  \item [事業者情報編集機能] 事業者名，事業代表者，免許情報，口座情報，事業拠点，従業員数，電話番号，メールアドレス，施設情報，パスワードを編集する機能．
-  % パスワードは2度入力してもらう．
-  % 編集を終えた場合，完了したことを表示した後，マイページに遷移する．
-  \fig{\detokenize{coop_edit}}{事業者情報編集機能}
 
-  \item [配達依頼一覧表示機能]一覧を表示する機能
-  \item [依頼受注判断機能] 管理者から送られる宅配依頼を承諾もしくは拒否する機能．
+
+  \item [絞り込み機能] 一覧の絞り込みを行う機能．
+  \fig{coop_filter_user_delivery_request_list_view}{絞り込み機能}
+  \item [検索機能] 検索を行う機能．
+  \fig{coop_search_user_delivery_request_list_view}{検索機能}
+  \item [情報ソート機能] 情報のソートを行う機能．
+  \fig{coop_sort_user_delivery_request_list_view_info}{情報ソート機能}
+  % \fig{coop_check_user_delivery_request_list_view_execute}{実行確認機能}
+  \item [配達完了通知機能]  宅配が完了した場合に利用者に通知する機能．
+  \fig{coop_notice_user_delivery_request_list_view_delivery_complete}{配達完了通知機能}
+  \item [使用ドローン登録機能]  事業者が独自に購入したドローンを登録する機能．
+  \fig{coop_register_user_delivery_request_list_view_use_drone}{使用ドローン登録機能}
+
+  % \item [配達依頼一覧表示機能] 一覧を表示する機能．
+  % \item [依頼受注判断機能]  管理者から送られる宅配依頼を承諾もしくは拒否する機能．
   % (宅配依頼全体ではなく，都道府県単位に分割されたもの)
-  % 上に一括チェック，絞り込み，チェックの全承諾，チェックの全拒否ボタン
-  % 受け取り住所，届ける住所，報酬，依頼日時，承諾，拒否
+  % 上に一括チェック，絞り込み，チェックの全承諾，チェックの全拒否ボタン．
+  % 受け取り住所，届ける住所，報酬，依頼日時，承諾，拒否．
   % 承諾もしくは拒否する場合，確認の画面を一度挟む，その後にooしましたのポップアップを出す．
   % 画面遷移はしない．
-  \item [絞り込み機能]一覧の絞り込みを行う機能
-  \fig{\detokenize{business_deliveryRequestListViewFilter}}{絞り込み機能}
-  \item [検索機能]検索を行う機能
-  \fig{\detokenize{business_deliveryRequestListViewSearch}}{検索機能}
-  \item [情報ソート機能]情報のソートを行う機能
-  \fig{\detokenize{coop_delivery_request_list_sort}}{情報ソート機能}
-  % \item [一括選択機能]一括選択をする機能
-  % \fig{\detokenize{coop_all_select_deliv}}{一括選択機能}
-  \item [一括実行機能]選択したの機能を一括で実行する機能
-  \fig{\detokenize{coop_all_do_deliv}}{一括実行機能}
-
-  \item [配達完了通知機能] 宅配が完了した場合に利用者に通知する機能．
-  \fig{\detokenize{coop_delivery_request_list_notice}}{配達完了通知機能}
   % 受けている宅配依頼の一覧画面から配達完了通知を出す．
-  % 上に絞り込み
-  % 受け取り住所，届ける住所，報酬，依頼日時，配達状態，配達完了通知ボタン
-  % 配達完了通知ボタンを押した場合，確認が出てyesを押すと相手に配達完了通知が行く
-  % ドローンの着地と合わせて自動で切り替わるようにもしたい
-
-  \item [使用ドローン登録機能] 事業者が独自に購入したドローンを登録する機能．
+  % 上に絞り込み．
+  % 受け取り住所，届ける住所，報酬，依頼日時，配達状態，配達完了通知ボタン．
+  % 配達完了通知ボタンを押した場合，確認が出てyesを押すと相手に配達完了通知が行く．
+  % ドローンの着地と合わせて自動で切り替わるようにもしたい．
   % ドローンの型番，現状の使用時間，保険の有無，航続距離(必要があれば)，台数を入力してドローンを一括で登録する．
-  \fig{\detokenize{drone_registration}}{使用ドローン登録機能}
 
-  \item [子アカウント一覧表示機能]一覧を表示する機能
-  \fig{\detokenize{view_child_accounts}}{子アカウント一覧表示機能}
-  \item [絞り込み機能]一覧の絞り込みを行う機能
-  \fig{\detokenize{business_childAccountListViewFilter}}{絞り込み機能}
-  \item [検索機能]検索を行う機能
-  \fig{\detokenize{business_childAccountListViewSearch}}{検索機能}
-  \item [情報ソート機能]情報のソートを行う機能
-  \fig{\detokenize{coop_child_account_list_sort}}{情報ソート機能}
-  % \item [一括選択機能]一括選択をする機能
-  % \fig{\detokenize{coop_all_select_child}}{一括選択機能}
-  \item [一括実行機能]選択したの機能を一括で実行する機能
-  \fig{\detokenize{coop_all_do_child}}{一括実行機能}
-    % \item [子アカウント管理機能] 事業者が子アカウント発行機能を用いて発行した子アカウントの管理を行う機能．
-    % 発行した子アカウントの一覧画面で管理を行う．
-    % 上に新規アカウント発行，全チェック，絞り込み，プルダウンでチェック全ての(権限変更，パスワード再発行，削除)，プルダウンで選んだ処理の実行ボタン
-    % id，メールアドレス，権限一覧，権限変更，パスワード再発行ボタン，削除ボタン
-    % ボタンを押した場合確認が出て，処理が終わったら同じ画面に戻る
-    % 新規アカウント発行は
 
-    \item [子アカウント発行機能] 権限を限定した一般従業員用アカウントを発行して，同一事業者内で複数人が事業を行えるようにする機能．
-    \begin{figure}[H]
-      \centering
-      \includegraphics[height=0.8\textheight]{flow/coop_create_child_acc.pdf}
-      \caption{子アカウント発行機能}
-      \label{fig:coop_create_child_acc}
-    \end{figure}
-    %\fig{\detokenize{coop_create_child_acc}}{子アカウント発行機能}
-    % 各種機能のチェックボックス画面から与える権限を選び，次へを押す．
-    % 次の画面で登録用のメールアドレスとパスワード2回の入力を行うと発行ボタンを押せる．
-    % あとは登録したメールアドレスに招待リンクが飛ぶ．
-    %\item [子アカウント一覧機能]一覧を表示する機能．
-    \item [子アカウント削除機能]子アカウントの削除を行う機能．
-    \fig{\detokenize{delete_child_account}}{子アカウント削除機能}
-    \item [子アカウント編集機能]子アカウントの編集を行う機能．
-    \fig{\detokenize{coop_child_account_edit}}{子アカウント編集機能}
+  % \fig{view_child_accounts}{子アカウント一覧表示機能}
+  % \item [絞り込み機能] 一覧の絞り込みを行う機能．
+  % \fig{business_childAccountListViewFilter}{絞り込み機能}
+  % \item [検索機能] 検索を行う機能．
+  % \fig{business_childAccountListViewSearch}{検索機能}
+  % \item [情報ソート機能] 情報のソートを行う機能．
+  % \fig{coop_child_account_list_sort}{情報ソート機能}
+  % % \item [一括選択機能] 一括選択をする機能．
+  % % \fig{coop_all_select_child}{一括選択機能}
+  % \item [一括実行機能] 選択したの機能を一括で実行する機能．
+  % \fig{coop_all_do_child}{一括実行機能}
+  % \item [子アカウント管理機能]  事業者が子アカウント発行機能を用いて発行した子アカウントの管理を行う機能．
+  % 発行した子アカウントの一覧画面で管理を行う．
+  % 上に新規アカウント発行，全チェック，絞り込み，プルダウンでチェック全ての(権限変更，パスワード再発行，削除)，プルダウンで選んだ処理の実行ボタン．
+  % id，メールアドレス，権限一覧，権限変更，パスワード再発行ボタン，削除ボタン．
+  % ボタンを押した場合確認が出て，処理が終わったら同じ画面に戻る．
+  % 新規アカウント発行は．
 
-  \item [ドローン種類一覧機能]ドローンの種類を一覧表示する機能ここから，ドローンの貸与申請を行う．
+  \item [子アカウント一覧表示機能] 一覧を表示する機能．
+  \fig{coop_view_child_coop_account_list}{子アカウント一覧閲覧機能}
+  \item [子アカウント発行機能] 権限を限定した一般従業員用アカウントを発行して，同一事業者内で複数人が事業を行えるようにする機能．
+  \fig{coop_publish_child_coop_account}{子アカウント発行機能}
+  \item [子アカウント削除機能] 子アカウントの削除を行う機能．
+  \fig{coop_delete_child_coop_account}{子アカウント削除機能}
+  \item [子アカウント編集機能] 子アカウントの編集を行う機能．
+  \fig{coop_edit_child_coop_account}{子アカウント編集機能}
+
+  % 各種機能のチェックボックス画面から与える権限を選び，次へを押す．
+  % 次の画面で登録用のメールアドレスとパスワード2回の入力を行うと発行ボタンを押せる．
+  % あとは登録したメールアドレスに招待リンクが飛ぶ．
+
+
+  \item [ドローン種類一覧機能] ドローンの種類を一覧表示する機能ここから，ドローンの貸与申請を行う．
+  \fig{coop_view_admin_drone_lend_apply_types_list}{ドローン種類一覧閲覧機能}
+  \item [ドローンの修理依頼機能] ドローンの修理を依頼する機能．
+  \fig{coop_request_admin_drone_lend_apply_fix}{ドローンの修理依頼機能}
+  \item [ドローンの機体トラブル報告] ドローンの機体に関するトラブルを管理者に報告する機能．
+  \fig{coop_report_admin_drone_lend_apply_trouble}{ドローンの機体トラブル報告機能}
   \item [ドローン貸与申請機能] ドローン貸与の申請，ドローンの返却，ドローンの修理依頼，ドローンの機体トラブル報告をする機能．
-  \fig{\detokenize{drone_lending}}{ドローン貸与申請機能}
-  % ドローンの種類一覧画面から借りたいドローンを選ぶ．
-  % 次に期間と申請理由を入力して申請．
-  % 終わったらTOPに戻る
-  \item [所持ドローン一覧機能]所持ドローンを一覧表示する機能．
-  \fig{\detokenize{view_drone_types}}{ドローン種類一覧表示機能}
-  \item [ドローンの修理依頼機能]ドローンの修理を依頼する機能．
-  \fig{\detokenize{drone_repair_request}}{ドローンの修理依頼機能}
-  \item [ドローンの機体トラブル報告]ドローンの機体に関するトラブルを管理者に報告する機能．
-  \fig{\detokenize{drone_trouble_request}}{ドローンの機体トラブル報告機能}
+  \fig{coop_apply_admin_drone_lend}{ドローン貸与申請機能}
   \item [退会機能] 事業を終了し，データ削除を申請して退会する機能．
-  \fig{\detokenize{coop_withdrawal}}{退会機能}
-  % 確認をした後に削除申請を行う．
-  % 終わったらTOPに戻る
+  \fig{coop_withdraw}{退会機能}
+  \item [所持ドローン一覧機能] 所持ドローンを一覧表示する機能．
+  \fig{coop_view_own_drone}{所持ドローン一覧機能}
+
 \end{description}
 
-\fig{\detokenize{favorite_data_reference}}{お気に入りからデータ参照機能}
-\fig{\detokenize{receipt_completion_notice}}{受け取り完了通知機能}
-\fig{\detokenize{add_favorite}}{お気に入り登録機能}
-\fig{\detokenize{user_withdrawal}}{退会機能}
+
+
+
 \subsection{利用者向け機能}
 利用者向けのスマートフォン用ソフトウェアを用意し下記の機能を設ける．
 \begin{description}[labelwidth=\linewidth]
   \setlength{\leftskip}{1em}
+
   \item [ログイン機能] 利用者がユーザ名，パスワード入力フィールドに情報を入力することでログインすることができ，
-  ログイン状態を保持できる機能である．%入力内容が正しい場合，ログイン状態になあり，トップページに遷移する
-  \fig{\detokenize{user_login}}{ログイン機能}
+  ログイン状態を保持できる機能である．%入力内容が正しい場合，ログイン状態になあり，トップページに遷移する．
+  \fig{user_login}{ログイン機能}
   \item [ログアウト機能] 本システムにログインしている利用者が，ログイン状態を解除できる機能である．
-  % ログアウトするとTOP画面に遷移する．
-  \fig{\detokenize{user_logout}}{ログアウト機能}
+  \fig{user_logout}{ログアウト機能}
   \item [利用者会員登録機能] 利用者名，住所，電話番号，メールアドレス，パスワードを用いて利用者が会員登録をする機能，これは管理者の許可が必要ない．
-  % 終わったらTOPに戻る．
-  \fig{\detokenize{user_registration}}{利用者会員登録機能}
+  \fig{user_register_account}{利用者会員登録機能}
   \item [利用者会員情報編集機能] 利用者名，住所，電話番号，メールアドレス，パスワードを編集する機能．
-  変更の確認画面を出す．
-  終わったらTOPに戻る．
-  \fig{\detokenize{customer_info_editor}}{利用者会員情報編集機能}
+  \fig{user_edit_info}{利用者会員情報編集機能}
   \item [宅配場所登録機能] 宅配で離着陸する場所を指定して登録編集する機能，外の画像を送信して申請をする．
   登録申請をしました画面を出す．
-  % TOPに戻る
-  \begin{figure}[H]
-    \centering
-    \includegraphics[height=0.9\textheight]{flow/user_deliv_pacement_request.pdf}
-    \caption{宅配場所申請機能}
-    \label{fig:user_deliv_pacement_request}
-  \end{figure}
-  %\fig{\detokenize{user_deliv_pacement_request}}{宅配場所申請機能}
+  \fig{user_apply_user_delivery_place}{宅配場所申請機能}
   \item [宅配依頼機能] 管理者に対して宅配を依頼する機能．
-  % お気に入りから選択もしくは自分と相手の住所を選択して，荷物受け渡し時間を指定することで宅配を依頼する．
-  % しばらくして受けてもらえたら，荷物をドローンに入れる
-  \begin{figure}[H]
-    \centering
-    \includegraphics[height=0.9\textheight]{flow/user_deliv_request.pdf}
-    \caption{宅配依頼機能}
-    \label{fig:user_deliv_request}
-  \end{figure}
-  %\fig{\detokenize{user_deliv_request}}{宅配依頼機能}
-  \item [お気に入り一覧表示機能]お気に入り登録した相手を一覧表示する機能．
-  \fig{\detokenize{favorites_list_display}}{お気に入り一覧表示機能}
-  \item [お気に入りからデータ参照機能]お気に入りからデータを取得して反映する機能．
-  \fig{\detokenize{favorite_data_reference}}{お気に入りからデータ参照機能}
+  \fig{user_request_delivery}{宅配依頼機能}
+  \item [お気に入り一覧表示機能] お気に入り登録した相手を一覧表示する機能．
+  \fig{user_view_favorites}{お気に入り一覧閲覧機能}
+  \item [お気に入りからデータ参照機能] お気に入りからデータを取得して反映する機能．
+  \fig{user_refer_favorites_data}{お気に入りからデータ参照機能}
   \item [受け取り完了通知機能] 受け取り完了を通知する機能．
-  % 宅配依頼の一覧ページから受け取り完了ボタンを押す
-  % 確認画面を出す
-  \fig{\detokenize{receipt_completion_notice}}{受け取り完了通知機能}
+  \fig{user_receive_notice_complete_delivery}{受け取り完了通知機能}
   \item [お気に入り登録機能] 配送相手をお気に入り登録する機能，これを用いて簡単に宅配を依頼する機能．
-  % お気に入り一覧画面から追加ボタンを押して追加する．
-  % 送り元の住所と送り先の住所をまとめて登録する
-  \fig{\detokenize{add_favorite}}{お気に入り登録機能}
+  \fig{user_register_favorites}{お気に入り登録機能}
   \item [退会機能] データ削除を申請して退会する機能．
-  \fig{\detokenize{user_withdrawal}}{退会機能}
+  \fig{user_withdraw}{退会機能}
 \end{description}
+
 
 \section{ユーザインタフェース設計}
 \subsection{画面遷移図}
@@ -432,136 +391,246 @@
   \label{fig:user_diagram}
 \end{figure}
 
-\subsection{管理者向け}
-% ほぼ全ての画面にサイドバーがある
-% サイドバーには各種一覧画面と分析画面へのリンクが貼ってある．
-% 一覧画面と詳細画面があるが，載せるデータをそれぞれ検討した方が良い．
-% 差が出ないなら詳細画面は必要ない．
+\clearpage
+\subsection{管理者向け画面}
+以下に管理者向けの各機能に対する画面を示す．
 \subsubsection{ログイン画面}
-% ユーザ名とパスワード入力欄
-% ログインボタンのみ
-\ui{\detokenize{admin_login.pdf}}{管理者向け画面ログイン}
-\ui{\detokenize{admin_login_error_screen.pdf}}{管理者向けログインエラー画面}
+ログインすることで各機能を利用できる．
+\ui{\detokenize{admin/admin_login_0.pdf}}{ログイン画面}
+\ui{\detokenize{admin/admin_login_1.pdf}}{ログイン画面}
+\clearpage
 \subsubsection{ログアウト画面}
-% ログアウトボタンとログアウトが完了しました
-% \subsubsection{TOP画面}
-% ヘッダーに基本的な情報
-% 左側にいろんな画面に行けるように左にサイドバー
-% フッターに利用規約とか諸々
-% これが基本デザイン
-
-% TOP画面というもののサイドバーの左上に表示する画面をTOP画面として使う
+ログアウトは，画面右上部のアイコン横のボタンから可能である．
+\ui{\detokenize{admin/admin_logout_0.pdf}}{ログアウト画面}
+\ui{\detokenize{admin/admin_logout_1.pdf}}{ログアウト画面}
+\clearpage
 \subsubsection{事業者管理画面}
-% 事業者管理機能に書いてある，事業者一覧画面
-% 事業者情報詳細と支払い状態詳細と事業者ドローン情報管理に飛ぶボタンがある
-\ui{\detokenize{coop_information_management_screen.pdf}}{事業者情報管理画面}
-\ui{\detokenize{coop_info_fil.pdf}}{事業者情報絞り込み画面}
-\begin{figure}[H]
-  \centering
-  \includegraphics[height=\textheight]{ui/coop_information_editing_function.pdf}
-  \caption{事業者情報編集機能}
-  \label{fig:coop_information_editing_function.pdf}
-\end{figure}
+事業者管理画面では，事業者の地域別の絞り込みが可能である．
+\ui{\detokenize{admin/admin_management_coop_0.pdf}}{事業者管理画面}
+\ui{\detokenize{admin/admin_management_coop_1.pdf}}{事業者管理画面}
 \clearpage
-%\ui{\detokenize{coop_information_editing_function.pdf}}{事業者情報編集機能}
-\subsubsection{事業者情報詳細}
-% 事業者情報を全部表示する画面
-% 戻るボタンで事業者管理画面に行く
-% 支払い状態詳細と事業者ドローン情報管理にも飛べるようにしたい
-\ui{\detokenize{coop_information_details_screen.pdf}}{事業者情報詳細画面}
-\subsubsection{事業者支払い状態詳細}
-% 支払い状態のお金関係の情報を表示する，請求書の送付，メールの送信を行えるようにしたい．
-% 事業者一覧画面に戻るボタンがある
-\ui{\detokenize{coop_payment_info_prop_edit.pdf}}{事業者支払い情報詳細編集画面}
-\ui{\detokenize{coop_payment_information_details_screen.pdf}}{事業者支払い情報詳細画面}
-% \subsubsection{ドローン貸与申請一覧}
+\subsubsection{事業者情報詳細画面}
+事業者情報詳細画面では，該当事業者の詳細情報を確認できる．
+\ui{\detokenize{admin/admin_view_coop_info.pdf}}{事業者情報詳細画面}
+\subsubsection{事業者支払い情報詳細画面}
+事業者支払い情報詳細画面では，該当事業者の支払いに関する詳細情報を確認できる．
+\ui{\detokenize{admin/admin_view_coop_payment.pdf}}{事業者支払い情報詳細画面}
 \clearpage
-\subsubsection{事業者ドローン情報管理}
-\ui{\detokenize{coop_drone_information_management_screen.pdf}}{事業者ドローン情報管理画面}
-\ui{\detokenize{coop_drone_information_management_screen_refinement.pdf}}{事業者ドローン情報管理画面絞り込み}
-\subsubsection{利用者管理}
-\ui{\detokenize{user_information_management_screen.pdf}}{利用者情報管理画面}
-\ui{\detokenize{user_information_management_screen_refinement.pdf}}{利用者情報管理画面絞り込み}
-\subsubsection{利用者情報詳細}
-\ui{\detokenize{user_information_details_screen.pdf}}{利用者情報詳細画面}
-\subsubsection{事業者情報分析}
-\ui{\detokenize{coop_stats_info.pdf}}{事業者統計情報画面}
-\ui{\detokenize{coop_info_graph.pdf}}{事業者統計情報画面}
-\subsubsection{利用者情報分析}
-\ui{\detokenize{user_stats_info.pdf}}{利用者統計情報画面}
-\ui{\detokenize{user_info_graph.pdf}}{利用者情報グラフ画面}
-\subsubsection{宅配依頼一覧}
-\ui{\detokenize{admin_deliv_req_list.pdf}}{管理者向け宅配依頼一覧}
+\subsubsection{事業者支払い情報編集画面}
+事業者支払い情報編集画面では，該当事業者の支払いに関する情報を編集できる．
+\ui{\detokenize{admin/admin_edit_coop_payment_0.pdf}}{事業者支払い情報編集画面}
+\ui{\detokenize{admin/admin_edit_coop_payment_1.pdf}}{事業者支払い情報編集画面}
 \clearpage
-\subsection{事業者向け}
-\subsubsection{ログイン画面}
-% ユーザ名とパスワード入力欄
-% ログインボタンのみ
-% TOPに遷移する
-\ui{\detokenize{coop_login.pdf}}{事業者向け画面ログイン}
-\ui{\detokenize{coop_login_error_screen.pdf}}{事業者向けログインエラー画面}
-% \subsubsection{ログアウト画面}
-% ログアウトボタンとログアウトが完了しました
-\ui{\detokenize{logout_coop.pdf}}{ログアウト画面}
-\ui{\detokenize{logout_check.pdf}}{ログアウト確認画面}
-\subsubsection{TOP画面}
-\subsubsection{事業者登録申請画面}
-\ui{\detokenize{new_coop_member_registration.pdf}}{事業者新規会員登録}
-\subsubsection{事業者情報編集画面}
-\subsubsection{依頼一覧機能}
-\ui{\detokenize{coop_deliv_req_list-1.pdf}}{事業者向け宅配依頼申請一覧}
-\subsubsection{配達依頼一覧機能}
-\subsubsection{使用ドローン登録画面}
-\ui{\detokenize{drone_registration_function.pdf}}{ドローン登録機能}
-\subsubsection{子アカウント一覧画面}
-\ui{\detokenize{child_account_list_screen.pdf}}{子アカウント一覧画面}
-\ui{\detokenize{child_account_list_screen-1.pdf}}{子アカウント一覧画面-1}
-\subsubsection{子アカウント発行画面}
-\ui{\detokenize{child_acc.pdf}}{子アカウント発行画面}
-\subsubsection{ドローン貸与申請画面}
-\ui{\detokenize{drone_loan_list.pdf}}{ドローン貸与申請一覧}
-\ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
-\ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
-\subsubsection{退会画面}
-\ui{\detokenize{withdrawal(PC).pdf}}{退会(PC)}
+\subsubsection{ドローン貸与申請一覧画面}
+ドローン貸与申請一覧画面画面では，事業者からの貸与申請の確認及び編集が出来る．
+\ui{\detokenize{admin/admin_drone_loan_request_list.pdf}}{ドローン貸与申請一覧画面}
 \clearpage
-\subsection{利用者向け}
-% 基本全部機能を見て
-\subsubsection{ログイン画面}
-% ユーザ名とパスワード入力欄
-% ログインボタンのみ
-% TOPに遷移する
-\ui{\detokenize{user_login.pdf}}{利用者向けログイン画面}
-\ui{\detokenize{users_login_error_screen.pdf}}{利用者向けログインエラー画面}
-\subsubsection{ログアウト画面}
-\ui{\detokenize{logout_user.pdf}}{ログアウト画面}
-\ui{\detokenize{logout_check_user.pdf}}{ログアウト確認画面(利用者)}
-\subsubsection{利用者会員登録画面}
-\ui{\detokenize{user_new_member_registration.pdf}}{利用者新規会員登録}
-\subsubsection{利用者会員情報編集画面}
-\ui{\detokenize{user_information_edit_function.pdf}}{利用者情報編集機能}
-\subsubsection{宅配場所登録画面}
-\ui{\detokenize{deliv_place_req_phone.pdf}}{宅配場所登録画面(スマホ)}
-\subsubsection{宅配依頼画面}
-\ui{\detokenize{deliv_req_phone.pdf}}{宅配依頼(スマホ)}
+\subsubsection{貸与ドローン管理画面}
+貸与ドローン管理画面では，貸与したドローンの管理が出来る．
+\ui{\detokenize{admin/admin_management_coop_drone_0.pdf}}{貸与ドローン管理画面}
+\ui{\detokenize{admin/admin_management_coop_drone_1.pdf}}{貸与ドローン管理画面}
+\clearpage
+\subsubsection{利用者管理画面}
+利用者管理画面では，利用者の地域別の絞り込みが可能である．
+\ui{\detokenize{admin/admin_management_user_info_0.pdf}}{利用者管理画面}
+\ui{\detokenize{admin/admin_management_user_info_1.pdf}}{利用者管理画面}
+\clearpage
+\subsubsection{利用者情報詳細画面}
+利用者情報詳細画面では，該当利用者の詳細情報を確認できる．
+\ui{\detokenize{admin/admin_management_user_detail.pdf}}{利用者情報詳細画面}
+\clearpage
+\subsubsection{事業者情報分析画面}
+事業者情報分析画面では，事業者情報を表またはグラフにて分析できる．
+\ui{\detokenize{admin/admin_view_coop_statistics_0.pdf}}{事業者情報分析画面}
+\ui{\detokenize{admin/admin_view_coop_statistics_1.pdf}}{事業者情報分析画面}
+\clearpage
+\subsubsection{利用者情報分析画面}
+利用者情報分析画面では，利用者情報を表またはグラフにて分析できる．
+\ui{\detokenize{admin/admin_view_user_statistics_0.pdf}}{利用者情報分析画面}
+\ui{\detokenize{admin/admin_view_user_statistics_1.pdf}}{利用者情報分析画面}
+\clearpage
 \subsubsection{宅配依頼一覧画面}
-\ui{\detokenize{user_deliv_req_list_receive.pdf}}{利用者向け宅配依頼一覧(受け取り)}
-\ui{\detokenize{user_deliv_req_list_submit.pdf}}{利用者向け宅配依頼一覧(送信)}
-\subsubsection{お気に入り登録画面}
-\ui{\detokenize{fav_registor_phone.pdf}}{お気に入り登録(スマホ)}
+宅配依頼一覧画面では，宅配依頼を確認することが出来る．
+\ui{\detokenize{admin/admin_delivery_request_list.pdf}}{宅配依頼一覧画面}
+\clearpage
+
+\subsection{事業者向け画面}
+以下に事業者向けの各機能に対する画面を示す．
+\subsubsection{ログイン画面}
+ログインすることで各機能を利用できる．
+\ui{\detokenize{coop/coop_login_0.pdf}}{ログイン画面}
+\ui{\detokenize{coop/coop_login_1.pdf}}{ログイン画面}
+\clearpage
+\subsubsection{ログアウト画面}
+ログアウトは，画面右上部のアイコン横のボタンから可能である．
+\ui{\detokenize{coop/coop_logout_0.pdf}}{ログアウト画面}
+\ui{\detokenize{coop/coop_logout_1.pdf}}{ログアウト画面}
+\clearpage
+\subsubsection{事業者登録申請画面}
+本画面にて事業者としての申請を行うことができる．
+\ui{\detokenize{coop/coop_registration_request_0.pdf}}{事業者登録申請画面}
+\ui{\detokenize{coop/coop_registration_request_1.pdf}}{事業者登録申請画面}
+\clearpage
+\subsubsection{事業者情報編集画面}
+事業者情報編集画面では，事業者情報の更新が可能である．
+\ui{\detokenize{coop/coop_edit_coop_info_0.pdf}}{事業者情報編集画面}
+\ui{\detokenize{coop/coop_edit_coop_info_1.pdf}}{事業者情報編集画面}
+\clearpage
+\subsubsection{宅配依頼一覧画面}
+宅配依頼一覧画面では，担当する宅配依頼の選択等を決定できる．
+\ui{\detokenize{coop/coop_delivery_request_list.pdf}}{宅配依頼一覧画面}
+\subsubsection{所持ドローン一覧画面}
+所持ドローン一覧画面では，自身の保有するドローンを確認できる．
+\ui{\detokenize{coop/coop_drone_list.pdf}}{所持ドローン一覧画面}
+\clearpage
+\subsubsection{ドローン登録画面}
+ドローン登録画面では，貸与されたドローン以外のドローンを登録できる．
+\ui{\detokenize{coop/coop_drone_registration.pdf}}{ドローン登録画面}
+\subsubsection{子アカウント作成画面}
+子アカウント作成画面では，同一事業者内で利用可能な子アカウントの作成を行える．
+\ui{\detokenize{coop/coop_create_child_account.pdf}}{子アカウント作成画面}
+\clearpage
+\subsubsection{子アカウント一覧画面}
+子アカウント一覧画面では，子アカウントの確認を行うことが出来る．
+\ui{\detokenize{coop/coop_child_account_list.pdf}}{子アカウント一覧画面}
+\subsubsection{ドローン貸与申請画面}
+ドローン貸与申請画面では，ドローンの貸出を申請することが出来る．
+\ui{\detokenize{coop/coop_drone_lent_request.pdf}}{ドローン貸与申請画面}
+\clearpage
 \subsubsection{退会画面}
-\ui{\detokenize{withdrawal(phone).pdf}}{退会(スマホ)}
+退会画面は，画面右上部のアイコン横のボタンから可能である．
+\ui{\detokenize{coop/coop_withdraw_0.pdf}}{退会画面}
+\ui{\detokenize{coop/coop_withdraw_1.pdf}}{退会画面}
+\ui{\detokenize{coop/coop_withdraw_2.pdf}}{退会画面}
+\clearpage
+
+\subsection{利用者向け画面}
+
+%% % ユーザ名とパスワード入力欄
+%% % ログインボタンのみ
+
+%% \ui{\detokenize{admin_login.pdf}}{管理者向け画面ログイン}
+%% \ui{\detokenize{admin_login_error_screen.pdf}}{管理者向けログインエラー画面}
+%% \subsubsection{ログアウト画面}
+%% % ログアウトボタンとログアウトが完了しました
+%% % \subsubsection{TOP画面}
+%% % ヘッダーに基本的な情報
+%% % 左側にいろんな画面に行けるように左にサイドバー
+%% % フッターに利用規約とか諸々
+%% % これが基本デザイン
+
+%% % TOP画面というもののサイドバーの左上に表示する画面をTOP画面として使う
+%% \subsubsection{事業者管理画面}
+%% % 事業者管理機能に書いてある，事業者一覧画面
+%% % 事業者情報詳細と支払い状態詳細と事業者ドローン情報管理に飛ぶボタンがある
+%% \ui{\detokenize{coop_information_management_screen.pdf}}{事業者情報管理画面}
+%% \ui{\detokenize{coop_info_fil.pdf}}{事業者情報絞り込み画面}
+%% \begin{figure}[H]
+%%   \centering
+%%   \includegraphics[height=\textheight]{ui/coop_information_editing_function.pdf}
+%%   \caption{事業者情報編集機能}
+%%   \label{fig:coop_information_editing_function.pdf}
+%% \end{figure}
+%% \clearpage
+%% %\ui{\detokenize{coop_information_editing_function.pdf}}{事業者情報編集機能}
+%% \subsubsection{事業者情報詳細}
+%% % 事業者情報を全部表示する画面
+%% % 戻るボタンで事業者管理画面に行く
+%% % 支払い状態詳細と事業者ドローン情報管理にも飛べるようにしたい
+%% \ui{\detokenize{coop_information_details_screen.pdf}}{事業者情報詳細画面}
+%% \subsubsection{事業者支払い状態詳細}
+%% % 支払い状態のお金関係の情報を表示する，請求書の送付，メールの送信を行えるようにしたい．
+%% % 事業者一覧画面に戻るボタンがある
+%% \ui{\detokenize{coop_payment_info_prop_edit.pdf}}{事業者支払い情報詳細編集画面}
+%% \ui{\detokenize{coop_payment_information_details_screen.pdf}}{事業者支払い情報詳細画面}
+%% % \subsubsection{ドローン貸与申請一覧}
+%% \clearpage
+%% \subsubsection{事業者ドローン情報管理}
+%% \ui{\detokenize{coop_drone_information_management_screen.pdf}}{事業者ドローン情報管理画面}
+%% \ui{\detokenize{coop_drone_information_management_screen_refinement.pdf}}{事業者ドローン情報管理画面絞り込み}
+%% \subsubsection{利用者管理}
+%% \ui{\detokenize{user_information_management_screen.pdf}}{利用者情報管理画面}
+%% \ui{\detokenize{user_information_management_screen_refinement.pdf}}{利用者情報管理画面絞り込み}
+%% \subsubsection{利用者情報詳細}
+%% \ui{\detokenize{user_information_details_screen.pdf}}{利用者情報詳細画面}
+%% \subsubsection{事業者情報分析}
+%% \ui{\detokenize{coop_stats_info.pdf}}{事業者統計情報画面}
+%% \ui{\detokenize{coop_info_graph.pdf}}{事業者統計情報画面}
+%% \subsubsection{利用者情報分析}
+%% \ui{\detokenize{user_stats_info.pdf}}{利用者統計情報画面}
+%% \ui{\detokenize{user_info_graph.pdf}}{利用者情報グラフ画面}
+%% \subsubsection{宅配依頼一覧}
+%% \ui{\detokenize{admin_deliv_req_list.pdf}}{管理者向け宅配依頼一覧}
+%% \clearpage
+%% \subsection{事業者向け}
+%% \subsubsection{ログイン画面}
+%% % ユーザ名とパスワード入力欄
+%% % ログインボタンのみ
+%% % TOPに遷移する
+%% \ui{\detokenize{coop_login.pdf}}{事業者向け画面ログイン}
+%% \ui{\detokenize{coop_login_error_screen.pdf}}{事業者向けログインエラー画面}
+%% % \subsubsection{ログアウト画面}
+%% % ログアウトボタンとログアウトが完了しました
+%% \ui{\detokenize{logout_coop.pdf}}{ログアウト画面}
+%% \ui{\detokenize{logout_check.pdf}}{ログアウト確認画面}
+%% \subsubsection{TOP画面}
+%% \subsubsection{事業者登録申請画面}
+%% \ui{\detokenize{new_coop_member_registration.pdf}}{事業者新規会員登録}
+%% \subsubsection{事業者情報編集画面}
+%% \subsubsection{依頼一覧機能}
+%% \ui{\detokenize{coop_deliv_req_list-1.pdf}}{事業者向け宅配依頼申請一覧}
+%% \subsubsection{配達依頼一覧機能}
+%% \subsubsection{使用ドローン登録画面}
+%% \ui{\detokenize{drone_registration_function.pdf}}{ドローン登録機能}
+%% \subsubsection{子アカウント一覧画面}
+%% \ui{\detokenize{child_account_list_screen.pdf}}{子アカウント一覧画面}
+%% \ui{\detokenize{child_account_list_screen-1.pdf}}{子アカウント一覧画面-1}
+%% \subsubsection{子アカウント発行画面}
+%% \ui{\detokenize{child_acc.pdf}}{子アカウント発行画面}
+%% \subsubsection{ドローン貸与申請画面}
+%% \ui{\detokenize{drone_loan_list.pdf}}{ドローン貸与申請一覧}
+%% \ui{\detokenize{drone_req.pdf}}{ドローン申請画面}
+%% \ui{\detokenize{drone_information_detail_screen.pdf}}{ドローン情報詳細画面}
+%% \subsubsection{退会画面}
+%% \ui{\detokenize{withdrawal(PC).pdf}}{退会(PC)}
+%% \clearpage
+%% \subsection{利用者向け}
+%% % 基本全部機能を見て
+%% \subsubsection{ログイン画面}
+%% % ユーザ名とパスワード入力欄
+%% % ログインボタンのみ
+%% % TOPに遷移する
+%% \ui{\detokenize{user_login.pdf}}{利用者向けログイン画面}
+%% \ui{\detokenize{users_login_error_screen.pdf}}{利用者向けログインエラー画面}
+%% \subsubsection{ログアウト画面}
+%% \ui{\detokenize{logout_user.pdf}}{ログアウト画面}
+%% \ui{\detokenize{logout_check_user.pdf}}{ログアウト確認画面(利用者)}
+%% \subsubsection{利用者会員登録画面}
+%% \ui{\detokenize{user_new_member_registration.pdf}}{利用者新規会員登録}
+%% \subsubsection{利用者会員情報編集画面}
+%% \ui{\detokenize{user_information_edit_function.pdf}}{利用者情報編集機能}
+%% \subsubsection{宅配場所登録画面}
+%% \ui{\detokenize{deliv_place_req_phone.pdf}}{宅配場所登録画面(スマホ)}
+%% \subsubsection{宅配依頼画面}
+%% \ui{\detokenize{deliv_req_phone.pdf}}{宅配依頼(スマホ)}
+%% \subsubsection{宅配依頼一覧画面}
+%% \ui{\detokenize{user_deliv_req_list_receive.pdf}}{利用者向け宅配依頼一覧(受け取り)}
+%% \ui{\detokenize{user_deliv_req_list_submit.pdf}}{利用者向け宅配依頼一覧(送信)}
+%% \subsubsection{お気に入り登録画面}
+%% \ui{\detokenize{fav_registor_phone.pdf}}{お気に入り登録(スマホ)}
+%% \subsubsection{退会画面}
+%% \ui{\detokenize{withdrawal(phone).pdf}}{退会(スマホ)}
 
 \section{運用・保守設計}
-本システムはAWSで構築することを前提とする，基本的には24時間365日システムを稼働させる
+本システムはAWSで構築することを前提とする，基本的には24時間365日システムを稼働させる．
 % 従って24時間365日という時間はオンライン/バッチを含みシステムが稼働している時間として定義する．
 ただし，毎月頭の深夜1時間程度メンテナンスの為にシステムを停止させる．
 \subsection{運用設計}
 % ここ調べないと分からない．
-基本的にはDBのみ一定時間ごとにRDSがバックアップを取る.
+基本的にはDBのみ一定時間ごとにRDSがバックアップを取る．
 それ以外のサーバについてはコンテナを用いて素早い復旧を可能にする．
 % 各種サーバはDockerか何かですぐに立ち上がるようにする．
-% 具体的なやつはAWSの機能を調べたら良いらしい
+% 具体的なやつはAWSの機能を調べたら良いらしい．
 
 \subsection{保守設計}
 保守設計はシステムに変更を加えてシステムを維持することを目的とする．
@@ -618,12 +687,12 @@ DDoS攻撃の対策としてAWS Shieldを用いる．
 
 \section{貢献度}
 \begin{itemize}
-  \item 1240312 久保田 天治 : 非機能要件の設計及びフロー図,UI図の作成
-  \item 1250329 塩澤 康志 : データベース設計及びフロー図,UI図の作成 週当番としての職務を果たした
-  \item 1250333 蝉 祐介 : フロー図,UI図の作成 週当番としての職務を果たした
-  \item 1250348 寺内 俊輔 : テンプレートの作成及びフロー図の作成 チームのバランスを確保(仲裁) タスク表を作成及び管理
-  \item 1250358 林 晃太郎 : UIの画面遷移図の作成及びフロー図,UI図の作成
-  \item 1250371 松本 吏司 : ネットワーク設計及びフロー図,UI図の作成 作業用リポジトリの整備 週当番としての職務を果たした
+  \item 1240312 久保田 天治 : 非機能要件の設計及びフロー図,UI図の作成．
+  \item 1250329 塩澤 康志 : データベース設計及びフロー図,UI図の作成 週当番としての職務を果たした．
+  \item 1250333 蝉 祐介 : フロー図,UI図の作成 週当番としての職務を果たした．
+  \item 1250348 寺内 俊輔 : テンプレートの作成及びフロー図の作成 チームのバランスを確保(仲裁) タスク表を作成及び管理．
+  \item 1250358 林 晃太郎 : UIの画面遷移図の作成及びフロー図,UI図の作成．
+  \item 1250371 松本 吏司 : ネットワーク設計及びフロー図,UI図の作成 作業用リポジトリの整備 週当番としての職務を果たした．
 \end{itemize}
 
 \end{document}
