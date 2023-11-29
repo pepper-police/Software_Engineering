@@ -1,0 +1,112 @@
+\documentclass[a4paper, titlepage]{jsarticle}
+
+\date{\today}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{url}
+% \usepackage[T1]{fontenc}
+\usepackage{float}
+\usepackage{ascmac}
+\usepackage{pdfpages}
+\usepackage{enumitem}
+\usepackage{otf}
+\usepackage{morefloats}
+% \usepackage{morefloats}
+\usepackage{comment}
+
+
+\newcommand{\system}{\textsl{Aero Net}}
+\maxdeadcycles=10000
+\begin{document}
+\begin{titlepage}
+  \centering
+  \vspace*{150truept}
+  {\Large 内部設計書}\\
+  \vspace*{50truept}
+  {\Huge ドローン宅配事業者支援システム} \\
+  \vspace{15truept}
+  {\Huge \system} \\
+  \vspace{50truept}
+  {\LARGE 土佐山田IT株式会社}\\
+  \vspace{20truept}
+  {\large{\tabcolsep = 1cm
+      \begin{tabular}{ccc}
+        久保田 天治 & 塩澤 康志 & 蝉 祐介  \\
+        寺内 俊輔  & 林 晃太郎 & 松本 吏司
+      \end{tabular}
+    }}
+\end{titlepage}
+% \fig{filename(.pdf無し)}
+% \newcommand{\fig}[1]{
+%   \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=\linewidth]{pdf/#1.pdf}
+%     \caption{#1}
+%     \label{fig:#1}
+%   \end{figure}
+% }
+% \fig{filename(.pdf無し)}{caption}
+\newcommand{\fig}[2]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{flow/#1.pdf}
+    \caption{#2}
+    \label{fig:#1}
+  \end{figure}
+  \clearpage
+}
+\newcommand{\ui}[2]{
+  \begin{figure}[H]
+    \centering
+    \fbox{
+      \includegraphics[width=0.65\textwidth]{ui/#1}
+      }
+    \caption{#2}
+    \label{fig:#1}
+  \end{figure}
+}
+
+\tableofcontents
+
+\clearpage
+
+\section{はじめに}
+何か一言．何を示す文章か．
+\section{システム概要}
+これはどんなシステムか
+\section{動作環境}
+アプリ，PC，Windows，性能
+\section{開発環境}
+使用言語，コーディング規約，ファイル構成
+
+\section{機能一覧}
+実装したい機能の一覧
+
+\section{遷移図の定義}
+遷移図の見方
+
+% 機能を実装するためのモジュール
+\section{モジュール一覧}
+
+\section{各モジュール定義}
+\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
++遷移図
+\section{モジュールの依存関係}
+同時に呼び出しが出来ない，呼び出しの限定
+
+
+% 機能を実装するためのコンポーネント
+\section{コンポーネント一覧}
+一覧(名前と概要)
+入力フォームのような小さい機能(部品)
+\section{各コンポーネント定義}
+\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
++遷移図
+\section{コンポーネントの依存関係}
+呼び出しの制限
+
+
+% できればやる
+% \section{データベース設計}
+% 何を保存するTableか．なんの属性を持つか．その概要と保存の規則．
+
+\end{document}
