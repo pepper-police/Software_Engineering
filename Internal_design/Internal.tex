@@ -83,9 +83,42 @@
 このシステムを導入することにより，今後日本国内で増加するであろう宅配便取扱個数の増加と労働力不足を宅配業界全体で乗り越えられると考える．
 
 \section{動作環境}
-アプリ，PC，Windows，性能
+%アプリ，PC，Windows，性能
+本システムを使用するためには, 以下の動作環境が必要である.
+
+\begin{table}[H]
+  \begin{minipage}{0.45\hsize}
+    \centering
+    \begin{tabular}{c|c} \hline
+      OS & Windows10 以上 \\ \hline
+      CPU & 1GHz以上 \\ \hline
+      メモリ & 4GB以上 \\ \hline
+    \end{tabular}
+    \caption{管理者・事業者の動作環境}
+    \label{tab:ACOpEnv}
+  \end{minipage}
+  \begin{minipage}{0.45\hsize}
+    \centering
+    \begin{tabular}{c|c} \hline
+      OS & Android 11以上 \\ \hline
+      CPU & 1GHz以上 \\ \hline
+      メモリ & 4GB以上 \\ \hline
+    \end{tabular}
+    \caption{利用者の動作環境}
+    \label{tab:UOpEnv}
+  \end{minipage}
+\end{table}
+%ブラウザとかGithubとかいるのかな?
+%サーバの動作環境あった方がいいかな?
 \section{開発環境}
 使用言語，コーディング規約，ファイル構成
+%AWSのAmazon Cloud Front を用いて作成する
+\subsection{使用言語}
+本システムでは, WebアプリケーションフレームワークとしてLaravelを採用し, PHPとMySQLを使用する.
+
+\subsection{ファイル構成}
+%メソッドは、どこから呼び出されるのか？
+
 
 \section{機能一覧}
 %実装したい機能の一覧
