@@ -84,37 +84,41 @@
 
 \section{動作環境}
 %アプリ，PC，Windows，性能
-本システムを使用するためには, 以下の動作環境が必要である.
+本システムを使用するためには, 以下の表\ref{tab:OpEnv}に示す動作環境が必要である．
 
 \begin{table}[H]
-  \begin{minipage}{0.45\hsize}
-    \centering
-    \begin{tabular}{c|c} \hline
-      OS & Windows10 以上 \\ \hline
-      CPU & 1GHz以上 \\ \hline
-      メモリ & 4GB以上 \\ \hline
-    \end{tabular}
-    \caption{管理者・事業者の動作環境}
-    \label{tab:ACOpEnv}
-  \end{minipage}
-  \begin{minipage}{0.45\hsize}
-    \centering
-    \begin{tabular}{c|c} \hline
-      OS & Android 11以上 \\ \hline
-      CPU & 1GHz以上 \\ \hline
-      メモリ & 4GB以上 \\ \hline
-    \end{tabular}
-    \caption{利用者の動作環境}
-    \label{tab:UOpEnv}
-  \end{minipage}
+  \centering
+  \begin{tabular}{c|c} \hline
+    OS & Windows10 以上 \\ \hline
+    CPU & 1GHz以上 \\ \hline
+    メモリ & 4GB以上 \\ \hline
+    ブラウザ & Firefox \\ \hline
+  \end{tabular}
+  \caption{動作環境}
+  \label{tab:OpEnv}
 \end{table}
-%ブラウザとかGithubとかいるのかな?
-%サーバの動作環境あった方がいいかな?
+
 \section{開発環境}
 使用言語，コーディング規約，ファイル構成
 %AWSのAmazon Cloud Front を用いて作成する
 \subsection{使用言語}
-本システムでは, WebアプリケーションフレームワークとしてLaravelを採用し, PHPとMySQLを使用する.
+本システムの開発環境を, 表\ref{tab:DevEnv}に示す．
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c} \hline
+    プラットフォーム & Docker \\ \hline
+    フレームワーク & Laravel \\ \hline
+    バージョン管理 & Git \\ \hline
+    サーバ & Amazon EC2 \\ \hline
+    使用言語 & PHP \\
+    & HTML \\
+    & CSS \\
+    & JavaScript \\
+    & MySQL \\ \hline
+  \end{tabular}
+  \caption{開発環境}
+  \label{tab:DevEnv}
+\end{table}
 
 \subsection{ファイル構成}
 %メソッドは、どこから呼び出されるのか？
