@@ -1,0 +1,40 @@
+<mxfile host="Electron" modified="2023-12-09T16:19:36.529Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/22.0.3 Chrome/114.0.5735.289 Electron/25.8.4 Safari/537.36" etag="BLWXB2JLNqpZvW4wPADP" version="22.0.3" type="device">
+  <diagram name="ページ1" id="YDTNipPEBcN2hHsjhOQj">
+    <mxGraphModel dx="514" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Bu2mcCE37NxpNvYvRLMu-2" target="Bu2mcCE37NxpNvYvRLMu-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-2" value="呼び出し" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="369.75" y="290" width="86.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-7" value="終了" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="369.75" y="490" width="86.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-16" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=13;" edge="1" parent="1" source="Bu2mcCE37NxpNvYvRLMu-13" target="Bu2mcCE37NxpNvYvRLMu-7">
+          <mxGeometry x="0.0161" y="17" relative="1" as="geometry">
+            <mxPoint x="-1" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-21" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=13;" edge="1" parent="1" source="Bu2mcCE37NxpNvYvRLMu-13" target="Bu2mcCE37NxpNvYvRLMu-20">
+          <mxGeometry x="-0.5957" y="15" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-13" value="入力規則を満たす" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="380" width="156" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Bu2mcCE37NxpNvYvRLMu-20" target="Bu2mcCE37NxpNvYvRLMu-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="570" y="562.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Bu2mcCE37NxpNvYvRLMu-20" value="エラーコード生成" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="500" y="440" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

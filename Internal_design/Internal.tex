@@ -13,7 +13,6 @@
 % \usepackage{morefloats}
 \usepackage{comment}
 
-
 \newcommand{\system}{\textsl{Aero Net}}
 \maxdeadcycles=10000
 \begin{document}
@@ -45,24 +44,14 @@
 %   \end{figure}
 % }
 % \fig{filename(.pdf無し)}{caption}
-\newcommand{\fig}[2]{
+\newcommand{\definition}[2]{
   \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{flow/#1.pdf}
+    \includegraphics[width=0.9\linewidth]{module/definition/#1.pdf}
     \caption{#2}
     \label{fig:#1}
   \end{figure}
   \clearpage
-}
-\newcommand{\ui}[2]{
-  \begin{figure}[H]
-    \centering
-    \fbox{
-      \includegraphics[width=0.65\textwidth]{ui/#1}
-      }
-    \caption{#2}
-    \label{fig:#1}
-  \end{figure}
 }
 
 \tableofcontents
@@ -99,9 +88,9 @@
 \end{table}
 
 \section{開発環境}
-使用言語，コーディング規約，ファイル構成
+%使用言語，コーディング規約，ファイル構成
 %AWSのAmazon Cloud Front を用いて作成する
-\subsection{使用言語}
+%\subsection{使用言語}
 本システムの開発環境を, 表\ref{tab:DevEnv}に示す．
 \begin{table}[H]
   \centering
@@ -123,6 +112,48 @@
 \subsection{ファイル構成}
 %メソッドは、どこから呼び出されるのか？
 
+\subsection{コーディング規約}
+本システムでは，PHP標準勧告であるPSR-2に従う．
+\begin{itemize}
+  \item 命名規則
+  \begin{itemize}
+    \item 変数名
+    \begin{itemize}
+      \item スネークケースを採用
+    \end{itemize}
+    \item 定数名
+    \item クラス名
+    \item メソッド名
+    \item 予約語
+    \begin{itemize}
+      \item 小文字で書く
+    \end{itemize}
+  \end{itemize}
+  \item コーディングスタイル
+  \begin{itemize}
+    \item インデント
+    \begin{itemize}
+      \item スペース4つとする
+      \item タブによるインデントは行わない
+    \end{itemize}
+    \item 括弧
+    \item 行
+    \begin{itemize}
+      \item 名前空間定義の後に空行を挟む
+      \item use定義ブロックの後に空行を挟む
+      \item ファイルの最終行には空行をいれてはならない
+      \item 1行の長さの目安は80文字以内
+      \item 1行の長さは120文字を超えてはならない
+      \item 行の最後には空白を入れてはならない
+      \item 可読性を上げるための空行は許可する
+      \item 1行に複数のステートメントがあってはならない
+    \end{itemize}
+    \item 文字列
+    \item コメント
+    \item クラス
+    \item 演算子
+  \end{itemize}
+\end{itemize}
 
 \subsection{コーディング規約}
 本システムでは，PHP標準勧告であるPSR-2に従う．
@@ -298,18 +329,50 @@
 
 % 機能を実装するためのモジュール
 \section{モジュール一覧}
-
+\begin{itemize}
+  \item ログインモジュール
+  \item ログアウトモジュール
+  \item 一覧表示モジュール
+  \item 詳細表示モジュール
+  \item 登録モジュール
+  \item 編集モジュール
+  \item 分析モジュール
+  \item 退会モジュール
+\end{itemize}
 \section{各モジュール定義}
-\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
-+遷移図
+\definition{\detokenize{login}}{ログインモジュール}
+\definition{\detokenize{logout}}{ログアウトモジュール}
+\definition{\detokenize{list}}{一覧モジュール}
+\definition{\detokenize{detail}}{詳細モジュール}
+\definition{\detokenize{register}}{登録モジュール}
+\definition{\detokenize{edit}}{編集モジュール}
+\definition{\detokenize{analysis}}{分析モジュール}
+\definition{\detokenize{withdraw}}{退会モジュール}
 \section{モジュールの依存関係}
 同時に呼び出しが出来ない，呼び出しの限定
 
 
 % 機能を実装するためのコンポーネント
 \section{コンポーネント一覧}
-一覧(名前と概要)
-入力フォームのような小さい機能(部品)
+\begin{itemize}
+  \item データの入力フォーム
+  \item データの送信(フロントエンド)
+  \item ボタン表示
+  \item データの一覧表示
+  \item データの詳細表示
+  \item ヘッダーの表示
+  \item サイドバーの表示
+  \item 絞り込み
+  \item グラフ表示
+  \item データの受け取り
+  \item データ送信(バックエンド)
+  \item データベース問い合わせ
+  \item データベース更新
+  \item データベースに新規追加
+  \item バリデーション(入力規則確認)
+  \item ページ遷移
+  \item データ並び替え
+\end{itemize}
 \section{各コンポーネント定義}
 \url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
 +遷移図
