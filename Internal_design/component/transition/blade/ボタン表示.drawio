@@ -1,0 +1,35 @@
+<mxfile host="app.diagrams.net" modified="2023-12-09T02:38:23.133Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="Hq7eoPXp4q6LLBu8xWfR" version="22.1.7" type="google">
+  <diagram name="ページ1" id="p3CFfWcp1M3JB6rwDc4G">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DuwTn_dUK_D_w1iEiweo-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DuwTn_dUK_D_w1iEiweo-1" target="DuwTn_dUK_D_w1iEiweo-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DuwTn_dUK_D_w1iEiweo-1" value="ボタン表示&lt;br&gt;(開始)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="90" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DuwTn_dUK_D_w1iEiweo-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="E7Lx8b7WVJ2F9TXdpgp7-2" target="DuwTn_dUK_D_w1iEiweo-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="350" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DuwTn_dUK_D_w1iEiweo-3" value="ボタン表示&lt;br&gt;(終了)" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DuwTn_dUK_D_w1iEiweo-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="DuwTn_dUK_D_w1iEiweo-4" target="E7Lx8b7WVJ2F9TXdpgp7-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DuwTn_dUK_D_w1iEiweo-4" value="（サイズ・場所・色・形状）受け取り" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="354" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E7Lx8b7WVJ2F9TXdpgp7-2" value="ボタン生成" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="354" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
