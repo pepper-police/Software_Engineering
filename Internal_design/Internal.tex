@@ -83,9 +83,46 @@
 このシステムを導入することにより，今後日本国内で増加するであろう宅配便取扱個数の増加と労働力不足を宅配業界全体で乗り越えられると考える．
 
 \section{動作環境}
-アプリ，PC，Windows，性能
+%アプリ，PC，Windows，性能
+本システムを使用するためには, 以下の表\ref{tab:OpEnv}に示す動作環境が必要である．
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c} \hline
+    OS & Windows10 以上 \\ \hline
+    CPU & 1GHz以上 \\ \hline
+    メモリ & 4GB以上 \\ \hline
+    ブラウザ & Firefox \\ \hline
+  \end{tabular}
+  \caption{動作環境}
+  \label{tab:OpEnv}
+\end{table}
+
 \section{開発環境}
 使用言語，コーディング規約，ファイル構成
+%AWSのAmazon Cloud Front を用いて作成する
+\subsection{使用言語}
+本システムの開発環境を, 表\ref{tab:DevEnv}に示す．
+\begin{table}[H]
+  \centering
+  \begin{tabular}{c|c} \hline
+    プラットフォーム & Docker \\ \hline
+    フレームワーク & Laravel \\ \hline
+    バージョン管理 & Git \\ \hline
+    サーバ & Amazon EC2 \\ \hline
+    使用言語 & PHP \\
+    & HTML \\
+    & CSS \\
+    & JavaScript \\
+    & MySQL \\ \hline
+  \end{tabular}
+  \caption{開発環境}
+  \label{tab:DevEnv}
+\end{table}
+
+\subsection{ファイル構成}
+%メソッドは、どこから呼び出されるのか？
+
 
 \section{機能一覧}
 %実装したい機能の一覧
