@@ -53,7 +53,25 @@
   \end{figure}
   \clearpage
 }
+\newcommand{\moduleTransition}[2]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{module/transition/#1.pdf}
+    \caption{#2}
+    \label{fig:#1}
+  \end{figure}
+  \clearpage
+}
 
+\newcommand{\componentTransition}[2]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\linewidth]{component/transition/#1.pdf}
+    \caption{#2}
+    \label{fig:#1}
+  \end{figure}
+  \clearpage
+}
 \tableofcontents
 
 \clearpage
@@ -338,8 +356,10 @@
 \definition{\detokenize{analysis}}{分析モジュール}
 \definition{\detokenize{withdraw}}{退会モジュール}
 \section{モジュールの依存関係}
-同時に呼び出しが出来ない，呼び出しの限定
-
+%同時に呼び出しが出来ない，呼び出しの限定
+\moduleTransition{\detokenize{login}}{ログインモジュール}
+%\moduleTransition{\detokenize{logout}}{ログアウトモジュール}
+\moduleTransition{\detokenize{analysis}}{分析モジュール}
 
 % 機能を実装するためのコンポーネント
 \section{コンポーネント一覧}
@@ -363,12 +383,22 @@
   \item データ並び替え
 \end{itemize}
 \section{各コンポーネント定義}
-\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
-+遷移図
+%\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
+
+%+遷移図
 \section{コンポーネントの依存関係}
-呼び出しの制限
-
-
+%呼び出しの制限
+\componentTransition{\detokenize{data_send_blade}}{データ送信(blade)コンポーネント}
+\componentTransition{\detokenize{button_show}}{ボタン表示コンポーネント}
+\componentTransition{\detokenize{list_show}}{一覧表示コンポーネント}
+\componentTransition{\detokenize{detail_show}}{詳細表示コンポーネント}
+\componentTransition{\detokenize{data_receive}}{データの受け取りコンポーネント}
+\componentTransition{\detokenize{data_send_controller}}{データ送信(controller)}
+\componentTransition{\detokenize{database_query}}{データベース問い合わせコンポーネント}
+\componentTransition{\detokenize{database_update}}{データベース更新コンポーネント}
+\componentTransition{\detokenize{database_register}}{データベース新規登録}
+\componentTransition{\detokenize{validation}}{バリデーションコンポーネント}
+\componentTransition{\detokenize{page_transition}}{ページ遷移コンポーネント}
 % できればやる
 % \section{データベース設計}
 % 何を保存するTableか．なんの属性を持つか．その概要と保存の規則．
