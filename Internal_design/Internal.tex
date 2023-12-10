@@ -283,7 +283,18 @@
 \end{itemize}
 
 \section{遷移図の定義}
-遷移図の見方
+図\ref{fig:def_module_diagram}に，コンポーネント及びモジュールの処理順序を示すダイアグラムで用いる記法を示す．
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig/rule.pdf}
+  \caption{ダイアグラムで用いる図形とその意味}
+  \label{fig:def_module_diagram}
+\end{figure}
+
+処理の流れは矢印で示し，処理に必要なデータが存在する場合は矢印付近に表記を行う．
+各ダイアグラムは，該当コンポーネント又はモジュールの呼び出しから始まり，処理終了で終わるものとする．
+
 
 % 機能を実装するためのモジュール
 \section{モジュール一覧}
