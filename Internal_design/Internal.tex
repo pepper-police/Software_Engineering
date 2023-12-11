@@ -95,14 +95,13 @@
 
 \begin{table}[H]
   \centering
-  \begin{tabular}{c|c} \hline
-    OS & Windows10 以上 \\ \hline
-    CPU & 1GHz以上 \\ \hline
-    メモリ & 4GB以上 \\ \hline
-    ブラウザ & Firefox \\ \hline
-  \end{tabular}
   \caption{動作環境}
   \label{tab:OpEnv}
+  \begin{tabular}{c|c} \hline
+    ブラウザ & Firefox \\ \hline
+    メモリ & 4GB以上 \\ \hline
+    サーバ & AWS(EC2 t2.micro) \\ \hline
+  \end{tabular}
 \end{table}
 
 \section{開発環境}
@@ -112,19 +111,17 @@
 本システムの開発環境を, 表\ref{tab:DevEnv}に示す．
 \begin{table}[H]
   \centering
+  \caption{開発環境}
+  \label{tab:DevEnv}
   \begin{tabular}{c|c} \hline
     プラットフォーム & Docker \\ \hline
     フレームワーク & Laravel \\ \hline
     バージョン管理 & Git \\ \hline
-    サーバ & Amazon EC2 \\ \hline
     使用言語 & PHP \\
     & HTML \\
     & CSS \\
-    & JavaScript \\
-    & MySQL \\ \hline
+    & JavaScript \\ \hline
   \end{tabular}
-  \caption{開発環境}
-  \label{tab:DevEnv}
 \end{table}
 
 \subsection{ファイル構成}
