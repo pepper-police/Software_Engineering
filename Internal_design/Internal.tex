@@ -182,7 +182,43 @@
 
 
 \subsection{コーディング規約}
-本システムでは，PHP標準勧告であるPSR-2に従う．
+本システムでは，PHP標準勧告であるPSR-12に従う．
+PSR-12に従って記述した例を以下に示す．
+\begin{screen}
+\begin{verbatim}
+<?php
+
+declare(strict_types=1);
+
+namespace Vendor\Package;
+
+use Vendor\Package\{ClassA as A, ClassB, ClassC as C};
+use Vendor\Package\SomeNamespace\ClassD as D;
+
+use function Vendor\Package\{functionA, functionB, functionC};
+
+use const Vendor\Package\{ConstantA, ConstantB, ConstantC};
+
+class Foo extends Bar implements FooInterface
+{
+    public function sampleFunction(int $a, int $b = null): array
+    {
+        if ($a === $b) {
+            bar();
+        } elseif ($a > $b) {
+            $foo->bar($arg1);
+        } else {
+            BazClass::bar($arg2, $arg3);
+        }
+    }
+
+    final public static function bar()
+    {
+        // method body
+    }
+}
+\end{verbatim}
+\end{screen}
 \begin{itemize}
   \item 命名規則
   \begin{itemize}
@@ -196,7 +232,8 @@
     \item メソッド名
     \item 予約語
     \begin{itemize}
-      \item 小文字で書く
+      \item 予約後(true, false, null)は小文字で書く
+      \item タイプキーワードは短い形式を利用する．(例：integer$\rightarrow$int)
     \end{itemize}
   \end{itemize}
   \item コーディングスタイル
@@ -207,20 +244,28 @@
       \item タブによるインデントは行わない
     \end{itemize}
     \item 括弧
-    \item 行
+    \item 改行
     \begin{itemize}
       \item 名前空間定義の後に空行を挟む
       \item use定義ブロックの後に空行を挟む
       \item ファイルの最終行には空行をいれてはならない
-      \item 1行の長さの目安は80文字以内
-      \item 1行の長さは120文字を超えてはならない
-      \item 行の最後には空白を入れてはならない
       \item 可読性を上げるための空行は許可する
+    \end{itemize}
+    \item 行
+    \begin{itemize}
+      \item 1行の長さは80文字を超えてはならない．超える場合は複数の行に複数の行に分割する．
+      \item 行末には空白を入れてはならない
       \item 1行に複数のステートメントがあってはならない
     \end{itemize}
     \item 文字列
     \item コメント
     \item クラス
+    \begin{itemize}
+      \item extendsとimplementsは、クラス名と同じ行で定義する
+      \item クラスの開き括弧は次の行に記述する
+      \item 閉じ括弧は本文最後の次の行に記述する
+      \item implementsは複数の行に分割しても良い．その場合は，最初の定義も次の行から始め，１行に1つのインターフェイスを定義する
+    \end{itemize}
     \item 演算子
   \end{itemize}
 \end{itemize}
@@ -379,6 +424,18 @@
 \moduleTransition{\detokenize{login}}{ログインモジュール}
 %\moduleTransition{\detokenize{logout}}{ログアウトモジュール}
 \moduleTransition{\detokenize{analysis}}{分析モジュール}
+同時に呼び出しが出来ない，呼び出しの限定
+
+\section{クラスの依存関係}
+\begin{itemize}
+  \item Admin，Coop，UserクラスはAccountクラスを継承する．
+  \item Account，DroneクラスはPairClassを継承する．
+  \item PiarClassはInterface1インターフェイスを実装する．
+  \item Admin，Coop，UserクラスはInterface2インターフェイスを実装する．
+  \item DroneクラスはInterfaceDroneインターフェイスを実装する．
+  \item Admin，CoopクラスはManagerクラスをメンバとして持つ．
+  \item Coop，UserクラスはConsumerクラスをメンバとして持つ．
+\end{itemize}
 
 % 機能を実装するためのコンポーネント
 \section{コンポーネント一覧}
