@@ -101,17 +101,28 @@
 
 \section{動作環境}
 %アプリ，PC，Windows，性能
-本システムを使用するためには, 以下の表\ref{tab:OpEnv}に示す動作環境が必要である．
+本システムを使用するためには, 以下の表\ref{tab:OpEnv}に示す動作環境が必要である．また, サーバの動作環境を表\ref{tab:ServerEnv}に示す．
 
 \begin{table}[H]
-  \centering
-  \caption{動作環境}
-  \label{tab:OpEnv}
-  \begin{tabular}{c|c} \hline
-    ブラウザ & Firefox \\ \hline
-    メモリ & 4GB以上 \\ \hline
-    サーバ & AWS(EC2 t2.micro) \\ \hline
-  \end{tabular}
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \caption{動作環境}
+    \label{tab:OpEnv}
+    \begin{tabular}{c|c} \hline
+      OS & Windows10 以上 \\ \hline
+      CPU & 1GHz以上 \\ \hline
+      メモリ & 4GB以上 \\ \hline
+      ブラウザ & Firefox \\ \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}{0.45\linewidth}
+    \centering
+    \caption{サーバの動作環境}
+    \label{tab:ServerEnv}
+    \begin{tabular}{c|c} \hline
+      サーバ & AWS(EC2 t2.micro) \\ \hline
+    \end{tabular}
+  \end{minipage}
 \end{table}
 
 \section{開発環境}
