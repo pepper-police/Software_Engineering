@@ -149,7 +149,7 @@
 %メソッドは、どこから呼び出されるのか？
 
 \subsection{コーディング規約}
-本システムでは，PHP標準勧告であるPSR-2に従う．
+本システムでは，PHP標準勧告であるPSR-12に従う．
 \begin{itemize}
   \item 命名規則
   \begin{itemize}
@@ -158,8 +158,18 @@
       \item スネークケースを採用
     \end{itemize}
     \item 定数名
+    \begin{itemize}
+      \item 全部大文字
+      \item スネークケースを採用
+    \end{itemize}
     \item クラス名
+    \begin{itemize}
+      \item StudlyCaps記法(先頭と単語の区切りを大文字)を採用
+    \end{itemize}
     \item メソッド名
+    \begin{itemize}
+      \item camelCase記法(単語の区切りを大文字)を採用
+    \end{itemize}
     \item 予約語
     \begin{itemize}
       \item 小文字で書く
@@ -173,6 +183,10 @@
       \item タブによるインデントは行わない
     \end{itemize}
     \item 括弧
+    \begin{itemize}
+      \item クラスやメソッドの波括弧は新しい行に配置する
+      \item メソッドや関数や制御構造の開き括弧は同じ行にスペースを一つ入れた後配置する
+    \end{itemize}
     \item 行
     \begin{itemize}
       \item 名前空間定義の後に空行を挟む
@@ -185,9 +199,28 @@
       \item 1行に複数のステートメントがあってはならない
     \end{itemize}
     \item 文字列
+    \begin{itemize}
+      \item シングルクォートで文字列は囲む
+    \end{itemize}
     \item コメント
+    \begin{itemize}
+      \item 文章を使う
+      \item 命令形を使う
+      \item クラス、メソッド、プロパティに対しては、ドキュメンテーションコメント(/** ... */で囲まれた説明)を付ける
+    \end{itemize}
     \item クラス
+    \begin{itemize}
+      \item StudlyCaps記法(先頭と単語の区切りを大文字)を採用
+    \end{itemize}
     \item 演算子
+    \begin{itemize}
+      \item 演算子の周囲にスペースを何個使用しても構わない
+      \item 単項演算子 : インクリメント/デクリメント演算子は演算子とオペランドの間にスペースを挟んではならない
+      \item 単項演算子 : 型キャスト演算子は括弧の内側にスペースがあってはならない
+      \item 二項演算子 : 代数演算子、比較演算子、代入演算子、ビット演算子、論理演算子、文字列演算子、型演算子は前後に1個以上のスペースを置く
+      \item 三項演算子 : ?と:それぞれの前後に1個以上のスペースを置く
+      \item 三項演算子 : 三項演算子の真ん中のオペランドが省略されている場合、演算子は二項の比較演算子と同様のスタイルルールを適用する
+    \end{itemize}
   \end{itemize}
 \end{itemize}
 
