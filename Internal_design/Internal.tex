@@ -149,7 +149,7 @@
 %メソッドは、どこから呼び出されるのか？
 
 \subsection{コーディング規約}
-本システムでは，PHP標準勧告であるPSR-12に従う．
+本システムでは，PHP標準勧告であるPSR-12\cite{PSR}に従う．
 \begin{itemize}
   \item 命名規則
   \begin{itemize}
@@ -223,7 +223,15 @@
     \end{itemize}
   \end{itemize}
 \end{itemize}
-
+\clearpage
+\section{クラスの関係図}
+図\ref{fig:class_tree}にクラスの継承関係と、各クラスの持つモジュールを示す。
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig/class_tree.pdf}
+  \caption{クラスの関係図}
+  \label{fig:class_tree}
+\end{figure}
 
 \section{機能一覧}
 %実装したい機能の一覧
@@ -476,5 +484,6 @@
   \item 定義書の作成
   \end{itemize}
 \end{itemize}
-
+\bibliographystyle{junsrt}
+\bibliography{References.bib}
 \end{document}
