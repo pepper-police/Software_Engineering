@@ -129,7 +129,7 @@
 %使用言語，コーディング規約，ファイル構成
 %AWSのAmazon Cloud Front を用いて作成する
 %\subsection{使用言語}
-本システムの開発環境を, 表\ref{tab:DevEnv}に示す．
+本システムの開発環境を表\ref{tab:DevEnv}に示す．
 \begin{table}[H]
   \centering
   \caption{開発環境}
@@ -145,10 +145,7 @@
   \end{tabular}
 \end{table}
 
-\subsection{ファイル構成}
-%メソッドは、どこから呼び出されるのか？
-
-\subsection{コーディング規約}
+\section{コーディング規約}
 本システムでは，PHP標準勧告であるPSR-12\cite{PSR}に従う．
 \begin{itemize}
   \item 命名規則
@@ -206,7 +203,7 @@
     \begin{itemize}
       \item 文章を使う
       \item 命令形を使う
-      \item クラス、メソッド、プロパティに対しては、ドキュメンテーションコメント(/** ... */で囲まれた説明)を付ける
+      \item クラス，メソッド，プロパティに対しては，ドキュメンテーションコメント(/** ... */で囲まれた説明)を付ける
     \end{itemize}
     \item クラス
     \begin{itemize}
@@ -217,15 +214,15 @@
       \item 演算子の周囲にスペースを何個使用しても構わない
       \item 単項演算子 : インクリメント/デクリメント演算子は演算子とオペランドの間にスペースを挟んではならない
       \item 単項演算子 : 型キャスト演算子は括弧の内側にスペースがあってはならない
-      \item 二項演算子 : 代数演算子、比較演算子、代入演算子、ビット演算子、論理演算子、文字列演算子、型演算子は前後に1個以上のスペースを置く
+      \item 二項演算子 : 代数演算子，比較演算子，代入演算子，ビット演算子，論理演算子，文字列演算子，型演算子は前後に1個以上のスペースを置く
       \item 三項演算子 : ?と:それぞれの前後に1個以上のスペースを置く
-      \item 三項演算子 : 三項演算子の真ん中のオペランドが省略されている場合、演算子は二項の比較演算子と同様のスタイルルールを適用する
+      \item 三項演算子 : 三項演算子の真ん中のオペランドが省略されている場合，演算子は二項の比較演算子と同様のスタイルルールを適用する
     \end{itemize}
   \end{itemize}
 \end{itemize}
 \clearpage
 \section{クラスの関係図}
-図\ref{fig:class_tree}にクラスの継承関係と、各クラスの持つモジュールを示す。
+図\ref{fig:class_tree}にクラスの継承関係と，各クラスの持つモジュールを示す．
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{fig/class_tree.pdf}
@@ -346,6 +343,7 @@
   \item 退会機能 %データ削除を申請して退会する機能．
 \end{itemize}
 
+\clearpage
 \section{遷移図の定義}
 図\ref{fig:def_module_diagram}に，コンポーネント及びモジュールの処理順序を示すダイアグラムで用いる記法を示す．
 
@@ -362,6 +360,7 @@
 
 % 機能を実装するためのモジュール
 \section{モジュール一覧}
+以下にモジュールの一覧を示す．
 \begin{itemize}
   \item ログインモジュール
   \item ログアウトモジュール
@@ -372,75 +371,115 @@
   \item 分析モジュール
   \item 退会モジュール
 \end{itemize}
+
+\clearpage
 \section{各モジュール定義}
 % 機能を実装するためのコンポーネント
-\fig{modules}{module_logout.pdf}{ログインモジュール(バック)}{0.6}
-\fig{modules}{module_analysis.pdf}{ログアウトモジュール(バック)}{0.6}
-\fig{modules}{module_detail_show.pdf}{一覧表示モジュール}{0.3}
-\fig{modules}{module_edit.pdf}{詳細表示モジュール}{0.3}
-\fig{modules}{module_list_show.pdf}{登録モジュール}{0.3}
-\fig{modules}{module_login.pdf}{編集モジュール}{0.3}
-\fig{modules}{module_register.pdf}{分析モジュール}{0.3}
-\fig{modules}{module_withdraw.pdf}{退会モジュール}{0.3}
-\fig{modules}{def_module_logout.pdf}{ログインモジュール}{0.6}
-\fig{modules}{def_module_analysis.pdf}{ログアウトモジュール}{0.6}
-\fig{modules}{def_module_detail_show.pdf}{一覧表示モジュール}{0.6}
-\fig{modules}{def_module_edit.pdf}{詳細表示モジュール}{0.6}
-\fig{modules}{def_module_list_show.pdf}{登録モジュール}{0.6}
-\fig{modules}{def_module_login.pdf}{編集モジュール}{0.6}
-\fig{modules}{def_module_register.pdf}{分析モジュール}{0.6}
-\fig{modules}{def_module_withdraw.pdf}{退会モジュール}{0.6}
+以下にログインモジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_login.pdf}{ログインモジュール}{0.8}
+\fig{modules}{module_login.pdf}{ログインモジュール}{0.8}
+\clearpage
+以下にログアウトモジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_logout.pdf}{ログアウトモジュール}{0.8}
+\fig{modules}{module_logout.pdf}{ログアウトモジュール}{0.3}
+\clearpage
+以下に一覧表示モジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_list_show.pdf}{一覧表示モジュール}{0.8}
+\fig{modules}{module_list_show.pdf}{一覧表示モジュール}{0.25}
+\clearpage
+以下に詳細表示モジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_detail_show.pdf}{詳細表示モジュール}{0.8}
+\fig{modules}{module_detail_show.pdf}{詳細表示モジュール}{0.3}
+\clearpage
+以下に編集モジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_edit.pdf}{編集モジュール}{0.8}
+\fig{modules}{module_edit.pdf}{編集モジュール}{0.5}
+\clearpage
+以下に登録モジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_register.pdf}{登録モジュール}{0.8}
+\fig{modules}{module_register.pdf}{登録モジュール}{0.5}
+\clearpage
+以下に分析モジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_analysis.pdf}{分析モジュール}{0.8}
+\fig{modules}{module_analysis.pdf}{分析モジュール}{0.6}
+\clearpage
+以下に退会モジュールの定義書及び遷移図を示す．
+\fig{modules}{def_module_withdraw.pdf}{退会モジュール}{0.8}
+\fig{modules}{module_withdraw.pdf}{退会モジュール}{1}
 
+\clearpage
 \section{コンポーネント一覧}
+以下にコンポーネントの一覧を示す．
 \begin{itemize}
-  \item データの入力フォーム
-  \item データの送信(フロントエンド)
-  \item ボタン表示
-  \item データの一覧表示
-  \item データの詳細表示
-  \item ヘッダーの表示
-  \item サイドバーの表示
-  \item 絞り込み
-  \item グラフ表示
-  \item データの受け取り
-  \item データ送信(バックエンド)
-  \item データベース問い合わせ
-  \item データベース更新
-  \item データベースに新規追加
-  \item バリデーション(入力規則確認)
-  \item ページ遷移
-  \item データ並び替え
+  \item データの入力フォーム(フロント)
+  \item データの送信(フロント)
+  \item ボタン生成(フロント)
+  \item データの一覧表示(フロント)
+  \item データの詳細表示(フロント)
+  \item データの受け取り(バック)
+  \item データ送信(バック)
+  \item データベース問い合わせ(バック)
+  \item データベースに新規追加(バック)
+  \item データベース更新(バック)
+  \item バリデーション(バック)
+  \item ページ遷移(バック)
 \end{itemize}
+
+\clearpage
 \section{各コンポーネント定義}
-%\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
-\fig{components}{blade_button_create.pdf}{ボタン生成(フロント)}{0.3}
-\fig{components}{blade_data_detail.pdf}{データの詳細表示(フロント)}{0.3}
+
+以下にデータの入力フォーム(フロント)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_blade_data_input_form.pdf}{データの入力フォーム(フロント)}{0.8}
 \fig{components}{blade_data_input_form.pdf}{データの入力フォーム(フロント)}{0.3}
-\fig{components}{blade_data_list.pdf}{データの一覧表示(フロント)}{0.3}
-\fig{components}{blade_data_send.pdf}{データ送信(フロント)}{0.3}
-\fig{components}{ctrl_data_receive.pdf}{データの受け取り(バック)}{0.3}
-\fig{components}{ctrl_data_send.pdf}{データ送信(バック)}{0.3}
+\clearpage
+以下にデータ送信(フロント)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_blade_data_send.pdf}{データ送信(フロント)}{0.8}
+\fig{components}{blade_data_send.pdf}{データ送信(フロント)}{0.2}
+\clearpage
+以下にボタン生成(フロント)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_blade_button_create.pdf}{ボタン生成(フロント)}{0.8}
+\fig{components}{blade_button_create.pdf}{ボタン生成(フロント)}{0.2}
+\clearpage
+以下にデータの一覧表示(フロント)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_blade_data_list.pdf}{データの一覧表示(フロント)}{0.8}
+\fig{components}{blade_data_list.pdf}{データの一覧表示(フロント)}{0.8}
+\clearpage
+以下にデータの詳細表示(フロント)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_blade_data_detail.pdf}{データの詳細表示(フロント)}{0.8}
+\fig{components}{blade_data_detail.pdf}{データの詳細表示(フロント)}{0.8}
+\clearpage
+以下にデータの受け取り(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_data_receive.pdf}{データの受け取り(バック)}{0.8}
+\fig{components}{ctrl_data_receive.pdf}{データの受け取り(バック)}{0.2}
+\clearpage
+以下にデータ送信(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_data_send.pdf}{データ送信(バック)}{0.8}
+\fig{components}{ctrl_data_send.pdf}{データ送信(バック)}{0.2}
+\clearpage
+以下にデータベース問い合わせ(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_database_query.pdf}{データベース問い合わせ(バック)}{0.8}
 \fig{components}{ctrl_database_query.pdf}{データベース問い合わせ(バック)}{0.3}
-\fig{components}{ctrl_database_register.pdf}{データベース新規登録(バック)}{0.3}
-\fig{components}{ctrl_database_update.pdf}{データベース更新(バック)}{0.3}
-\fig{components}{ctrl_page_transition.pdf}{ページ遷移(バック)}{0.3}
-\fig{components}{ctrl_validation.pdf}{バリデーション(バック)}{0.3}
-\fig{components}{def_blade_button_create.pdf}{ボタン生成(フロント)}{0.6}
-\fig{components}{def_blade_data_detail.pdf}{データの詳細表示(フロント)}{0.6}
-\fig{components}{def_blade_data_input_form.pdf}{データの入力フォーム(フロント)}{0.6}
-\fig{components}{def_blade_data_list.pdf}{データの一覧表示(フロント)}{0.6}
-\fig{components}{def_blade_data_send.pdf}{データ送信(フロント)}{0.6}
-\fig{components}{def_ctrl_data_receive.pdf}{データの受け取り(バック)}{0.6}
-\fig{components}{def_ctrl_data_send.pdf}{データ送信(バック)}{0.6}
-\fig{components}{def_ctrl_database_query.pdf}{データベース問い合わせ(バック)}{0.6}
-\fig{components}{def_ctrl_database_register.pdf}{データベース新規登録(バック)}{0.6}
-\fig{components}{def_ctrl_database_update.pdf}{データベース更新(バック)}{0.6}
-\fig{components}{def_ctrl_page_transition.pdf}{ページ遷移(バック)}{0.6}
-\fig{components}{def_ctrl_validation.pdf}{バリデーション(バック)}{0.6}
+\clearpage
+以下にデータベース新規登録(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_database_register.pdf}{データベース新規登録(バック)}{0.8}
+\fig{components}{ctrl_database_register.pdf}{データベース新規登録(バック)}{0.2}
+\clearpage
+以下にデータベース更新(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_database_update.pdf}{データベース更新(バック)}{0.8}
+\fig{components}{ctrl_database_update.pdf}{データベース更新(バック)}{0.5}
+\clearpage
+以下にバリデーション(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_validation.pdf}{バリデーション(バック)}{0.8}
+\fig{components}{ctrl_validation.pdf}{バリデーション(バック)}{0.5}
+\clearpage
+以下にページ遷移(バック)コンポーネントの定義書及び遷移図を示す．
+\fig{components}{def_ctrl_page_transition.pdf}{ページ遷移(バック)}{0.8}
+\fig{components}{ctrl_page_transition.pdf}{ページ遷移(バック)}{0.2}
+
 
 % \section{データベース設計}
 % 何を保存するTableか．なんの属性を持つか．その概要と保存の規則．
-
+\clearpage
 \section{貢献度}
 \begin{itemize}
 \item 1240312 久保田 天治
