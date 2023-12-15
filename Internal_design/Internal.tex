@@ -34,16 +34,16 @@
       \end{tabular}
     }}
 \end{titlepage}
-% \fig{filename(.pdf無し)}
-% \newcommand{\fig}[1]{
-%   \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=\linewidth]{pdf/#1.pdf}
-%     \caption{#1}
-%     \label{fig:#1}
-%   \end{figure}
-% }
-% \fig{filename(.pdf無し)}{caption}
+
+\newcommand{\fig}[4]{
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=#4\linewidth]{#1/#2}
+    \caption{#3}
+    \label{fig:#1_#2}
+  \end{figure}
+}
+
 \newcommand{\definition}[2]{
   \begin{figure}[H]
     \centering
@@ -332,21 +332,24 @@
   \item 退会モジュール
 \end{itemize}
 \section{各モジュール定義}
-\definition{\detokenize{login}}{ログインモジュール}
-\definition{\detokenize{logout}}{ログアウトモジュール}
-\definition{\detokenize{list}}{一覧モジュール}
-\definition{\detokenize{detail}}{詳細モジュール}
-\definition{\detokenize{register}}{登録モジュール}
-\definition{\detokenize{edit}}{編集モジュール}
-\definition{\detokenize{analysis}}{分析モジュール}
-\definition{\detokenize{withdraw}}{退会モジュール}
-\section{モジュールの依存関係}
-%同時に呼び出しが出来ない，呼び出しの限定
-\moduleTransition{\detokenize{login}}{ログインモジュール}
-%\moduleTransition{\detokenize{logout}}{ログアウトモジュール}
-\moduleTransition{\detokenize{analysis}}{分析モジュール}
-
 % 機能を実装するためのコンポーネント
+\fig{modules}{module_logout.pdf}{ログインモジュール(バック)}{0.6}
+\fig{modules}{module_analysis.pdf}{ログアウトモジュール(バック)}{0.6}
+\fig{modules}{module_detail_show.pdf}{一覧表示モジュール}{0.3}
+\fig{modules}{module_edit.pdf}{詳細表示モジュール}{0.3}
+\fig{modules}{module_list_show.pdf}{登録モジュール}{0.3}
+\fig{modules}{module_login.pdf}{編集モジュール}{0.3}
+\fig{modules}{module_register.pdf}{分析モジュール}{0.3}
+\fig{modules}{module_withdraw.pdf}{退会モジュール}{0.3}
+\fig{modules}{def_module_logout.pdf}{ログインモジュール}{0.6}
+\fig{modules}{def_module_analysis.pdf}{ログアウトモジュール}{0.6}
+\fig{modules}{def_module_detail_show.pdf}{一覧表示モジュール}{0.6}
+\fig{modules}{def_module_edit.pdf}{詳細表示モジュール}{0.6}
+\fig{modules}{def_module_list_show.pdf}{登録モジュール}{0.6}
+\fig{modules}{def_module_login.pdf}{編集モジュール}{0.6}
+\fig{modules}{def_module_register.pdf}{分析モジュール}{0.6}
+\fig{modules}{def_module_withdraw.pdf}{退会モジュール}{0.6}
+
 \section{コンポーネント一覧}
 \begin{itemize}
   \item データの入力フォーム
@@ -369,22 +372,31 @@
 \end{itemize}
 \section{各コンポーネント定義}
 %\url{https://lms.kochi-tech.ac.jp/pluginfile.php/210601/mod_page/content/12/tkb_12_module_def.pdf}これを参考にする
+\fig{components}{blade_button_create.pdf}{ボタン生成(フロント)}{0.3}
+\fig{components}{blade_data_detail.pdf}{データの詳細表示(フロント)}{0.3}
+\fig{components}{blade_data_input_form.pdf}{データの入力フォーム(フロント)}{0.3}
+\fig{components}{blade_data_list.pdf}{データの一覧表示(フロント)}{0.3}
+\fig{components}{blade_data_send.pdf}{データ送信(フロント)}{0.3}
+\fig{components}{ctrl_data_receive.pdf}{データの受け取り(バック)}{0.3}
+\fig{components}{ctrl_data_send.pdf}{データ送信(バック)}{0.3}
+\fig{components}{ctrl_database_query.pdf}{データベース問い合わせ(バック)}{0.3}
+\fig{components}{ctrl_database_register.pdf}{データベース新規登録(バック)}{0.3}
+\fig{components}{ctrl_database_update.pdf}{データベース更新(バック)}{0.3}
+\fig{components}{ctrl_page_transition.pdf}{ページ遷移(バック)}{0.3}
+\fig{components}{ctrl_validation.pdf}{バリデーション(バック)}{0.3}
+\fig{components}{def_blade_button_create.pdf}{ボタン生成(フロント)}{0.6}
+\fig{components}{def_blade_data_detail.pdf}{データの詳細表示(フロント)}{0.6}
+\fig{components}{def_blade_data_input_form.pdf}{データの入力フォーム(フロント)}{0.6}
+\fig{components}{def_blade_data_list.pdf}{データの一覧表示(フロント)}{0.6}
+\fig{components}{def_blade_data_send.pdf}{データ送信(フロント)}{0.6}
+\fig{components}{def_ctrl_data_receive.pdf}{データの受け取り(バック)}{0.6}
+\fig{components}{def_ctrl_data_send.pdf}{データ送信(バック)}{0.6}
+\fig{components}{def_ctrl_database_query.pdf}{データベース問い合わせ(バック)}{0.6}
+\fig{components}{def_ctrl_database_register.pdf}{データベース新規登録(バック)}{0.6}
+\fig{components}{def_ctrl_database_update.pdf}{データベース更新(バック)}{0.6}
+\fig{components}{def_ctrl_page_transition.pdf}{ページ遷移(バック)}{0.6}
+\fig{components}{def_ctrl_validation.pdf}{バリデーション(バック)}{0.6}
 
-%+遷移図
-\section{コンポーネントの依存関係}
-%呼び出しの制限
-\componentTransition{\detokenize{data_send_blade}}{データ送信(blade)コンポーネント}
-\componentTransition{\detokenize{button_show}}{ボタン表示コンポーネント}
-\componentTransition{\detokenize{list_show}}{一覧表示コンポーネント}
-\componentTransition{\detokenize{detail_show}}{詳細表示コンポーネント}
-\componentTransition{\detokenize{data_receive}}{データの受け取りコンポーネント}
-\componentTransition{\detokenize{data_send_controller}}{データ送信(controller)}
-\componentTransition{\detokenize{database_query}}{データベース問い合わせコンポーネント}
-\componentTransition{\detokenize{database_update}}{データベース更新コンポーネント}
-\componentTransition{\detokenize{database_register}}{データベース新規登録}
-\componentTransition{\detokenize{validation}}{バリデーションコンポーネント}
-\componentTransition{\detokenize{page_transition}}{ページ遷移コンポーネント}
-% できればやる
 % \section{データベース設計}
 % 何を保存するTableか．なんの属性を持つか．その概要と保存の規則．
 
